@@ -1741,7 +1741,7 @@ form {
     height: 40vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
+    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
   }
 }
 
@@ -1927,17 +1927,6 @@ form {
   color: white;
 }
 
-.foBloc5 {
-  grid-area: fo5;
-}
-
-@media screen and (max-width: 1300px) {
-  .foBloc5 {
-    width: 100%;
-    padding-top: 20%;
-  }
-}
-
 .foBloc1__icofooter {
   width: 80%;
   margin-top: 2%;
@@ -1957,6 +1946,7 @@ form {
 }
 
 .foBloc5 {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1971,17 +1961,19 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 @media screen and (max-width: 1300px) {
   .foBloc5 {
-    padding: 0;
+    justify-self: center;
   }
 }
 
 .foBloc5__btnFtr {
   width: 90%;
-  height: 7vw;
+  height: 6vw;
   border-radius: 8px;
   border: none;
   display: -webkit-box;
@@ -1998,9 +1990,15 @@ form {
   cursor: pointer;
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 1300px) {
   .foBloc5__btnFtr {
     height: 8vw;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .foBloc5__btnFtr {
+    height: 10vw;
   }
 }
 
@@ -2008,11 +2006,13 @@ form {
   .foBloc5__btnFtr {
     margin-top: 8%;
     height: 13vw;
+    font-size: 2vw;
   }
 }
 
 .imgBTN {
   width: 16%;
+  margin-top: 6%;
 }
 
 .btnFtr_marg {
