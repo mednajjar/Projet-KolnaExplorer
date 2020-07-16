@@ -1,1 +1,1 @@
-# Projet-KolnaExplorer
+# KolnaExplorer
