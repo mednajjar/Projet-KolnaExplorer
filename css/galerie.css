@@ -775,7 +775,7 @@ form {
 .galerie__img img {
   height: 350px;
   width: 350px;
-  padding: 35px;
+  padding: 30px;
 }
 
 .galerie__but {
@@ -816,21 +816,33 @@ form {
   font-size: 52px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 470px) {
   .gal__h1 {
-    font-size: 100px;
+    font-size: 50px;
+    padding-left: 40px;
   }
   .galerie__img img {
-    height: 250px;
-    padding: 20px;
-    width: 250px;
+    height: 300px;
+    padding: 15px;
+    width: 300px;
   }
   .galerie__p1, .galerie__p2 {
-    font-size: 48px;
+    font-size: 20px;
+  }
+  .galerie__but {
+    text-align: center;
+    padding-bottom: 30px;
+    display: flex;
+  }
+  .galerie__but button {
+    width: 135px;
+    height: 35px;
+    font-size: 6px;
+    margin: 10px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .gal__h1 {
     font-size: 100px;
   }
@@ -854,29 +866,28 @@ form {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 1022px) and (max-width: 1382px) {
   .gal__h1 {
-    font-size: 50px;
-    padding-left: 40px;
+    font-size: 100px;
   }
   .galerie__img img {
     height: 300px;
-    padding: 15px;
+    padding: 20px;
     width: 300px;
   }
   .galerie__p1, .galerie__p2 {
-    font-size: 20px;
+    font-size: 48px;
   }
-  .galerie__but {
-    text-align: center;
-    padding-bottom: 30px;
-    display: flex;
+}
+
+@media only screen and (min-width: 1021px) and (max-width: 1132px) {
+  .gal__h1 {
+    font-size: 100px;
   }
-  .galerie__but button {
-    width: 135px;
-    height: 35px;
-    font-size: 6px;
-    margin: 10px;
+  .galerie__img img {
+    height: 270px;
+    padding: 15px;
+    width: 270px;
   }
 }
 

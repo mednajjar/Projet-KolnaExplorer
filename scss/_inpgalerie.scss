@@ -22,7 +22,7 @@
 
             height: 350px;
             width: 350px;
-            padding: 35px;
+            padding: 30px;
         }
     }
 
@@ -72,80 +72,9 @@
 }
 
 
-//Breakpoint
-@media screen and(max-width:1024px) {
 
-    .gal {
-        &__h1 {
-            font-size: 100px;
-        }
-    }
-
-    .galerie {
-        &__img {
-            img {
-
-                height: 250px;
-                padding: 20px;
-                width: 250px;
-
-            }
-        }
-
-        &__p1,
-        &__p2 {
-            font-size: 48px;
-        }
-    }
-
-}
-
-//TAB
-
-@media screen and(max-width:768px) {
-
-    .gal {
-        &__h1 {
-            font-size: 100px;
-        }
-    }
-
-    .galerie {
-        &__img {
-            img {
-
-                height: 200px;
-                padding: 15px;
-                width: 200px;
-
-            }
-        }
-
-        &__p1,
-        &__p2 {
-            font-size: 40px;
-        }
-
-        &__but {
-            text-align: center;
-            padding-bottom: 30px;
-
-            button {
-                width: 150px;
-                height: 50px;
-                font-size: 15px;
-                margin: 10pxx;
-            }
-        }
-    }
-
-
-}
-
-
-
-//MOB
-@media screen and(max-width: 375px) {
+//////////////////////::::/MOB
+@media screen and(max-width: 470px) {
 
     .gal {
         &__h1 {
@@ -187,3 +116,100 @@
 
 
 }
+
+
+///////////////////:::://TAB
+
+@media screen and(min-width:768px) and (max-width:1024px) {
+
+    .gal {
+        &__h1 {
+            font-size: 100px;
+        }
+    }
+
+    .galerie {
+        &__img {
+            img {
+
+                height: 200px;
+                padding: 15px;
+                width: 200px;
+
+            }
+        }
+
+        &__p1,
+        &__p2 {
+            font-size: 40px;
+        }
+
+        &__but {
+            text-align: center;
+            padding-bottom: 30px;
+
+            button {
+                width: 150px;
+                height: 50px;
+                font-size: 15px;
+                margin: 10pxx;
+            }
+        }
+    }
+
+
+}
+
+
+
+
+///////////////////////::::Breakpoint
+@media only screen and (min-width:1022px) and (max-width:1382px) {
+
+    .gal {
+        &__h1 {
+            font-size: 100px;
+        }
+    }
+
+    .galerie {
+        &__img {
+            img {
+
+                height: 300px;
+                padding: 20px;
+                width: 300px;
+
+            }
+        }
+
+        &__p1,
+        &__p2 {
+            font-size: 48px;
+        }
+    }
+
+}
+
+@media only screen and (min-width:1021px) and (max-width:1132px) {
+
+    .gal {
+        &__h1 {
+            font-size: 100px;
+        }
+    }
+
+    .galerie {
+        &__img {
+            img {
+
+                height: 270px;
+                padding: 15px;
+                width: 270px;
+
+            }
+        }
+    }
+
+}
+
