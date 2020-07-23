@@ -720,6 +720,15 @@ hr {
   width: 70%;
 }
 
+.sectionTeam2 .block1 .block1-team2 h2 {
+  color: rgba(202, 195, 195, 0.76);
+  font-family: 'EB Garamond', serif;
+}
+
+.sectionTeam2 .block1 .block1-team2 h1 {
+  font-family: 'Playfair Display SC', serif;
+}
+
 .sectionTeam2 .block2 {
   padding-left: 80px;
   grid-column: 2/3;
@@ -749,6 +758,15 @@ hr {
 
 .sectionTeam2 .block2 .block1-team2 p {
   width: 70%;
+}
+
+.sectionTeam2 .block2 .block1-team2 h2 {
+  color: rgba(202, 195, 195, 0.76);
+  font-family: 'EB Garamond', serif;
+}
+
+.sectionTeam2 .block2 .block1-team2 h1 {
+  font-family: 'Playfair Display SC', serif;
 }
 
 .sectionTeam2 .block3 {
@@ -782,6 +800,15 @@ hr {
   width: 70%;
 }
 
+.sectionTeam2 .block3 .block1-team2 h1 {
+  font-family: 'Playfair Display SC', serif;
+}
+
+.sectionTeam2 .block3 .block1-team2 h2 {
+  color: rgba(202, 195, 195, 0.76);
+  font-family: 'EB Garamond', serif;
+}
+
 .sectionTeam2 .block4 {
   padding-left: 80px;
   grid-column: 2/3;
@@ -811,6 +838,15 @@ hr {
 
 .sectionTeam2 .block4 .block1-team2 p {
   width: 70%;
+}
+
+.sectionTeam2 .block4 .block1-team2 h2 {
+  color: rgba(202, 195, 195, 0.76);
+  font-family: 'EB Garamond', serif;
+}
+
+.sectionTeam2 .block4 .block1-team2 h1 {
+  font-family: 'Playfair Display SC', serif;
 }
 
 /*# sourceMappingURL=Team.css.map */
