@@ -1057,3 +1057,30 @@ body {
 
 
 }
+
+//::::::::::::::::::::::::::::BREAKPOINT
+@media only screen and (min-width:876px) and (max-width:1050px) {
+    .aboutheader {
+        &__h {
+            font-size: 70px;
+
+            &::after {
+                flex: 40% 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:677px) {
+    .aboutheader {
+        height: 75vh;
+
+        &__h {
+            font-size: 50px;
+
+            &::after {
+                flex: 28% 0;
+            }
+        }
+    }
+}

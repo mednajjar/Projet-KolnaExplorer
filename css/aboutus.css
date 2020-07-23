@@ -1645,4 +1645,25 @@ body {
   }
 }
 
+@media only screen and (min-width: 876px) and (max-width: 1050px) {
+  .aboutheader__h {
+    font-size: 70px;
+  }
+  .aboutheader__h::after {
+    flex: 40% 0;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 677px) {
+  .aboutheader {
+    height: 75vh;
+  }
+  .aboutheader__h {
+    font-size: 50px;
+  }
+  .aboutheader__h::after {
+    flex: 28% 0;
+  }
+}
+
 /*# sourceMappingURL=aboutus.css.map */
