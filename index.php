@@ -10,12 +10,13 @@
 </head>
 
 <body>
+
     <!--------------------------------------------** M E N u **----------------------------------------------->
     <nav>
         <div class="logo">
             <img class="logo__logo" src="/Assets/Image 1.png" alt="">
         </div>
-        </div>
+
         <ul class="navMenu">
             <li><a class="active" href="#">Acceuil</a></li>
             <li><a href="#">À propos de nous</a></li>
@@ -387,15 +388,15 @@
 
         <div class="footerSec">
 
-           
-                <h1 class="footerSec__Tit1">Abonnez-vous à notre newsletter</h1>
-               
-            
+
+            <h1 class="footerSec__Tit1">Abonnez-vous à notre newsletter</h1>
+
+
             <form>
-                   <div class="formNewsletter">
-                <input class="formInput" type="text" id="lname" name="lname" placeholder=" Entrer votre email">
-                <input class="formBtn" type="submit" value="Abonner" onclick="location.href='#';">
-            </div>
+                <div class="formNewsletter">
+                    <input class="formInput" type="text" id="lname" name="lname" placeholder=" Entrer votre email">
+                    <input class="formBtn" type="submit" value="Abonner" onclick="location.href='#';">
+                </div>
             </form>
         </div>
 
@@ -427,19 +428,19 @@
                 <div class="foBloc2">
                     <h2 class="foBloc2__title1">À propos de nous</h2>
                     <div class="footerLien">
-                    <h4 class="foBloc2__title2"><a href="#">Notre équipe</a></h4>
-                    <h4 class="foBloc2__title2"><a href="#">Statut</a></h4>
-                    <h4 class="foBloc2__title2"><a href="#">Réglement intérieur</a></h4>
-                </div>
+                        <h4 class="foBloc2__title2"><a href="#">Notre équipe</a></h4>
+                        <h4 class="foBloc2__title2"><a href="#">Statut</a></h4>
+                        <h4 class="foBloc2__title2"><a href="#">Réglement intérieur</a></h4>
+                    </div>
                 </div>
                 <!---------------------------------------------------------------->
                 <div class="foBloc3">
                     <h2 class="foBloc3__title1">Nos activités</h2>
                     <div class="footerLien">
-                    <h4 class="foBloc3__title2"><a href="#">Randonnée</a></h4>
-                    <h4 class="foBloc3__title2"><a href="#">Développement humain</a></h4>
-                    <h4 class="foBloc3__title2"><a href="#">Afforestation</a></h4>
-                </div>
+                        <h4 class="foBloc3__title2"><a href="#">Randonnée</a></h4>
+                        <h4 class="foBloc3__title2"><a href="#">Développement humain</a></h4>
+                        <h4 class="foBloc3__title2"><a href="#">Afforestation</a></h4>
+                    </div>
                 </div>
                 <!---------------------------------------------------------------->
                 <div class="foBloc4">

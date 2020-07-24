@@ -561,8 +561,7 @@ ul li .active {
 
 /*-----------------------------Destination--------------------------------*/
 .acDestination {
-  background: yellow;
-  background-image: url(/Assets/bg.png);
+  background-image: url(../Assets/bg.png);
   margin-top: 8%;
   padding-bottom: 4%;
 }
