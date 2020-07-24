@@ -261,7 +261,7 @@ hr {
         }
         .sectionTeam2 {
             width: 100%;
-            height: 2500px;
+            height: 2000px;
             // align-content: space-between;
             // display: flex;
             // flex-direction: column;
@@ -287,6 +287,25 @@ hr {
             }
             
         }
+        .block1-team2 {
+            margin-top: 30px;
+            margin-left: 15px;
+            p {
+                font-size: 12px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+          
     }
+        .block1-team1 {
+            margin-left:50px;
+            margin-top: 25px;
+            
+        }
 
+    }
 }

@@ -886,7 +886,7 @@ hr {
   }
   body .sectionTeam2 {
     width: 100%;
-    height: 2500px;
+    height: 2000px;
   }
   body .sectionTeam2 .block1 {
     display: flex;
@@ -905,6 +905,23 @@ hr {
   body .sectionTeam2 .block4 {
     display: flex;
     flex-direction: column;
+  }
+  body .block1-team2 {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+  body .block1-team2 p {
+    font-size: 12px;
+  }
+  body .block1-team2 h2 {
+    font-size: 16px;
+  }
+  body .block1-team2 h1 {
+    font-size: 22px;
+  }
+  body .block1-team1 {
+    margin-left: 50px;
+    margin-top: 25px;
   }
 }
 
