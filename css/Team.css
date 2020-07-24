@@ -858,6 +858,40 @@ hr {
   body {
     width: 100%;
   }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam h1 {
+    text-align: center;
+  }
+  body .sectionTeam2 {
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+  }
+  body .sectionTeam2 .block1-team2 {
+    padding-top: -20px;
+  }
+}
+
+@media screen and (max-width: px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam h1 {
+    text-align: center;
+  }
+  body .sectionTeam2 {
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+  }
+  body .sectionTeam2 .block1-team2 {
+    padding-top: -20px;
+  }
 }
 
 /*# sourceMappingURL=Team.css.map */
