@@ -16,7 +16,7 @@
     <!-----------------------Menu----------------------->
     <nav>
         <div class="logo">
-            <img class="logo__logo" src="/Assets/Image 1.png" alt="">
+            <img class="logo__logo" src="/Projet-KolnaExplorer/Assets/Image 1.png" alt="">
         </div>
         </div>
         <ul class="navMenu">
@@ -159,24 +159,24 @@
         <div class="lastFooter">
             <h1 class="lastFooter__titpart">Nos partenaires</h1>
             <div class="footerPart">
-                <img class="footerPart__imgPart" src="/Assets/Groupe85.png" alt="partenaire">
-                <img class="footerPart__imgPart" src="/Assets/Groupe85.png" alt="partenaire">
-                <img class="footerPart__imgPart" src="/Assets/Groupe85.png" alt="partenaire">
-                <img class="footerPart__imgPart" src="/Assets/Groupe85.png" alt="partenaire">
+                <img class="footerPart__imgPart" src="/Projet-KolnaExplorer/Assets/Groupe85.png" alt="partenaire">
+                <img class="footerPart__imgPart" src="/Projet-KolnaExplorer/Assets/Groupe85.png" alt="partenaire">
+                <img class="footerPart__imgPart" src="/Projet-KolnaExplorer/Assets/Groupe85.png" alt="partenaire">
+                <img class="footerPart__imgPart" src="/Projet-KolnaExplorer/Assets/Groupe85.png" alt="partenaire">
             </div>
             <div class="footerInfo">
                 <!----------------------------------------------------------------->
                 <div class="foBloc1">
-                    <img class="foBloc1__footerLogo" src="/Assets/logo.png" alt="logo">
+                    <img class="foBloc1__footerLogo" src="/Projet-KolnaExplorer/Assets/logo.png" alt="logo">
                     <div class="foBloc1__infoCont">
                         <p><b>Email :</b> kolnaexplorer@gmail.com</p>
                         <p><b>Phone :</b> +212-661-123-456</p>
                     </div>
                     <div class="foBloc1__icofooter">
-                        <img class="icofooter" src="/Assets/twitter-footer.png" alt="twitter">
-                        <img class="icofooter" src="/Assets/facebook-footer.png" alt="facebook">
-                        <img class="icofooter" src="/Assets/insta-footer.png" alt="instagram">
-                        <img class="icofooter" src="/Assets/youtube-footer.png" alt="youtube">
+                        <img class="icofooter" src="/Projet-KolnaExplorer/Assets/twitter-footer.png" alt="twitter">
+                        <img class="icofooter" src="/Projet-KolnaExplorer/Assets/facebook-footer.png" alt="facebook">
+                        <img class="icofooter" src="/Projet-KolnaExplorer/Assets/insta-footer.png" alt="instagram">
+                        <img class="icofooter" src="/Projet-KolnaExplorer/Assets/youtube-footer.png" alt="youtube">
                     </div>
                 </div>
                 <!---------------------------------------------------------------->
@@ -207,10 +207,10 @@
                 <!---------------------------------------------------------------->
                 <div class="foBloc5">
                     <button class="foBloc5__btnFtr btnFtr_marg" onclick="location.href='#';"><img class="imgBTN"
-                            src="/Assets/mail.png" alt="mail"> Contacter
+                            src="/Projet-KolnaExplorer/Assets/mail.png" alt="mail"> Contacter
                         nous</button>
                     <button class="foBloc5__btnFtr" onclick="location.href='#';"><img class="imgBTN"
-                            src="/Assets/sports.png" alt="sport"> Devenir membre</button>
+                            src="/Projet-KolnaExplorer/Assets/sports.png" alt="sport"> Devenir membre</button>
                 </div>
                 <!---------------------------------------------------------------->
             </div>
