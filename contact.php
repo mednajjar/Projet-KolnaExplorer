@@ -1,34 +1,3 @@
-<?php
-
-if(isset($_POST['send']))
-{
-    $userName=$_POST['name'];
-    $Email=$_POST['email'];
-    $sujet=$_POST['subject'];
-    $msg=$_POST['body'];
-    if(empty($userName) ||empty($Email) || empty($sujet) || empty($msg))
-    {
-        header("location:contact.php?error");
-    }
-    else
-    {
-        $Pour="meachkaddour1.gmail.com";
-        if(mail($Pour,$sujet,$msg,$Email))
-        {
-            header("location:contact.php?success");
-        }
-
-    }
-}
-// else{
-//     header("location:contact.php");
-// }
-
-
-
-?>
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -51,7 +20,7 @@ if(isset($_POST['send']))
         </div>
         </div>
         <ul class="navMenu">
-            <li><a class="active" href="#">Acceuil</a></li>
+            <li><a class="active" href="index.php">Acceuil</a></li>
             <li><a href="#">À propos de nous</a></li>
             <li class="active" id="act"><a href="#">Nos Activités</a>
                 <ul class="smenu">
@@ -63,7 +32,7 @@ if(isset($_POST['send']))
 
             <li class="active"><a href="#">Galerie</a></li>
             <li class="active"><a href="#">Blog</a></li>
-            <li class="active"><a href="#">Contact</a></li>
+            <li class="active"><a href="contact.php">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
@@ -105,54 +74,68 @@ if(isset($_POST['send']))
             
                 <h4 class="contact__form--title">Contacter-Nous!</h4>
             
-                <div id="message">
-                    <?php
-                    $reponseMsg="";
-                    if(isset($_GET['error']))
-                    {
-                        $reponseMsg="SVP renseigné Tous Les Champs !!";
-                        echo '<div class="text-danger">'.$reponseMsg.'</div>';
-                    }
-                    
+                    <?php 
+                        $name = $subject = $email = $message = "";
+                        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+                        
+                            $name = $_POST['name'];
+                            $email = $_POST['email']; 
+                            $subject = $_POST['subject'];
+                            $message = $_POST['body'];
+                            $email_from = 'kolnaexplorer@gmail.com';
+
+                            $email_subject = "New form submission";
+
+                            $email_body = "User Name: $name.\n".
+                                                "User Email: $email.\n".
+                                                    "User subject: $subject.\n".
+                                                        "User Message: $message.\n";
+
+
+                            $to = "meachkaddour1@gmail.com";
+
+                            $headers = "From: $email_from \r\n";
+
+                            $headers .= "Reply-To: $email \r\n";
+                            mail($to,$email_subject,$email_body,$headers);
+
+                            header("Location: contact.php");
+                        
+                        }
+ 
                     ?>
-                </div>
+                    
+                
                 <form method="POST" action="contact.php" name="contact-form" id="contact-form">
                    
-                    
                     <div class="form__label1">
                         <label>Votre Nom<span class="text-danger"> *</span></label>
                         <img src="Assets/name.png" alt="personne">
-                        <input name="name" id="name" type="text" placeholder="First Name :">
+                        <input name="name" id="name" type="text" placeholder="First Name :" required>
                     </div>
                     <div class="form__label2">
                         <label>Votre Email<span class="text-danger"> *</span></label>
                         <img src="Assets/gmail.png" alt="gmail">
-                        <input name="email" id="email" type="email" placeholder="Your email :">
+                        <input name="email" id="email" type="email" placeholder="Your email :" required>
                     </div>
                     <div class="form__label3">
                         <label>Sujet</label>
                         <img src="Assets/subject.png" alt="subject">
-                        <input name="subject" id="subject" type="text" placeholder="Sujet">
+                        <input name="subject" id="subject" type="text" placeholder="Sujet" required >
                     </div>
                     <div class="form__label4">
                         <label>Message</label>
                         <img src="Assets/msg.png" alt="message">
-                        <textarea name="body" id="comments"  placeholder="Votre Message :"></textarea>
+                        <textarea name="body" id="comments"  placeholder="Votre Message :" required></textarea>
                     </div>
                     <div class="form__labelSend">
-                        <input type="submit" id="submit" name="send" class="form__btnSend" value="Envoyer le message">
+                        <input type="submit" id="submit" name="submit" class="form__btnSend" value="Envoyer le message" required>
                     </div>
                 </form>
 
                 <!-- <input type="submit" id="submit" name="send" class="form__btnSend" value="Envoyer le message"> -->
                 <div id="simple-msg">
-                    <?php
-                        if(isset($_GET['success']))
-                        {
-                            $reponseMsg="Votre Message a été Bien Envoyée Merci!";
-                            echo '<div class="text-success">'.$reponseMsg.'</div>';
-                        }
-                    ?>
+                    
                 </div>
             </div>
             <div class="bgImg">

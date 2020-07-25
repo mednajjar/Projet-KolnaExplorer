@@ -17,7 +17,7 @@
         </div>
         </div>
         <ul class="navMenu">
-            <li><a class="active" href="#">Acceuil</a></li>
+            <li><a class="active" href="index.php">Acceuil</a></li>
             <li><a href="#">À propos de nous</a></li>
             <li class="active" id="act"><a href="#">Nos Activités</a>
                 <ul class="smenu">
