@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "eventDest.css",
+	"file": "galerie.css",
 	"sources": [
-		"../scss/eventDest.scss"
+		"../scss/galerie.scss"
 	],
 	"names": [],
 	"mappings": ""

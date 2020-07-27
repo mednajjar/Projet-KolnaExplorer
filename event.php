@@ -5,30 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolna Explorer</title>
-    <link rel="stylesheet" href="css/eventDest.css">
+    <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!--------------------------------------------** M E N u **----------------------------------------------->
     <nav>
         <div class="logo">
-            <img class="logo__logo" src="./Assets/Image 1.png" alt="">
+            <img class="logo__logo" src="/Assets/Image 1.png" alt="">
         </div>
-        </div>
+
         <ul class="navMenu">
-            <li><a class="active" href="#">Acceuil</a></li>
+            <li><a href="index.php">Acceuil</a></li>
             <li><a href="#">À propos de nous</a></li>
-            <li class="active" id="act"><a href="#">Nos Activités</a>
+            <li id="act"><a href="#">Nos Activités</a>
                 <ul class="smenu">
-                    <li class="active"><a href="">Activités Principales</a></li>
-                    <li class="active"><a href="destination.html">Destination</a></li>
-                    <li class="active"><a href="event.html">Events</a></li>
+                    <li><a href="">Activités Principales</a></li>
+                    <li><a href="destination.php">Destination</a></li>
+                    <li><a href="event.php">Events</a></li>
                 </ul>
             </li>
 
-            <li class="active"><a href="#">Galerie</a></li>
-            <li class="active"><a href="#">Blog</a></li>
-            <li class="active"><a href="#">Contact</a></li>
+            <li><a href="#">Galerie</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
@@ -52,26 +53,25 @@
         </div>
         <!---------------------------------------------------------------------------------------------------------------->
         <div class="imgHero">
-            <img class="imgHero__imgSld" src="./Assets/Asset_2.png" alt="imgHeader">
+            <img class="imgHero__imgSld" src="/Assets/illustration1.png" alt="imgHeader">
         </div>
         <!---------------------------------------------------------------------------------------------------------------->
 
     </div>
-
     <!--------------------------------------** F I N - H E A D E R - H E R O **------------------------------------------>
 
 
-<!--------------------------------------------------------** event**---------------------------------------------------------->
-<!--------------------------------------------------------** event**---------------------------------------------------------->
-<section>
-    <h1>Nos événements</h1>
- 
-       <div class="eventItems">
- 
+    <!--------------------------------------------------------** event**---------------------------------------------------------->
+    <!--------------------------------------------------------** event**---------------------------------------------------------->
+    <section>
+        <h1 class="nos-evenements">Nos événements</h1>
+
+        <div class="eventItems">
+
             <!-- <div class="eventItems__img"> -->
-                <img class="eventItems__img" src="./Assets/IMG-20190303-WA0008.jpg" alt="">
+            <img class="eventItems__img" src="./Assets/IMG-20190303-WA0008.jpg" alt="">
             <!-- </div> -->
- 
+
             <div class="eventItems__content">
                 <h3 class="eventItems__content--title">Titre de l'event</h3>
                 <div class="eventItems__content--info">
@@ -88,119 +88,119 @@
                 <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
                     elitsed do eiusmod tempor incididunt utlabore et
                     dolore magna aliqua. Utenim ad minim veniam</p>
- 
-            </div>
-       </div>
- 
- 
- 
- 
-       <div class="eventItems">
- 
-        <!-- <div class="eventItems__img"> -->
-            <img class="eventItems__img" src="./Assets/IMG-20190303-WA0009.jpg" alt="">
-        <!-- </div> -->
- 
-        <div class="eventItems__content">
-            <h3 class="eventItems__content--title">Titre de l'event</h3>
-            <div class="eventItems__content--info">
-                <div class="eventItems__content--infoLocation">
-                    <img src="./Assets/Location.png" alt="">
-                    <p>Beni mellal, Maroc</p>
-                </div>
-                <div class="eventItems__content--infoCalender">
-                    <img src="./Assets/calendar.png" alt="">
-                    <p>24 January, 2021</p>
-                </div>
-            </div>
-            <hr>
-            <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
-                elitsed do eiusmod tempor incididunt utlabore et
-                dolore magna aliqua. Utenim ad minim veniam</p>
- 
-        </div>
-   </div>
- 
- 
- 
- 
-   <div class="eventItems">
- 
-    <!-- <div class="eventItems__img"> -->
-        <img class="eventItems__img" src="./Assets/IMG-20190304-WA0021.jpg" alt="">
-    <!-- </div> -->
- 
-    <div class="eventItems__content">
-        <h3 class="eventItems__content--title">Titre de l'event</h3>
-        <div class="eventItems__content--info">
-            <div class="eventItems__content--infoLocation">
-                <img src="./Assets/Location.png" alt="">
-                <p>Beni mellal, Maroc</p>
-            </div>
-            <div class="eventItems__content--infoCalender">
-                <img src="./Assets/calendar.png" alt="">
-                <p>24 January, 2021</p>
-            </div>
-        </div>
-        <hr>
-        <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
-            elitsed do eiusmod tempor incididunt utlabore et
-            dolore magna aliqua. Utenim ad minim veniam</p>
- 
-    </div>
- </div>
- 
- 
- 
- 
- 
- 
- 
- <div class="eventItems">
- 
-    <!-- <div class="eventItems__img"> -->
-        <img class="eventItems__img" src="./Assets/IMG-20190304-WA0076.jpg" alt="">
-    <!-- </div> -->
- 
-    <div class="eventItems__content">
-        <h3 class="eventItems__content--title">Titre de l'event</h3>
-        <div class="eventItems__content--info">
-            <div class="eventItems__content--infoLocation">
-                <img src="./Assets/Location.png" alt="">
-                <p>Beni mellal, Maroc</p>
-            </div>
-            <div class="eventItems__content--infoCalender">
-                <img src="./Assets/calendar.png" alt="">
-                <p>24 January, 2021</p>
-            </div>
-        </div>
-        <hr>
-        <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
-            elitsed do eiusmod tempor incididunt utlabore et
-            dolore magna aliqua. Utenim ad minim veniam</p>
- 
-    </div>
- </div>
- 
- </section>
- 
- <!----> 
 
- <!-----------------------------------------------** F O O T E R **------------------------------------------------------->
+            </div>
+        </div>
+
+
+
+
+        <div class="eventItems">
+
+            <!-- <div class="eventItems__img"> -->
+            <img class="eventItems__img" src="./Assets/IMG-20190303-WA0009.jpg" alt="">
+            <!-- </div> -->
+
+            <div class="eventItems__content">
+                <h3 class="eventItems__content--title">Titre de l'event</h3>
+                <div class="eventItems__content--info">
+                    <div class="eventItems__content--infoLocation">
+                        <img src="./Assets/Location.png" alt="">
+                        <p>Beni mellal, Maroc</p>
+                    </div>
+                    <div class="eventItems__content--infoCalender">
+                        <img src="./Assets/calendar.png" alt="">
+                        <p>24 January, 2021</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
+                    elitsed do eiusmod tempor incididunt utlabore et
+                    dolore magna aliqua. Utenim ad minim veniam</p>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="eventItems">
+
+            <!-- <div class="eventItems__img"> -->
+            <img class="eventItems__img" src="./Assets/IMG-20190304-WA0021.jpg" alt="">
+            <!-- </div> -->
+
+            <div class="eventItems__content">
+                <h3 class="eventItems__content--title">Titre de l'event</h3>
+                <div class="eventItems__content--info">
+                    <div class="eventItems__content--infoLocation">
+                        <img src="./Assets/Location.png" alt="">
+                        <p>Beni mellal, Maroc</p>
+                    </div>
+                    <div class="eventItems__content--infoCalender">
+                        <img src="./Assets/calendar.png" alt="">
+                        <p>24 January, 2021</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
+                    elitsed do eiusmod tempor incididunt utlabore et
+                    dolore magna aliqua. Utenim ad minim veniam</p>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="eventItems">
+
+            <!-- <div class="eventItems__img"> -->
+            <img class="eventItems__img" src="./Assets/IMG-20190304-WA0076.jpg" alt="">
+            <!-- </div> -->
+
+            <div class="eventItems__content">
+                <h3 class="eventItems__content--title">Titre de l'event</h3>
+                <div class="eventItems__content--info">
+                    <div class="eventItems__content--infoLocation">
+                        <img src="./Assets/Location.png" alt="">
+                        <p>Beni mellal, Maroc</p>
+                    </div>
+                    <div class="eventItems__content--infoCalender">
+                        <img src="./Assets/calendar.png" alt="">
+                        <p>24 January, 2021</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
+                    elitsed do eiusmod tempor incididunt utlabore et
+                    dolore magna aliqua. Utenim ad minim veniam</p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!---->
+
+    <!-----------------------------------------------** F O O T E R **------------------------------------------------------->
 
     <div class="sectionFooter">
 
         <div class="footerSec">
 
 
-                <h1 class="footerSec__Tit1">Abonnez-vous à notre newsletter</h1>
+            <h1 class="footerSec__Tit1">Abonnez-vous à notre newsletter</h1>
 
 
             <form>
-                   <div class="formNewsletter">
-                <input class="formInput" type="text" id="lname" name="lname" placeholder=" Entrer votre email">
-                <input class="formBtn" type="submit" value="Abonner" onclick="location.href='#';">
-            </div>
+                <div class="formNewsletter">
+                    <input class="formInput" type="text" id="lname" name="lname" placeholder=" Entrer votre email">
+                    <input class="formBtn" type="submit" value="Abonner" onclick="location.href='#';">
+                </div>
             </form>
         </div>
 
@@ -232,19 +232,19 @@
                 <div class="foBloc2">
                     <h2 class="foBloc2__title1">À propos de nous</h2>
                     <div class="footerLien">
-                    <h4 class="foBloc2__title2"><a href="#">Notre équipe</a></h4>
-                    <h4 class="foBloc2__title2"><a href="#">Statut</a></h4>
-                    <h4 class="foBloc2__title2"><a href="#">Réglement intérieur</a></h4>
-                </div>
+                        <h4 class="foBloc2__title2"><a href="#">Notre équipe</a></h4>
+                        <h4 class="foBloc2__title2"><a href="#">Statut</a></h4>
+                        <h4 class="foBloc2__title2"><a href="#">Réglement intérieur</a></h4>
+                    </div>
                 </div>
                 <!---------------------------------------------------------------->
                 <div class="foBloc3">
                     <h2 class="foBloc3__title1">Nos activités</h2>
                     <div class="footerLien">
-                    <h4 class="foBloc3__title2"><a href="#">Randonnée</a></h4>
-                    <h4 class="foBloc3__title2"><a href="#">Développement humain</a></h4>
-                    <h4 class="foBloc3__title2"><a href="#">Afforestation</a></h4>
-                </div>
+                        <h4 class="foBloc3__title2"><a href="#">Randonnée</a></h4>
+                        <h4 class="foBloc3__title2"><a href="#">Développement humain</a></h4>
+                        <h4 class="foBloc3__title2"><a href="#">Afforestation</a></h4>
+                    </div>
                 </div>
                 <!---------------------------------------------------------------->
                 <div class="foBloc4">

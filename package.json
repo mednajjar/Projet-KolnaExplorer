@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "toCSS": "node-sass --output-style expanded --source-map=true scss -o css",
-    "concat": "concat --output=css/eventDest.css css/event.css css/destination.css",
-    "toPrefixed": "postcss css/eventDest.css --use=autoprefixer --map=false --output=css/eventDest.css",
-    "toMinified": "cleancss --level=1 --source-map --source-map-inline-sources --output css/eventDest.min.css css/eventDest.css",
+    "concat": "concat --output=css/style.css css/accueil.css css/propos.css css/activites.css css/galerie.css css/blog.css css/contact.css css/admin.css css/destination.css css/event.css",
+    "toPrefixed": "postcss css/style.css --use=autoprefixer --map=false --output=css/style.css",
+    "toMinified": "cleancss --level=1 --source-map --source-map-inline-sources --output css/style.min.css css/style.css",
     "watch": "npm run toCSS -- --watch",
     "build": "npm run toCSS && npm run concat && npm run toPrefixed && npm run toMinified && npm run watch"
   },
