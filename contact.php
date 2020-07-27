@@ -46,6 +46,7 @@
         <!-- section top -->
         <h1 class="contact__title">contact</h1>
         <h3 class="contact__subtitle">Cras eu elit congue, placerat dui ut, tincidunt nisl.</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29741.80430261499!2d-6.375134616072709!3d32.33645286910378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda38649419c7fc1%3A0x6236b3e9a12bafd9!2sB%C3%A9ni%20Mellal!5e0!3m2!1sfr!2sma!4v1595861589145!5m2!1sfr!2sma" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <div class="contact__wrapper">
             <div class="wrapper__tel">
                 <img class="wrapper__tel--icon" src="Assets/phone.png" alt="phone">
