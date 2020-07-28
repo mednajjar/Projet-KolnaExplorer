@@ -19,18 +19,18 @@
 
         <ul class="navMenu">
             <li><a href="index.php">Acceuil</a></li>
-            <li><a href="#">À propos de nous</a></li>
+            <li><a href="about.php">À propos de nous</a></li>
             <li id="act"><a href="#">Nos Activités</a>
                 <ul class="smenu" id="sous-act">
-                    <li><a href="">Activités Principales</a></li>
+                    <li><a href="activite.php">Activités Principales</a></li>
                     <li><a href="destination.php">Destination</a></li>
                     <li><a href="event.php">Events</a></li>
                 </ul>
             </li>
 
-            <li><a href="#">Galerie</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="galerie.php">Galerie</a></li>
+            <li><a href="blog.php">Blog</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
