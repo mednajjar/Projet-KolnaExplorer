@@ -377,9 +377,6 @@ body {
     width: 100%;
     padding-bottom: 4%;
 
-
-
-
     &__evenTit {
         font-size: 6vw;
         margin-top: 8%;
@@ -391,6 +388,7 @@ body {
             text-align: center;
             margin-left: 0;
             margin-top: 4%;
+            margin-bottom: 8%;
         }
     }
 }
@@ -417,6 +415,7 @@ body {
             "even2"
             "even3"
             "BTN";
+        margin-bottom: 38%;
     }
 
 }
@@ -647,6 +646,7 @@ body {
     width: 100%;
     text-align: center;
     margin-bottom: 8%;
+    margin-top: -2%;
 
 
     &__gaTit {

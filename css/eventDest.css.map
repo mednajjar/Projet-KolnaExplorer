@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "eventDest.css",
+	"sources": [
+		"../scss/eventDest.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
