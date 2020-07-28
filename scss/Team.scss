@@ -10,16 +10,17 @@
 body {
     overflow-x: hidden;
     font-family: nunito, sans-serif;
+    background-color: blue;
 }
 
 
 @import '_menu.scss';
-@import '_footer.scss';
+// @import '_footer.scss';
 
 
 .sectionTeam{
     margin-top: 10px;
-    img {
+    .sectionTeam-photo {
         width: 100%;
         height: 100vh;
         background-size: cover;
@@ -42,7 +43,7 @@ body {
 }
 
 
-hr {
+.block1-team2--ligne {
     height: 2px;
     width: 10%;
     margin-bottom: 30px;
@@ -51,7 +52,7 @@ hr {
 }
 
 .sectionTeam2 {
-        h1 {
+    h1 {
             margin-top: 80px;
             font-weight: bold;
         }
@@ -64,8 +65,8 @@ hr {
            grid-column: 1/3;
            grid-row:1/2;
            text-align: center; 
-          
         }
+        
         .block1 {
             padding-left: 80px;
             grid-column: 1/2;
@@ -226,7 +227,7 @@ hr {
         width: 100%;
         .sectionTeam {
             width: 100%;
-            h1 {
+            .title {
                 text-align: center;
             }
         }
@@ -262,13 +263,10 @@ hr {
         .sectionTeam2 {
             width: 100%;
             height: 2000px;
-            // align-content: space-between;
-            // display: flex;
-            // flex-direction: column;
+            
             .block1  {
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-between;
                 justify-content: space-evenly;
             }
             .block2  {

@@ -45,7 +45,7 @@
 
     <section class="sectionTeam">
         
-        <img src="Assets/explorer.jpg" alt="">
+        <img class="  sectionTeam-photo   "src="Assets/explorer.jpg" alt="">
         <div><h1 class="title">MEET OUR TEAM</h1></div>
 
     </section>
@@ -55,7 +55,7 @@
                    <!----------------------sectionTeam2----------------------> 
     <section class="sectionTeam2">
         
-        <div class="block0"><h1>Ours Team</h1></div>
+        <div class="block0"><h1 class="sectionTeam2-title ">Ours Team</h1></div>
         <div class="block1">
              <div class="block1-team1">
             <img  src="Assets/800px-Matt_Mullenweg-100x100.jpg" alt="" >
@@ -69,7 +69,7 @@
             </div>
 
             <div class="block1-team2">
-                <hr>
+                <hr class="block1-team2--ligne  ">
             <h1>Nom et Prénon</h1>
             <h2>Role</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
@@ -87,7 +87,7 @@
             </div>
             </div>
             <div class="block1-team2">
-                <hr>
+                <hr  class=block1-team2--ligne>
             <h1>Nom et Prénon</h1>
             <h2>Role</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
@@ -106,7 +106,8 @@
 
             </div>
             <div class="block1-team2">
-                <hr>
+                <hr  class=block1-team2--ligne>
+
             <h1>Nom et Prénon</h1>
             <h2>Role</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
@@ -125,7 +126,8 @@
 
             </div>
             <div class="block1-team2">
-                <hr>
+                <hr  class=block1-team2--ligne>
+
             <h1>Nom et Prénon</h1>
             <h2>Role</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
@@ -225,6 +227,8 @@
                      <!----------------------Fin Footer---------------------->
 
                      <script src="/js/script.js"></script>
+                     <script src="/js/Team.js"></script>
+
 
 </body>
 </html>
