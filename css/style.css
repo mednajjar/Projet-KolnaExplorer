@@ -3534,6 +3534,10 @@ ul li .active {
   }
 }
 
+.eventSection {
+  margin-bottom: 10%;
+}
+
 .nos-evenements {
   font-size: 6vw;
   color: #698474;
