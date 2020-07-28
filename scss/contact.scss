@@ -1,26 +1,33 @@
 @import 'variables';
 @import 'headerHero';
 @import 'menu';
-@import 'footer';
+
 // version DESKTOP //
+body {
+    font-family: nunito, sans-serif;
+}
 .contact {
-    font-family: $fontP;
+    width: 90%;
+    // font-family: $fontP;
     max-width: $maxwidth;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 8%;
     &__title {
-        margin-top: 1.5em;
-        font-family: $fontT;
+        margin-top: 3.5em;
+        // font-family: $fontT;
         font-size: $sizeT;
         text-transform: uppercase;
         color: $colorP;
         opacity: 0.5;
+        margin-bottom: 3%;
     }
     &__subtitle {
         margin-top: 0.5em;
         font-size: $sizeST;
-        font-family: $fontT;
+        // font-family: $fontT;
         color: $colorP;
+        margin-bottom: 3%;
     }
     &__wrapper {
         display: grid;
@@ -150,13 +157,13 @@
     color: red;
 }
 
-form {
+.contactForm {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-.form {
+.contactForm {
     &__label1 {
         grid-area: 1/1;
         label {
@@ -173,6 +180,7 @@ form {
             margin-top: 20px;
             height: 42px;
             width: 90%;
+            padding-left: 2%;
         }
     }
     &__label2 {
@@ -191,6 +199,7 @@ form {
             height: 42px;
             margin-top: 18px;
             width: 100%;
+            padding-left: 2%;
         }
     }
     &__label3 {
@@ -205,6 +214,7 @@ form {
             margin-top: 20px;
             width: 100%;
             height: 42px;
+            padding-left: 1%;
         }
         img {
             margin-top: 28px;
@@ -226,6 +236,7 @@ form {
             margin-top: 20px;
             width: 96%;
             height: 90px;
+            padding-left: 1%;
         }
         img {
             margin-top: 28px;
@@ -306,7 +317,7 @@ form {
             height: max-content;
         }
     }
-    .form {
+    .contactForm {
         &__label1 {
             margin-top: 20px;
             display: block;
@@ -391,7 +402,7 @@ form {
             }
         }
     }
-    .form {
+    .contactForm {
         &__label1 {
             img {
                 margin-left: 110px;
@@ -433,3 +444,4 @@ form {
 }
 
 // version TABLETTE FIN //
+@import './footer';
