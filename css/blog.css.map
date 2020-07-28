@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "eventDest.css",
+	"file": "blog.css",
 	"sources": [
-		"../scss/eventDest.scss"
+		"../scss/blog.scss"
 	],
 	"names": [],
 	"mappings": ""
