@@ -150,25 +150,25 @@
     color: red;
 }
 
-form {
+#contact-form {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 .form {
+    .contact-label {
+        font-weight: 700;
+        display: block;
+    }
     &__label1 {
         grid-area: 1/1;
-        label {
-            font-weight: 700;
-            display: block;
-        }
-        img {
+        --img {
             position: absolute;
             margin-top: 28px;
             margin-left: 220px;
         }
-        input {
+        --input {
             font-family: $fontP;
             margin-top: 20px;
             height: 42px;
@@ -177,16 +177,12 @@ form {
     }
     &__label2 {
         grid-area: 1/2;
-        label {
-            font-weight: 700;
-            display: block;
-        }
-        img {
+        --img {
             margin-top: 32px;
             margin-left: 240px;
             position: absolute
         }
-        input {
+        --input {
             font-family: $fontP;
             height: 42px;
             margin-top: 18px;
@@ -196,17 +192,13 @@ form {
     &__label3 {
         margin-top: 20px;
         grid-column: 1/3;
-        label {
-            font-weight: 700;
-            display: block;
-        }
-        input {
+        --input {
             // padding-left: 40px;
             margin-top: 20px;
             width: 100%;
             height: 42px;
         }
-        img {
+        --img {
             margin-top: 28px;
             margin-left: 510px;
             position: absolute;
@@ -215,19 +207,15 @@ form {
     &__label4 {
         margin-top: 40px;
         grid-column: 1/3;
-        label {
-            font-weight: 700;
-            display: block;
-        }
-        textarea {
+        --textarea {
             padding-top: 12px;
-            // padding-left: 40px;
+            padding-left: 40px;
             padding-right: 24px;
             margin-top: 20px;
-            width: 96%;
+            width: 100%;
             height: 90px;
         }
-        img {
+        --img {
             margin-top: 28px;
             margin-left: 510px;
             position: absolute;
@@ -236,7 +224,7 @@ form {
     &__labelSend {
         margin-top: 20px;
         grid-column: 1/3;
-        input {
+        --input {
             margin-top: 78px;
             // margin-bottom: 15px;
             width: 100%;
@@ -249,6 +237,10 @@ form {
             font-family: $fontT;
             cursor: pointer;
         }
+    }
+    &__labeSend:hover {
+        background-color: $colorW;
+        color: $colorP;
     }
 }
 
@@ -313,10 +305,10 @@ form {
             grid-area: 1/1;
             grid-column: 1/3;
             text-align: left;
-            input {
+            --input {
                 width: 100%;
             }
-            img {
+            --img {
                 margin-left: 360px;
             }
         }
@@ -326,10 +318,10 @@ form {
             grid-area: 2/1;
             grid-column: 1/3;
             text-align: left;
-            input {
+            --input {
                 width: 100%;
             }
-            img {
+            --img {
                 margin-left: 360px;
             }
         }
@@ -339,10 +331,10 @@ form {
             grid-area: 3/1;
             grid-column: 1/3;
             text-align: left;
-            input {
+            --input {
                 width: 100%;
             }
-            img {
+            --img {
                 margin-left: 360px;
             }
         }
@@ -353,19 +345,19 @@ form {
             grid-area: 4/1;
             grid-column: 1/3;
             text-align: left;
-            img {
+            --img {
                 margin-left: 360px;
             }
         }
         &__labelSend {
-            input {
+            --input {
                 margin-top: 28px;
             }
         }
     }
     .bgImg {
         margin: 0px;
-        img {
+        &__img {
             width: 80%;
         }
     }
@@ -393,39 +385,39 @@ form {
     }
     .form {
         &__label1 {
-            img {
+            --img {
                 margin-left: 110px;
             }
         }
         &__label2 {
-            img {
+            --img {
                 margin-left: 118px;
             }
-            input {
+            --input {
                 margin-top: 20px;
             }
         }
         &__label3 {
             margin-top: 10px;
-            img {
+            --img {
                 margin-top: 30px;
                 margin-left: 270px;
             }
         }
         &__label4 {
             margin-top: 20px;
-            img {
+            --img {
                 margin-top: 38px;
                 margin-left: 270px;
             }
-            textarea {
+            --textarea {
                 width: 93%;
             }
         }
         &__labelSend {
             margin-top: 20px;
             grid-column: 1/3;
-            input {
+            --input {
                 font-size: 18px;
             }
         }

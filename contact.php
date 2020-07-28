@@ -106,30 +106,30 @@
                     ?>
                     
                 
-                <form method="POST" action="contact.php" name="contact-form" id="contact-form">
+                <form method="POST" action="contact.php" name="contact-form" id="contact-form" class="form__contact">
                    
                     <div class="form__label1">
-                        <label>Votre Nom<span class="text-danger"> *</span></label>
-                        <img src="Assets/name.png" alt="personne">
-                        <input name="name" id="name" type="text" placeholder="First Name :" required>
+                        <label class="contact-label">Votre Nom<span class="text-danger"> *</span></label>
+                        <img  class="form__label1--img" src="Assets/name.png" alt="personne">
+                        <input class="form__label1--input" name="name" id="name" type="text" placeholder="First Name " required>
                     </div>
                     <div class="form__label2">
-                        <label>Votre Email<span class="text-danger"> *</span></label>
-                        <img src="Assets/gmail.png" alt="gmail">
-                        <input name="email" id="email" type="email" placeholder="Your email :" required>
+                        <label class="label-label1">Votre Email<span class="text-danger"> *</span></label>
+                        <img  class="form__label2--img"src="Assets/gmail.png" alt="gmail">
+                        <input  class="form__label2--input" name="email" id="email" type="email" placeholder="Your email " required>
                     </div>
                     <div class="form__label3">
-                        <label>Sujet</label>
-                        <img src="Assets/subject.png" alt="subject">
-                        <input name="subject" id="subject" type="text" placeholder="Sujet" required >
+                        <label class="label-label1">Sujet</label>
+                        <img class="form__label3--img" src="Assets/subject.png" alt="subject">
+                        <input class="form__label3--input" name="subject" id="subject" type="text" placeholder="Sujet" required >
                     </div>
                     <div class="form__label4">
-                        <label>Message</label>
-                        <img src="Assets/msg.png" alt="message">
-                        <textarea name="body" id="comments"  placeholder="Votre Message :" required></textarea>
+                        <label class="label-label1">Message</label>
+                        <img class="form__label4--img" src="Assets/msg.png" alt="message">
+                        <textarea class="form__label4--textarea" name="body" id="comments"  placeholder="Votre Message " required></textarea>
                     </div>
                     <div class="form__labelSend">
-                        <input type="submit" id="submit" name="submit" class="form__btnSend" value="Envoyer le message" required>
+                        <input class="form__labelSend--input" type="submit" id="submit" name="submit" class="form__btnSend" value="Envoyer le message" required>
                     </div>
                 </form>
 
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div class="bgImg">
-                <img src="Assets/bgcontact.png">
+                <img class="bgImg__img" src="Assets/bgcontact.png">
             </div>
         </div>
     </section>

@@ -917,28 +917,28 @@ form {
   color: red;
 }
 
-form {
+#contact-form {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.form .contact-label {
+  font-weight: 700;
+  display: block;
 }
 
 .form__label1 {
   grid-area: 1/1;
 }
 
-.form__label1 label {
-  font-weight: 700;
-  display: block;
-}
-
-.form__label1 img {
+.form__label1 --img {
   position: absolute;
   margin-top: 28px;
   margin-left: 220px;
 }
 
-.form__label1 input {
+.form__label1 --input {
   font-family: "Nunito", sans-serif;
   margin-top: 20px;
   height: 42px;
@@ -949,18 +949,13 @@ form {
   grid-area: 1/2;
 }
 
-.form__label2 label {
-  font-weight: 700;
-  display: block;
-}
-
-.form__label2 img {
+.form__label2 --img {
   margin-top: 32px;
   margin-left: 240px;
   position: absolute;
 }
 
-.form__label2 input {
+.form__label2 --input {
   font-family: "Nunito", sans-serif;
   height: 42px;
   margin-top: 18px;
@@ -972,18 +967,13 @@ form {
   grid-column: 1/3;
 }
 
-.form__label3 label {
-  font-weight: 700;
-  display: block;
-}
-
-.form__label3 input {
+.form__label3 --input {
   margin-top: 20px;
   width: 100%;
   height: 42px;
 }
 
-.form__label3 img {
+.form__label3 --img {
   margin-top: 28px;
   margin-left: 510px;
   position: absolute;
@@ -994,20 +984,16 @@ form {
   grid-column: 1/3;
 }
 
-.form__label4 label {
-  font-weight: 700;
-  display: block;
-}
-
-.form__label4 textarea {
+.form__label4 --textarea {
   padding-top: 12px;
+  padding-left: 40px;
   padding-right: 24px;
   margin-top: 20px;
-  width: 96%;
+  width: 100%;
   height: 90px;
 }
 
-.form__label4 img {
+.form__label4 --img {
   margin-top: 28px;
   margin-left: 510px;
   position: absolute;
@@ -1018,7 +1004,7 @@ form {
   grid-column: 1/3;
 }
 
-.form__labelSend input {
+.form__labelSend --input {
   margin-top: 78px;
   width: 100%;
   border: none;
@@ -1029,6 +1015,11 @@ form {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+}
+
+.form__labeSend:hover {
+  background-color: #FFFFFF;
+  color: #698474;
 }
 
 .bgImg {
@@ -1087,10 +1078,10 @@ form {
     grid-column: 1/3;
     text-align: left;
   }
-  .form__label1 input {
+  .form__label1 --input {
     width: 100%;
   }
-  .form__label1 img {
+  .form__label1 --img {
     margin-left: 360px;
   }
   .form__label2 {
@@ -1100,10 +1091,10 @@ form {
     grid-column: 1/3;
     text-align: left;
   }
-  .form__label2 input {
+  .form__label2 --input {
     width: 100%;
   }
-  .form__label2 img {
+  .form__label2 --img {
     margin-left: 360px;
   }
   .form__label3 {
@@ -1113,10 +1104,10 @@ form {
     grid-column: 1/3;
     text-align: left;
   }
-  .form__label3 input {
+  .form__label3 --input {
     width: 100%;
   }
-  .form__label3 img {
+  .form__label3 --img {
     margin-left: 360px;
   }
   .form__label4 {
@@ -1127,16 +1118,16 @@ form {
     grid-column: 1/3;
     text-align: left;
   }
-  .form__label4 img {
+  .form__label4 --img {
     margin-left: 360px;
   }
-  .form__labelSend input {
+  .form__labelSend --input {
     margin-top: 28px;
   }
   .bgImg {
     margin: 0px;
   }
-  .bgImg img {
+  .bgImg__img {
     width: 80%;
   }
 }
@@ -1151,37 +1142,37 @@ form {
   .wrapper__local--para {
     width: 90%;
   }
-  .form__label1 img {
+  .form__label1 --img {
     margin-left: 110px;
   }
-  .form__label2 img {
+  .form__label2 --img {
     margin-left: 118px;
   }
-  .form__label2 input {
+  .form__label2 --input {
     margin-top: 20px;
   }
   .form__label3 {
     margin-top: 10px;
   }
-  .form__label3 img {
+  .form__label3 --img {
     margin-top: 30px;
     margin-left: 270px;
   }
   .form__label4 {
     margin-top: 20px;
   }
-  .form__label4 img {
+  .form__label4 --img {
     margin-top: 38px;
     margin-left: 270px;
   }
-  .form__label4 textarea {
+  .form__label4 --textarea {
     width: 93%;
   }
   .form__labelSend {
     margin-top: 20px;
     grid-column: 1/3;
   }
-  .form__labelSend input {
+  .form__labelSend --input {
     font-size: 18px;
   }
 }
