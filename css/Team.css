@@ -502,4 +502,22 @@ ul li .active {
   }
 }
 
+@media screen and (max-width: 1400px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam .title {
+    text-align: center;
+  }
+  body .sectionTeam2 {
+    height: 1200px;
+  }
+  body .sectionTeam2 .block1-team2 {
+    padding-top: -20px;
+  }
+}
+
 /*# sourceMappingURL=Team.css.map */
