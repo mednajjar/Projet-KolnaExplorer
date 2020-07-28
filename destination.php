@@ -218,14 +218,24 @@
 
     </section>
 
+    <!-----------------------------------------------** N A T U R E **------------------------------------------------------->
+    <div class="natImg">
+        <div class="natImg__imgNature"><img class="natImg__imgIMG" src="/Assets/bg__quote.png" alt="nature"></div>
 
-
-
-
-
-
-
-
+        <div class="natContent">
+            <div class="descovNat">
+                <h1 class="descovNat__natTit">"Nature is not a place to visit.</br>
+                    <span>It's home.</span> "</h1>
+                <h2 class="descovNat__natTit2">Rejoignez-nous et venez découvrir la nature ensemble.</h2>
+                <div class="natBtn">
+                    <input type="button" class="natBtn__B1" onclick="location.href='#';" value="Devenir membre" />
+                    <input type="button" class="natBtn__B1 natBtn__B2" onclick="location.href='#';"
+                        value="Contactez nous" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------** F I N - N A T U R E **--------------------------------------------------->
     <!-----------------------------------------------** F O O T E R **------------------------------------------------------->
 
     <div class="sectionFooter">

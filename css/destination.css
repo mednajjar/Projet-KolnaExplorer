@@ -430,14 +430,110 @@ ul li .active {
   color: #698474;
 }
 
-.sectionFooter {
+.natImg {
+  position: relative;
+  width: 100%;
+  margin-bottom: -2%;
+  background-color: #698474;
+  z-index: -1111;
+}
+
+.natImg__imgNature {
   width: 100%;
   height: auto;
 }
 
+.natImg__imgIMG {
+  width: 100%;
+  height: 102%;
+  opacity: 0.4;
+}
+
+.natContent {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  top: 0;
+  color: white;
+}
+
+.descovNat {
+  position: absolute;
+  width: 100%;
+}
+
+.descovNat__natTit {
+  font-size: 3vw;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 875px) {
+  .descovNat__natTit {
+    margin-top: 4%;
+    font-size: 5vw;
+  }
+}
+
+.descovNat__natTit span {
+  color: #FF9C01;
+}
+
+.descovNat__natTit2 {
+  font-size: 2vw;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 875px) {
+  .descovNat__natTit2 {
+    font-size: 4vw;
+  }
+}
+
+.natBtn {
+  width: 70%;
+  margin: 3% auto 0%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.natBtn__B1 {
+  width: 25%;
+  border: none;
+  padding: 2.8%;
+  border-radius: 6px;
+  background: #698474;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width: 875px) {
+  .natBtn__B1 {
+    width: 45%;
+    font-size: 3vw;
+  }
+}
+
+.natBtn__B2 {
+  background: none;
+  border: 2px solid white;
+  padding: 2.5%;
+}
+
+.sectionFooter {
+  width: 100%;
+  height: auto;
+  margin-top: -.1%;
+}
+
 .footerSec {
   width: 100%;
-  height: 25vw;
+  height: 30vw;
   background: #BAC7A7;
   background-image: url(/Assets/bg__newsletter.png);
   background-position: inherit;
@@ -781,6 +877,7 @@ form {
 }
 
 .foBloc5 {
+  grid-area: fo5;
   width: 100%;
   display: flex;
   flex-direction: column;

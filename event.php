@@ -63,29 +63,29 @@
 
     <!--------------------------------------------------------** event**---------------------------------------------------------->
     <!--------------------------------------------------------** event**---------------------------------------------------------->
-    <section>
+    <section class="eventSection">
         <h1 class="nos-evenements">Nos événements</h1>
 
         <div class="eventItems">
 
-            <!-- <div class="eventItems__img"> -->
-            <img class="eventItems__img" src="./Assets/IMG-20190303-WA0008.jpg" alt="">
-            <!-- </div> -->
+            <div class="eventItems__imgContent">
+                <img src="./Assets/IMG-20190303-WA0008.jpg" alt="">
+            </div>
 
-            <div class="eventItems__content">
-                <h3 class="eventItems__content--title">Titre de l'event</h3>
-                <div class="eventItems__content--info">
-                    <div class="eventItems__content--infoLocation">
+            <div class="eventItems-content">
+                <h3 class="eventItems-content__title">Titre de l'event</h3>
+                <div class="eventItems-contentInfo">
+                    <div class="eventItems-contentInfo__infoLocation">
                         <img src="./Assets/Location.png" alt="">
                         <p>Beni mellal, Maroc</p>
                     </div>
-                    <div class="eventItems__content--infoCalender">
+                    <div class="eventItems-contentInfo__infoCalender">
                         <img src="./Assets/calendar.png" alt="">
                         <p>24 January, 2021</p>
                     </div>
                 </div>
-                <hr>
-                <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
+                <hr class="eventItems-content__ligne">
+                <p class="eventItems-content__paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
                     elitsed do eiusmod tempor incididunt utlabore et
                     dolore magna aliqua. Utenim ad minim veniam</p>
 
@@ -97,85 +97,76 @@
 
         <div class="eventItems">
 
-            <!-- <div class="eventItems__img"> -->
-            <img class="eventItems__img" src="./Assets/IMG-20190303-WA0009.jpg" alt="">
-            <!-- </div> -->
+            <div class="eventItems__imgContent">
+                <img src="./Assets/IMG-20190303-WA0009.jpg" alt="">
+            </div>
 
-            <div class="eventItems__content">
-                <h3 class="eventItems__content--title">Titre de l'event</h3>
-                <div class="eventItems__content--info">
-                    <div class="eventItems__content--infoLocation">
+            <div class="eventItems-content">
+                <h3 class="eventItems-content__title">Titre de l'event</h3>
+                <div class="eventItems-contentInfo">
+                    <div class="eventItems-contentInfo__infoLocation">
                         <img src="./Assets/Location.png" alt="">
                         <p>Beni mellal, Maroc</p>
                     </div>
-                    <div class="eventItems__content--infoCalender">
+                    <div class="eventItems-contentInfo__infoCalender">
                         <img src="./Assets/calendar.png" alt="">
                         <p>24 January, 2021</p>
                     </div>
                 </div>
-                <hr>
-                <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
+                <hr class="eventItems-content__ligne">
+                <p class="eventItems-content__paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
                     elitsed do eiusmod tempor incididunt utlabore et
                     dolore magna aliqua. Utenim ad minim veniam</p>
 
             </div>
         </div>
 
-
-
-
         <div class="eventItems">
 
-            <!-- <div class="eventItems__img"> -->
-            <img class="eventItems__img" src="./Assets/IMG-20190304-WA0021.jpg" alt="">
-            <!-- </div> -->
+            <div class="eventItems__imgContent">
+                <img src="./Assets/IMG-20190304-WA0021.jpg" alt="">
+            </div>
 
-            <div class="eventItems__content">
-                <h3 class="eventItems__content--title">Titre de l'event</h3>
-                <div class="eventItems__content--info">
-                    <div class="eventItems__content--infoLocation">
+            <div class="eventItems-content">
+                <h3 class="eventItems-content__title">Titre de l'event</h3>
+                <div class="eventItems-contentInfo">
+                    <div class="eventItems-contentInfo__infoLocation">
                         <img src="./Assets/Location.png" alt="">
                         <p>Beni mellal, Maroc</p>
                     </div>
-                    <div class="eventItems__content--infoCalender">
+                    <div class="eventItems-contentInfo__infoCalender">
                         <img src="./Assets/calendar.png" alt="">
                         <p>24 January, 2021</p>
                     </div>
                 </div>
-                <hr>
-                <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
+                <hr class="eventItems-content__ligne">
+                <p class="eventItems-content__paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
                     elitsed do eiusmod tempor incididunt utlabore et
                     dolore magna aliqua. Utenim ad minim veniam</p>
 
             </div>
         </div>
 
-
-
-
-
-
-
         <div class="eventItems">
 
-            <!-- <div class="eventItems__img"> -->
-            <img class="eventItems__img" src="./Assets/IMG-20190304-WA0076.jpg" alt="">
-            <!-- </div> -->
+            <div class="eventItems__imgContent">
+                <img src="./Assets/IMG-20190304-WA0076.jpg" alt="">
+            </div>
 
-            <div class="eventItems__content">
-                <h3 class="eventItems__content--title">Titre de l'event</h3>
-                <div class="eventItems__content--info">
-                    <div class="eventItems__content--infoLocation">
+            <div class="eventItems-content">
+                <h3 class="eventItems-content__title">Titre de l'event</h3>
+                <div class="eventItems-contentInfo">
+                    <div class="eventItems-contentInfo__infoLocation">
                         <img src="./Assets/Location.png" alt="">
                         <p>Beni mellal, Maroc</p>
                     </div>
-                    <div class="eventItems__content--infoCalender">
+                    <div class="eventItems-contentInfo__infoCalender">
                         <img src="./Assets/calendar.png" alt="">
                         <p>24 January, 2021</p>
                     </div>
                 </div>
-                <hr>
-                <p class="eventItems__content--paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
+                <hr class="eventItems-content__ligne">
+                <p class="eventItems-content__paragraph">Lorem ipsum dolor sit amet consectetur adipiscing
                     elitsed do eiusmod tempor incididunt utlabore et
                     dolore magna aliqua. Utenim ad minim veniam</p>
 
@@ -184,7 +175,24 @@
 
     </section>
 
-    <!---->
+    <!-----------------------------------------------** N A T U R E **------------------------------------------------------->
+    <div class="natImg">
+        <div class="natImg__imgNature"><img class="natImg__imgIMG" src="/Assets/bg__quote.png" alt="nature"></div>
+
+        <div class="natContent">
+            <div class="descovNat">
+                <h1 class="descovNat__natTit">"Nature is not a place to visit.</br>
+                    <span>It's home.</span> "</h1>
+                <h2 class="descovNat__natTit2">Rejoignez-nous et venez découvrir la nature ensemble.</h2>
+                <div class="natBtn">
+                    <input type="button" class="natBtn__B1" onclick="location.href='#';" value="Devenir membre" />
+                    <input type="button" class="natBtn__B1 natBtn__B2" onclick="location.href='#';"
+                        value="Contactez nous" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------** F I N - N A T U R E **--------------------------------------------------->
 
     <!-----------------------------------------------** F O O T E R **------------------------------------------------------->
 
