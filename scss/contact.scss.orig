@@ -157,25 +157,13 @@ body {
     color: red;
 }
 
-<<<<<<< HEAD
 .contactForm {
-=======
-#contact-form {
->>>>>>> 8adc4d714baa51dca1493431bcadb04da8fe4ba0
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
-<<<<<<< HEAD
 .contactForm {
-=======
-.form {
-    .contact-label {
-        font-weight: 700;
-        display: block;
-    }
->>>>>>> 8adc4d714baa51dca1493431bcadb04da8fe4ba0
     &__label1 {
         grid-area: 1/1;
         --img {
