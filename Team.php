@@ -20,7 +20,7 @@
         </div>
         </div>
         <ul class="navMenu">
-            <li><a class="active" href="#">Acceuil</a></li>
+            <li><a href="#">Acceuil</a></li>
             <li><a href="#">À propos de nous</a></li>
             <li class="active" id="act"><a href="#">Nos Activités</a>
                 <ul class="smenu">
@@ -227,7 +227,6 @@
                      <!----------------------Fin Footer---------------------->
 
                      <script src="/js/script.js"></script>
-                     <script src="/js/Team.js"></script>
 
 
 </body>
