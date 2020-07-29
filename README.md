@@ -1,4 +1,4 @@
 # KolnaExplorer
-# https://kolnaexplorer.netlify.app/
-# lien pour le test de merge en master-test branche
+# Host php and database
+# Check the last update on link below :
 # https://kolnaexplorer.000webhostapp.com/
