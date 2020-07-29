@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+php<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,19 +18,19 @@
         </div>
 
         <ul class="navMenu">
-            <li><a class="active" href="index.html">Acceuil</a></li>
-            <li><a href="about.html">À propos de nous</a></li>
+            <li><a class="active" href="index.php">Acceuil</a></li>
+            <li><a href="about.php">À propos de nous</a></li>
             <li id="act"><a href="#">Nos Activités</a>
                 <ul class="smenu">
-                    <li><a href="activite.html">Activités Principales</a></li>
-                    <li><a href="destination.html">Destination</a></li>
-                    <li><a href="event.html">Events</a></li>
+                    <li><a href="activite.php">Activités Principales</a></li>
+                    <li><a href="destination.php">Destination</a></li>
+                    <li><a href="event.php">Events</a></li>
                 </ul>
             </li>
 
-            <li><a href="glerie.html">Galerie</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="glerie.php">Galerie</a></li>
+            <li><a href="blog.php">Blog</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
         <div class="burger">
             <div class="burger__line1"></div>
