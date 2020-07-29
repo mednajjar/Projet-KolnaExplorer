@@ -2,7 +2,7 @@
 	"version": 3,
 	"file": "propos.css",
 	"sources": [
-		"../scss/propos.sass"
+		"../scss/propos.scss"
 	],
 	"names": [],
 	"mappings": ""
