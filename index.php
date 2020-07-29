@@ -68,9 +68,7 @@
                 <div class="bCart">
                     <div class="blcImg"><img class="blcImg__ico" src="/Assets/sports.png" alt="sport"></div>
                     <h3 class="bCart__Title">Randonnée</h3>
-                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor
-                        optio reiciendis
-                        dolore praesentium!</p>
+                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor optio reiciendis dolore praesentium!</p>
                 </div>
             </div>
             <div class="divBtn1">
@@ -82,9 +80,7 @@
                 <div class="bCart">
                     <div class="blcImg"><img class="blcImg__ico" src="/Assets/iconfinder.png" alt="inconfinder"></div>
                     <h3 class="bCart__Title">Développement humain</h3>
-                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor
-                        optio reiciendis
-                        dolore praesentium!</p>
+                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor optio reiciendis dolore praesentium!</p>
                 </div>
             </div>
             <div class="divBtn2">
@@ -97,9 +93,7 @@
                 <div class="bCart">
                     <div class="blcImg"><img class="blcImg__ico" src="/Assets/people.png" alt="people"></div>
                     <h3 class="bCart__Title">Afforestation</h3>
-                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor
-                        optio reiciendis
-                        dolore praesentium!</p>
+                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor optio reiciendis dolore praesentium!</p>
                 </div>
             </div>
             <div class="divBtn3">
@@ -174,18 +168,18 @@
 
             <div class="acEvent1">
                 <h3 class="evenAc">Event1</h3>
-                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum
-                    obcaecati.</p>
+                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum obcaecati.
+                </p>
             </div>
             <div class="acEvent2 ">
                 <h3 class="evenAc">Event2</h3>
-                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum
-                    obcaecati.</p>
+                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum obcaecati.
+                </p>
             </div>
             <div class="acEvent3 ">
                 <h3 class="evenAc">Event3</h3>
-                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum
-                    obcaecati.</p>
+                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum obcaecati.
+                </p>
             </div>
 
             <div class="acEvenR">
@@ -237,8 +231,7 @@
                 <h2 class="descovNat__natTit2">Rejoignez-nous et venez découvrir la nature ensemble.</h2>
                 <div class="natBtn">
                     <input type="button" class="natBtn__B1" onclick="location.href='#';" value="Devenir membre" />
-                    <input type="button" class="natBtn__B1 natBtn__B2" onclick="location.href='#';"
-                        value="Contactez nous" />
+                    <input type="button" class="natBtn__B1 natBtn__B2" onclick="location.href='#';" value="Contactez nous" />
                 </div>
             </div>
         </div>
@@ -276,12 +269,9 @@
                     </div>
                 </div>
                 <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkdin"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter"
-                        onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkdin" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
                 </div>
             </div>
             <!------------------------------------------**************------------------------------------------------>
@@ -295,12 +285,9 @@
                     </div>
                 </div>
                 <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter"
-                        onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
                 </div>
             </div>
             <!------------------------------------------**************------------------------------------------------>
@@ -314,12 +301,9 @@
                     </div>
                 </div>
                 <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter"
-                        onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
                 </div>
             </div>
             <!------------------------------------------**************------------------------------------------------>
@@ -333,12 +317,9 @@
                     </div>
                 </div>
                 <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter"
-                        onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
                 </div>
             </div>
             <!------------------------------------------**************------------------------------------------------>
@@ -352,12 +333,9 @@
                     </div>
                 </div>
                 <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter"
-                        onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
                 </div>
             </div>
             <!------------------------------------------**************------------------------------------------------>
@@ -371,12 +349,9 @@
                     </div>
                 </div>
                 <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding"
-                        onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter"
-                        onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="/Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
                 </div>
             </div>
             <!------------------------------------------**************------------------------------------------------>
@@ -451,7 +426,7 @@
                 </div>
                 <!---------------------------------------------------------------->
                 <div class="foBloc5">
-                    <button class="foBloc5__btnFtr btnFtr_marg" onclick="location.href='#';"><img class="imgBTN"
+                    <button class="foBloc5__btnFtr btnFtr_marg" onclick="location.href='contact.php';"><img class="imgBTN"
                             src="/Assets/mail.png" alt="mail"> Contacter
                         nous</button>
                     <button class="foBloc5__btnFtr" onclick="location.href='#';"><img class="imgBTN"
