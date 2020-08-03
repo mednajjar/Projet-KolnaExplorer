@@ -254,9 +254,9 @@ ul li .active {
 .sectionTeam2 {
   margin-bottom: 100px;
   display: grid;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 45% 45%;
   grid-template-rows: 20% 40% 40%;
-  width: 90%;
+  width: 80%;
 }
 
 .sectionTeam2 h1 {
@@ -270,6 +270,11 @@ ul li .active {
   text-align: center;
   font-size: 30px;
   color: #BAC7A7;
+}
+
+.sectionTeam2 .block0 .sectionTeam2-title {
+  display: block;
+  margin-top: 3px;
 }
 
 .sectionTeam2 .block1 {
@@ -512,6 +517,24 @@ ul li .active {
   body .block1-team1 {
     margin-left: 50px;
     margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam .title {
+    text-align: center;
+  }
+  body .sectionTeam2 {
+    height: 1200px;
+  }
+  body .sectionTeam2 .block1-team2 {
+    padding-top: -20px;
   }
 }
 
