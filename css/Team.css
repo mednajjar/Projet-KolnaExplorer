@@ -903,15 +903,18 @@ form {
     width: 100%;
   }
   body .sectionTeam {
-    width: 100%;
+    height: auto;
   }
-  body .sectionTeam .ectionTeam-title {
+  body .sectionTeam .sectionTeam-title {
     text-align: center;
   }
   body .sectionTeam2 {
-    height: 900px;
+    height: 800px;
     display: flex;
     flex-direction: column;
+  }
+  body .sectionTeam2 .block1-team1 {
+    padding-top: 100px;
   }
   body .sectionTeam2 .block1-team2 {
     padding-top: -20px;
@@ -929,9 +932,10 @@ form {
     font-size: 25px;
   }
   body .sectionTeam2 {
-    margin-top: 10px;
+    margin-top: 100px;
     margin: 0 auto;
-    height: 1800px;
+    height: 2100px;
+    margin-bottom: 200px;
   }
   body .sectionTeam2 .sectionTeam2-block1 {
     padding-left: 10px;
@@ -957,7 +961,6 @@ form {
     flex-direction: column;
   }
   body .block1-team2 {
-    margin-top: 50px;
     width: 100%;
     text-align: left;
   }
@@ -972,7 +975,6 @@ form {
   }
   body .block1-team1 {
     padding-left: 70px;
-    margin-top: 40px;
   }
 }
 
