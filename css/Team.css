@@ -734,7 +734,7 @@ form {
 }
 
 .sectionTeam2 .sectionTeam2-block1 .block1-team2 .block1-team2__tite3 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 .sectionTeam2 .sectionTeam2-block1 .block1-team2--ligne {
@@ -785,7 +785,7 @@ form {
 }
 
 .sectionTeam2-block2 .block1-team2 .block1-team2__tite3 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 .sectionTeam2-block2 .block1-team2 .block1-team2--ligne {
@@ -836,7 +836,7 @@ form {
 }
 
 .sectionTeam2-block3 .block1-team2 .block1-team2__tite3 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 .sectionTeam2-block3 .block1-team2 .block1-team2--ligne {
@@ -887,7 +887,7 @@ form {
 }
 
 .sectionTeam2-block4 .block1-team2 .block1-team2__tite3 {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Mulish', sans-serif;
 }
 
 .sectionTeam2-block4 .block1-team2 .block1-team2--ligne {
@@ -896,6 +896,24 @@ form {
   margin-bottom: 30px;
   color: #bdbcb6;
   background-color: #bdbcb6;
+}
+
+@media screen and (max-width: 1400px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam .title {
+    text-align: center;
+  }
+  body .sectionTeam2 {
+    height: 1200px;
+  }
+  body .sectionTeam2 .block1-team2 {
+    padding-top: -20px;
+  }
 }
 
 @media screen and (max-width: 875px) {
@@ -909,12 +927,12 @@ form {
     text-align: center;
   }
   body .sectionTeam2 {
-    height: 800px;
+    height: 700px;
     display: flex;
     flex-direction: column;
   }
   body .sectionTeam2 .block1-team1 {
-    padding-top: 100px;
+    padding-top: 40px;
   }
   body .sectionTeam2 .block1-team2 {
     padding-top: -20px;
@@ -935,7 +953,7 @@ form {
     margin-top: 100px;
     margin: 0 auto;
     height: 2100px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
   body .sectionTeam2 .sectionTeam2-block1 {
     padding-left: 10px;
@@ -975,24 +993,6 @@ form {
   }
   body .block1-team1 {
     padding-left: 70px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  body {
-    width: 100%;
-  }
-  body .sectionTeam {
-    width: 100%;
-  }
-  body .sectionTeam .title {
-    text-align: center;
-  }
-  body .sectionTeam2 {
-    height: 1200px;
-  }
-  body .sectionTeam2 .block1-team2 {
-    padding-top: -20px;
   }
 }
 
