@@ -17,7 +17,7 @@
 
     <title>Team</title>
 </head>
-<body>
+<body >
     <!-----------------------Menu----------------------->
     <nav>
         <div class="logo">
