@@ -669,6 +669,7 @@ form {
 }
 
 .sectionTeam2 {
+  margin: 0 auto;
   margin-bottom: 100px;
   display: grid;
   grid-row-gap: 10px;
@@ -676,7 +677,6 @@ form {
   grid-template-columns: 45% 45%;
   grid-template-rows: 20% 40% 40%;
   width: 80%;
-  background-color: cyan;
 }
 
 .sectionTeam2 .sectionTeam2-block0 {
@@ -928,7 +928,7 @@ form {
     text-align: center;
   }
   body .sectionTeam2 {
-    height: 700px;
+    height: 1200px;
     display: flex;
     flex-direction: column;
   }
@@ -953,7 +953,7 @@ form {
   body .sectionTeam2 {
     margin-top: 100px;
     margin: 0 auto;
-    height: 2100px;
+    height: 1900px;
     margin-bottom: 50px;
   }
   body .sectionTeam2 .sectionTeam2-block1 {

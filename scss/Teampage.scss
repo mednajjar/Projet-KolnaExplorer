@@ -91,7 +91,7 @@
     }
 
     &__titleAdmin {
-        position: absolute;
+        // position: absolute;
         text-align: center;
         top:15%;
         left: 37%;
@@ -158,8 +158,4 @@
 #eventPage,
 #homePage {
     display: none;
-}
-
-p {
-    color: rgb(248, 250, 250);
 }

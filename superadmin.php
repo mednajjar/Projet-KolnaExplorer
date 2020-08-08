@@ -45,7 +45,7 @@
                 </div>
                 <b class="dashMenu__list">Destination</b>
             </li>
-            <li onclick="group()" id="menu6">
+            <li onclick="location.href='Teampage.php'" id="menu6">
                 <div class="dashMenu__divico">
                     <img class="dashMenu__imgIco" src="Assets/teamicon.png" alt="team icone">
                 </div>
@@ -141,6 +141,7 @@
     <section id="teamPage" class="homePage">
         <div class="homePage__homeTitle">
             <h1>Team page</h1>
+            <p>bonjour tout le monde</p>
         </div>
 
     </section>

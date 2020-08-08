@@ -96,7 +96,6 @@
 }
 
 .topBar__titleAdmin {
-  position: absolute;
   text-align: center;
   top: 15%;
   left: 37%;
@@ -167,8 +166,4 @@
   display: none;
 }
 
-p {
-  color: #f8fafa;
-}
-
-/*# sourceMappingURL=supadmin.css.map */
+/*# sourceMappingURL=Teampage.css.map */
