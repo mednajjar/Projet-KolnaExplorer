@@ -676,6 +676,7 @@ form {
   grid-template-columns: 45% 45%;
   grid-template-rows: 20% 40% 40%;
   width: 80%;
+  background-color: cyan;
 }
 
 .sectionTeam2 .sectionTeam2-block0 {
