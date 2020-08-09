@@ -154,17 +154,62 @@
   margin: 0 auto;
 }
 
-#adminPage,
-#mediaPage,
-#categoryPage,
-#postPage,
-#partnerPage,
-#teamPage,
-#destPage,
-#galPage,
-#eventPage,
-#homePage {
+.formDiv {
+  position: relative;
+  width: 40%;
+  margin: 6% auto;
+}
+
+.formDiv__title {
+  font-size: 1.4vw;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.formDiv__myForm {
+  justify-content: space-between;
+  font-size: 1vw;
+}
+
+#subBtn[type="submit"] {
   display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 2% 6%;
+}
+
+.uploadBtn {
+  width: 26%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.uploadBtn:hover {
+  color: white;
+  background: #6a6ae4;
+}
+
+.sectionImg {
+  width: 90%;
+  margin: 4% auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sectionImg__imgSlide {
+  width: 22%;
+  height: auto;
+  border: 1px solid gray;
+  text-align: center;
+  align-items: center;
+}
+
+.titleSlide {
+  text-align: center;
 }
 
 /*# sourceMappingURL=supadmin.css.map */
