@@ -7,7 +7,6 @@
     <title>Welcome to page Teampage</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/Teampage.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
 <body>
@@ -89,9 +88,10 @@
         <h3 class="topBar__titleAdmin">Welcome to page Teampage</h3>
 
     </div>
-    <!-- <section>
+    <section>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus reprehenderit consectetur corrupti mollitia, iure vero quia ut quidem neque provident. Aliquid ad adipisci beatae totam similique quo dignissimos, odit nostrum.</p>
-    </section> -->
+        
+    </section> 
         
 
 
