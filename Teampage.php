@@ -1,98 +1,149 @@
+<?php
+include 'Teamaction.php'
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to page Teampage</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+
+     
+
+     
     <link rel="stylesheet" href="css/Teampage.css">
 </head>
-
 <body>
-    <aside class="asideBar">
+    
+<header>
+		<div class="logo">team<span>page</span></div>
+	</header>
+	<div class="nav-btn">Menu</div>
+	<div class="container">
+		
+		<div class="sidebar">
+			<nav>
+				<a href="#">Team<span>page</span></a>
+				<ul>
+					<li class="active"><a href="#">Dashboard</a></li>
+					<li><a href="#">Followers</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Social</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 
-        <ul class="dashMenu">
-            <li onclick="dashboard()" id="menu1" class="dashMenu__dashboard">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/dashicon.png" alt="dash icone">
-                </div>
-                <b class="dashMenu__list">Dashboard</b>
-            </li>
+		<div class="main-content">
+			<!-- <h1></h1> -->
+			
+      <div class="">
+				<div class="">
+				
+				</div>
+				<div class=" container-fluid ">
+                    <div class=" row  justify-content-center "></div>
+                    <div class="col-md-10">
+                        <h3 class="text-center text-dark"> bienvenue page team</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="text-center text-inf">Add Record</h3>
+                            <form action="Teamaction.php" method="post"  enctype="">
+                                <div class="form-group">
+                                    <input type="text" name="team_firstName" class="form-control" placeholder="firstname"  require        >
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="  team_role" class="form-control" placeholder="Enter role"  require        >
+                                </div> 
+                                <div class="form-group">
+                                    <input type="text" name="  team_resum" class="form-control" placeholder="Enter resumer"  require        >
 
-            <li onclick="homepage()" id="menu2" class="activate">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/homeicon.png" alt="home icone">
-                </div>
-                <b class="dashMenu__list">Home</b>
-            </li>
-            <li onclick="Events()" id="menu3">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/eventicon.png" alt="events icone">
-                </div>
-                <b class="dashMenu__list">Events</b>
-            </li>
-            <li onclick="galerie()" id="menu4">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/galerieicon.png" alt="galerie icone">
-                </div>
-                <b class="dashMenu__list">Galerie</b>
-            </li>
-            <li onclick="destination()" id="menu5">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/desticon.png" alt="destination icone">
-                </div>
-                <b class="dashMenu__list">Destination</b>
-            </li>
-            <li onclick="location.href='Teampage.php'" id="menu6">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/teamicon.png" alt="team icone">
-                </div>
-                <b class="dashMenu__list">Team</b>
-            </li>
-            <li onclick="partners()" id="menu7">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/partnericone.png" alt="partner icone">
-                </div>
-                <b class="dashMenu__list">Partners</b>
-            </li>
-            <li onclick="posts()" id="menu8">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/posticon.png" alt="post icone">
-                </div>
-                <b class="dashMenu__list">Posts</b>
-            </li>
-            <li onclick="categorys()" id="menu9">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/copieicon.png" alt="category icone">
-                </div>
-                <b class="dashMenu__list">Category</b>
-            </li>
-            <li onclick="Media()" id="menu10">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/mediaicon.png" alt="media icone">
-                </div>
-                <b class="dashMenu__list">Media</b>
-            </li>
-            <li onclick="administrateur()" id="menu11" class="dashMenu__admin">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/adminicon.png" alt="admin icone">
-                </div>
-                <b class="dashMenu__list">Ajouter admin</b>
-            </li>
-        </ul>
+                                </div>
+                                <div class="form-group">
+                                    <input type="file" name=" team_img" class="form-control" placeholder="Enter e-mail"  require        >
+                                </div>   
+                                <div class="form-group">
+                                    <input type="file" name="   facebook_path" class="form-control" placeholder="Enter e-mail"  require        >
+                                </div> 
+                                <div class="form-group">
+                                    <input type="file" name=" linkdin_path" class="form-control" placeholder="Enter e-mail"  require        >
+                                </div>
+                                </div> <div class="form-group">
+                                    <input type="file" name="  	twitter_patth" class="form-control" placeholder="Enter e-mail"  require       >
+                                </div>
+                            </div> <div class="form-group">
+                                <input type="submit" name=" add" class="form-control" placeholder=" Record"  require       >
+                            </div>
+                            </form>
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Record presente in data base</h2>
 
-    </aside>
-    <div class="topBar">
+                            <table>
+                                        <thead>
+                                            <tr>
+                                            <th>#</th>
+                                            <th>team_img </th>
+                                            <th>team_firstName</th>
+                                            <th> team_role</th>
+                                            <th>   	team_resum  </th>
+                                            <th>facebook_path</th>
+                                            <th> linkdin_path</th>
+                                            <th>twitter_patth</th>    
+                                            <th>action</th>     
+ 
 
-        <h3 class="topBar__titleAdmin">Welcome to page Teampage</h3>
+                                            </tr>
+                                        </thead><tbody>
+                                        <tr>
+                                            <td><img src="" alt="" width="25px"></td>
+                                            <td>29</td>
+                                            <td>khalid saaf</td>
+                                            <td> web developper</td>
+                                            <td> hello word</td>
+                                            <td><img src="" alt="" width="25px"></td>
+                                            <td><img src="" alt="" width="25px"></td>
+                                            <td><img src="" alt="" width="25px"></td>
+                                            <td> 
+                                                <a href="#"  style="background-color: rgb(25, 202, 18);"> Detail</a>
+                                                <a href="#"   style="background-color: rgb(214, 65, 28);" > Delete</a>
+                                                <a href="#"  style="background-color: rgb(23, 42, 216);" > Edit</a>
 
-    </div>
-    <section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus reprehenderit consectetur corrupti mollitia, iure vero quia ut quidem neque provident. Aliquid ad adipisci beatae totam similique quo dignissimos, odit nostrum.</p>
-        
-    </section> 
-        
+                                            </td>
+
+
+
+
+
+
+                                        </tr>
+                                       
+                                        </tbody>
+                                        </table>
+
+
+
+                        </div>
+
+
+                    </div>
+                    
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- <?php
+
+
+
+
+
+
+?> -->
 
 
 </body>
