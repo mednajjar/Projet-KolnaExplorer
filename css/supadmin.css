@@ -133,6 +133,7 @@
   overflow-y: scroll;
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
+  overflow-x: hidden;
 }
 
 .homePage__homeTitle {
@@ -156,7 +157,7 @@
 
 .formDiv {
   position: relative;
-  width: 40%;
+  width: 100%;
   margin: 6% auto;
 }
 
@@ -166,9 +167,103 @@
   padding-bottom: 3%;
 }
 
+@media screen and (max-width: 1260px) {
+  .formDiv__title {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .formDiv__title {
+    font-size: 2.4vw;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .formDiv__title {
+    font-size: 2.8vw;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .formDiv__title {
+    font-size: 3.2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formDiv__title {
+    font-size: 3.6vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formDiv__title {
+    font-size: 3.9vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .formDiv__title {
+    font-size: 4.4vw;
+  }
+}
+
 .formDiv__myForm {
+  width: 40%;
+  height: auto;
   justify-content: space-between;
   font-size: 1vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1260px) {
+  .formDiv__myForm {
+    width: 50%;
+    font-size: 1.4vw;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .formDiv__myForm {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .formDiv__myForm {
+    width: 70%;
+    font-size: 1.9vw;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .formDiv__myForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .formDiv__myForm {
+    width: 80%;
+    font-size: 2.3vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .formDiv__myForm {
+    width: 90%;
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .formDiv__myForm {
+    width: 98%;
+    font-size: 2.9vw;
+  }
 }
 
 #subBtn[type="submit"] {
@@ -185,6 +280,13 @@
   width: 26%;
   text-align: center;
   cursor: pointer;
+}
+
+@media screen and (max-width: 710px) {
+  .uploadBtn {
+    margin-left: 35%;
+    margin-top: 3%;
+  }
 }
 
 .uploadBtn:hover {
@@ -210,6 +312,12 @@
 
 .titleSlide {
   text-align: center;
+}
+
+@media screen and (max-width: 580px) {
+  .titleSlide {
+    font-size: 3.9vw;
+  }
 }
 
 /*# sourceMappingURL=supadmin.css.map */

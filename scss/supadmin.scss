@@ -125,6 +125,7 @@
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
+    overflow-x: hidden;
 
     &__homeTitle {
         width: 100%;
@@ -152,19 +153,84 @@
 
 .formDiv {
     position: relative;
-    width: 40%;
+    width: 100%;
     margin: 6% auto;
+    
+    
+   
     
 
     &__title {
         font-size: 1.4vw;
         text-align: center;
         padding-bottom: 3%;
+        @media screen and (max-width:1260px) {
+            font-size: 2vw;
+         }
+         @media screen and (max-width:999px) {
+            font-size: 2.4vw;
+            
+         }
+         @media screen and (max-width:830px) {
+            
+            font-size: 2.8vw;
+            
+         }
+         @media screen and (max-width:710px) {
+            font-size: 3.2vw;
+            
+         }
+         @media screen and (max-width:480px) {
+           
+            font-size: 3.6vw;
+         }
+         @media screen and (max-width:400px) {
+           
+            font-size: 3.9vw;
+         }
+         @media screen and (max-width:320px) {
+            
+            font-size: 4.4vw;
+         }
     }
 
     &__myForm{
+        width: 40%;
+        height: auto;
         justify-content: space-between;
         font-size: 1vw;
+        margin: 0 auto;
+        @media screen and (max-width:1260px) {
+           width: 50%;
+           font-size: 1.4vw;
+        }
+        @media screen and (max-width:999px) {
+            width: 60%;
+            
+         }
+         @media screen and (max-width:830px) {
+            width: 70%;
+            font-size: 1.9vw;
+            
+         }
+         @media screen and (max-width:710px) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+         }
+         @media screen and (max-width:480px) {
+            width: 80%;
+            font-size: 2.3vw;
+         }
+         @media screen and (max-width:400px) {
+            width: 90%;
+            font-size: 2.5vw;
+         }
+         @media screen and (max-width:320px) {
+            width: 98%;
+            font-size: 2.9vw;
+         }
     }
 
 }
@@ -178,12 +244,18 @@
     border: 1px solid #ccc;
     display: inline-block;
     padding: 2% 6%;
+  
     
 }
 .uploadBtn{
     width: 26%;
     text-align: center;
     cursor: pointer;
+    @media screen and (max-width:710px) {
+        margin-left: 35%;
+        margin-top: 3%;
+        
+     }
 }
 .uploadBtn:hover{
     color: white;
@@ -208,4 +280,8 @@
 }
 .titleSlide{
     text-align: center;
+    @media screen and (max-width:580px) {
+        
+        font-size: 3.9vw;
+     }
 }
