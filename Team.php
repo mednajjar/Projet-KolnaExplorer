@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+    
+    
     <link rel="stylesheet" href="css/Team.css">
     <link rel="stylesheet" href="css/style.css">
 
 
 
 
-    <title>Document</title>
+    <title>Team</title>
 </head>
-<body>
+<body >
     <!-----------------------Menu----------------------->
     <nav>
         <div class="logo">
@@ -46,8 +49,8 @@
 
     <section class="sectionTeam">
         
-        <img class="  sectionTeam-photo   "src="Assets/explorer.jpg" alt="">
-        <div><h1 class="title">MEET OUR TEAM</h1></div>
+        <img class=" sectionTeam-photo  "src="Assets/explorer.jpg" alt="">
+        <div><h1 class="sectionTeam-title">MEET OUR TEAM</h1></div>
 
     </section>
             <!----------------------Fin sectionTeam---------------------->
@@ -56,82 +59,81 @@
                    <!----------------------sectionTeam2----------------------> 
     <section class="sectionTeam2">
         
-        <div class="block0"><h1 class="sectionTeam2-title ">Ours Team</h1></div>
-        <div class="block1">
+            <div class="sectionTeam2-block0"><h1 class="   sectionTeam2-block0__title ">Ours Team</h1></div>
+            <div class="sectionTeam2-block1">
              <div class="block1-team1">
-            <img  src="Assets/800px-Matt_Mullenweg-100x100.jpg" alt="" >
+            <img  class="block1-team1__photo" src="Assets/800px-Matt_Mullenweg-100x100.jpg" alt="" >
             <div class="logoteam">
-                <img src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt="">
-                <img src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt="">
-                <img src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt="">
-                <img src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt="">
-
-            </div>
+                <a  href=" https://twitter.com/login?lang=fr" target="_blank"><img class=" logoteam--icone " src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
+                <a  href="https://fr-fr.facebook.com/" target="_blank" > <img  class=" logoteam--icone " src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
+                <a   href="https://www.instagram.com/accounts/login/?hl=fr" target="_blank"    >  <img  class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
+                <a   href="https://fr.linkedin.com/" target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
+                </div>
+           
             </div>
 
             <div class="block1-team2">
-                <hr class="block1-team2--ligne  ">
-            <h1>Nom et Prénon</h1>
-            <h2>Role</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
+            <hr class="block1-team2--ligne  ">
+            <h1 class="block1-team2__tite1">Nom et Prénon</h1>
+            <h2 class="block1-team2__tite2">Role</h2>
+            <p   class="block1-team2__tite3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
             </div>
         </div>
-        <div class="block2">
+        <div class="sectionTeam2-block2">
             <div class="block1-team1">
-            <img src="Assets/Jonathan_Ive_OTRS-100x100.jpg" alt="">
+            <img class="block1-team1__photo" src="Assets/Jonathan_Ive_OTRS-100x100.jpg" alt="">
             <div class="logoteam">
-                <img src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt="">
-                <img src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt="">
-                <img src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt="">
-                <img src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt="">
-
-            </div>
+                <a  href=" https://twitter.com/login?lang=fr" target="_blank"><img class=" logoteam--icone "src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
+                <a  href="https://fr-fr.facebook.com/" target="_blank" > <img class=" logoteam--icone "src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
+                <a   href="https://www.instagram.com/accounts/login/?hl=fr" target="_blank"    >  <img class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
+                <a   href="https://fr.linkedin.com/" target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
+                </div>
             </div>
             <div class="block1-team2">
                 <hr  class=block1-team2--ligne>
-            <h1>Nom et Prénon</h1>
-            <h2>Role</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
+            <h1  class="block1-team2__tite1"  >Nom et Prénon</h1>
+            <h2   class="block1-team2__tite2">Role</h2>
+            <p   class="block1-team2__tite3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
             </div>
         </div>
         
-        <div class="block3">
+        <div class="sectionTeam2-block3">
             <div class="block1-team1">
-            <img src="Assets/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1-100x100.jpg" alt="">
+            <img  class="block1-team1__photo" src="Assets/Mark_Zuckerberg_at_the_37th_G8_Summit_in_Deauville_018_v1-100x100.jpg" alt="">
             <div class="logoteam">
-                <img src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt="">
-                <img src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt="">
-                <img src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt="">
-                <img src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt="">
+                <a  href=" https://twitter.com/login?lang=fr" target="_blank"><img class=" logoteam--icone "src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
+                <a  href="https://fr-fr.facebook.com/" target="_blank" > <img class=" logoteam--icone " src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
+                <a   href="https://www.instagram.com/accounts/login/?hl=fr" target="_blank"    >  <img class=" logoteam--icone "src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
+                <a   href="https://fr.linkedin.com/" target="_blank">   <img class=" logoteam--icone "src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
                 </div>
 
             </div>
             <div class="block1-team2">
                 <hr  class=block1-team2--ligne>
 
-            <h1>Nom et Prénon</h1>
-            <h2>Role</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
+            <h1   class="block1-team2__tite1">Nom et Prénon</h1>
+            <h2  class="block1-team2__tite2">Role</h2>
+            <p   class="block1-team2__tite3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
             </div>
         </div>
 
-        <div class="block4">
+        <div class="sectionTeam2-block4">
             <div class="block1-team1">
-            <img src="Assets/President-Barack-Obama-100x100.jpg" alt="">
+            <img class="block1-team1__photo" src="Assets/President-Barack-Obama-100x100.jpg" alt="">
             <div class="logoteam">
-                <img src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt="">
-                <img src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt="">
-                <img src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt="">
-                <img src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt="">
+                <a  href=" https://twitter.com/login?lang=fr" target="_blank"><img class="logoteam--icone" src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
+                <a  href="https://fr-fr.facebook.com/" target="_blank" > <img  class=" logoteam--icone"src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
+                <a   href="https://www.instagram.com/accounts/login/?hl=fr" target="_blank"    >  <img class=" logoteam--icone"src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
+                <a   href="https://fr.linkedin.com/" target="_blank">   <img class=" logoteam--icone "src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
                 </div>
 
             </div>
             <div class="block1-team2">
                 <hr  class=block1-team2--ligne>
 
-            <h1>Nom et Prénon</h1>
-            <h2>Role</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
+            <h1  class="block1-team2__tite1">Nom et Prénon</h1>
+            <h2  class="block1-team2__tite2">Role</h2>
+            <p  class="block1-team2__tite3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
             </div>
         </div>
           
@@ -226,7 +228,6 @@
     </div>
 
                      <!----------------------Fin Footer---------------------->
-                     <script src="https://unpkg.com/scrollreveal"></script>
                      <script src="/js/script.js"></script>
 
 
