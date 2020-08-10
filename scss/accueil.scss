@@ -1029,5 +1029,15 @@ body {
 
 }
 
+.imgHero .bx-wrapper{
+    border: 0;
+    box-shadow: none;
+    margin: 0;
+   
+}
+.imgHero .bx-wrapper .bx-viewport{
+    height: 400px;
+}
+
 /*------------------------------footer---------------------------------*/
 @import '_footer.scss';

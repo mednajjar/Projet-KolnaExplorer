@@ -1,12 +1,15 @@
-php<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolna Explorer</title>
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -14,7 +17,7 @@ php<!DOCTYPE html>
     <!--------------------------------------------** M E N u **----------------------------------------------->
     <nav>
         <div class="logo">
-            <img class="logo__logo" src="/Assets/Image 1.png" alt="">
+            <img class="logo__logo" src="./Assets/Image 1.png" alt="">
         </div>
 
         <ul class="navMenu">
@@ -54,7 +57,26 @@ php<!DOCTYPE html>
         </div>
         <!---------------------------------------------------------------------------------------------------------------->
         <div class="imgHero">
-            <img class="imgHero__imgSld" src="/Assets/illustration1.png" alt="imgHeader">
+        <ul class="slider">
+            <?php
+            include 'config.php';
+            $query = $db->query("SELECT * FROM images ORDER BY id DESC LIMIT 3");
+                     if($query->rowCount() > 0){
+                       while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                           $imageURL = 'uploads/'.$row["image"];
+                    
+                           ?>
+                           <img class="imgHero__imgSld"  src=" <?php echo $imageURL ; ?>" alt="">
+                           <?php
+                       
+          
+               }
+            }
+               ?>
+        <!-- //     <li><img class="imgHero__imgSld" src="./Assets/illustration1.png" alt="imgHeader"></li>
+        //     <li>I am another slide.</li>
+        // </ul> -->
+            </ul>
         </div>
         <!---------------------------------------------------------------------------------------------------------------->
 
@@ -449,7 +471,9 @@ php<!DOCTYPE html>
 
 
 
-    <script src="/js/script.js"></script>
+    <script src="./js/jscript.js"></script>
+    <script src="./js/jquery.bxslider.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
