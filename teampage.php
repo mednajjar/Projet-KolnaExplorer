@@ -1,5 +1,7 @@
 <?php
-include 'Teamaction.php'
+include 'Teamaction.php';
+include 'config.php';
+
 
 ?>
 

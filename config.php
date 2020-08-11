@@ -1,6 +1,6 @@
 <?php
 
-$dsn = 'mysql:host=127.0.0.1; dbname=Kolnaexplorer';
+$dsn = 'mysql:host=127.0.0.1  dbname=Kolnaexplorer';
 $user = 'root';
 $pass = '';
 $options = array(
