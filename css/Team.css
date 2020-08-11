@@ -376,7 +376,7 @@ form {
     height: 40vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
+    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
   }
 }
 
@@ -736,6 +736,7 @@ form {
 
 .sectionTeam2 .sectionTeam2-block1 .block1-team2 .block1-team2__tite3 {
   font-family: 'Mulish', sans-serif;
+  color: black;
 }
 
 .sectionTeam2 .sectionTeam2-block1 .block1-team2--ligne {
@@ -787,6 +788,7 @@ form {
 
 .sectionTeam2-block2 .block1-team2 .block1-team2__tite3 {
   font-family: 'Mulish', sans-serif;
+  color: black;
 }
 
 .sectionTeam2-block2 .block1-team2 .block1-team2--ligne {
@@ -838,6 +840,7 @@ form {
 
 .sectionTeam2-block3 .block1-team2 .block1-team2__tite3 {
   font-family: 'Mulish', sans-serif;
+  color: black;
 }
 
 .sectionTeam2-block3 .block1-team2 .block1-team2--ligne {
@@ -889,6 +892,7 @@ form {
 
 .sectionTeam2-block4 .block1-team2 .block1-team2__tite3 {
   font-family: 'Mulish', sans-serif;
+  color: black;
 }
 
 .sectionTeam2-block4 .block1-team2 .block1-team2--ligne {

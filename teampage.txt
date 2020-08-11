@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to super-admin dashboard</title>
+    <title>Welcome to page team</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/supadmin.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,15 +13,15 @@
 <body>
     <aside class="asideBar">
 
-        <ul class="dashMenu">
-            <li onclick="location.href='superadmin.php'" id="menu1" class="dashMenu__dashboard">
-                <div class="dashMenu__divico">
-                    <img class="dashMenu__imgIco" src="Assets/dashicon.png" alt="dash icone">
-                </div>
-                <b class="dashMenu__list">Dashboard</b>
-            </li>
+    <ul class="dashMenu">
+        <li onclick="location.href='superadmin.php'" id="menu1" class="dashMenu__dashboard">
+            <div class="dashMenu__divico">
+                <img class="dashMenu__imgIco" src="Assets/dashicon.png" alt="dash icone">
+            </div>
+            <b class="dashMenu__list">Dashboard</b>
+        </li>
 
-            <li onclick="location.href='homepage.php'" id="menu2" class="activate">
+        <li onclick="location.href='homepage.php'" id="menu2" class="activate">
             <div class="dashMenu__divico">
                 <img class="dashMenu__imgIco" src="Assets/homeicon.png" alt="home icone">
             </div>
@@ -87,18 +86,22 @@
     </aside>
     <div class="topBar">
 
-        <h3 class="topBar__titleAdmin">Welcome to super-admin dashboard</h3>
+    <h3 class="topBar__titleAdmin">Welcome to page team</h3>
 
     </div>
-    <!-- ---------------------------------------------------** D A S H B O A R D **--------------------------------------------------------- -->
-    <section id="dash" class="homePage">
-        <div class="homePage__blocdiv">
-            <img class="homePage__illustimg" src="Assets/illustration-admin.gif" alt="admin">
+  
+    <!-- --------------------------------------------------** T E A M - P A G E **--------------------------------------------------------- -->
+
+    <section id="teamPage" class="homePage"  >
+        <div class="homePage__homeTitle">
+            <h1>Team page</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates maxime illo fugiat voluptas exercitationem quaerat voluptatem voluptate atque itaque quidem, porro culpa incidunt hic odio provident modi! Quibusdam, odit?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam quo perferendis necessitatibus eligendi atque odit, eum id porro consectetur a reiciendis blanditiis fugiat tempora dolorum modi quidem hic maiores.</p>
         </div>
+
     </section>
   
-    <!-- ---------------------------------------------------** D A S H B O A R D **--------------------------------------------------------- -->
-
+    <!-- --------------------------------------------------** T E A M - P A G E **--------------------------------------------------------- -->
     <script src="./js/jscript.js"></script>
     <script src="./js/script.js"></script>
 </body>

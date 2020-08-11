@@ -66,17 +66,21 @@ include 'Teamaction.php'
                                     <input type="file" name=" team_img" class="form-control" placeholder="Enter e-mail"  require        >
                                 </div>   
                                 <div class="form-group">
-                                    <input type="file" name="   facebook_path" class="form-control" placeholder="Enter e-mail"  require        >
-                                </div> 
+                                    <input type="file" name="   facebook_path  " class="form-control" placeholder=""  require        >
+                                </div>  
                                 <div class="form-group">
-                                    <input type="file" name=" linkdin_path" class="form-control" placeholder="Enter e-mail"  require        >
+                                    <input type="file" name=" linkdin_path  " class="form-control" placeholder=""  require        >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="file" name="  	twitter_patth" class="form-control" placeholder="Enter e-mail"  require       >
+                                    <input type="file" name="  	twitter_patth  " class="form-control" placeholder=""  require       >
                                 </div>
-                            </div> <div class="form-group">
+                                <div class="form-group">
                                 <input type="submit" name=" add" class="form-control" placeholder=" Record"  require       >
                             </div>
+                            </div>
+                             <!-- <div class="form-group">
+                                <input type="submit" name=" add" class="form-control" placeholder=" Record"  require       >
+                            </div> -->
                             </form>
                         </div>
                         <div class="col-md-8">

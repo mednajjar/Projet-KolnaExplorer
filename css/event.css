@@ -226,13 +226,13 @@ ul li .active {
   margin: 5% auto;
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
+  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
 }
 
 @media screen and (max-width: 875px) {
   .headerHero {
     grid-template-columns: 100%;
-    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
+    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
   }
 }
 
@@ -369,7 +369,7 @@ ul li .active {
     width: 64%;
     margin-bottom: 12%;
     grid-template-columns: 100%;
-    grid-template-areas: "EventImg" "EventContent";
+    grid-template-areas: "EventImg" "EventContent";
   }
 }
 
@@ -767,7 +767,7 @@ form {
     height: 40vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
+    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
   }
 }
 
