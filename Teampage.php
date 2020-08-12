@@ -58,17 +58,17 @@ include 'config.php';
                                     <input type="text" name="team_firstName" class="form-control" placeholder="firstname"  require        >
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="  team_role" class="form-control" placeholder="Enter role"  require        >
+                                    <input type="text" name="team_role" class="form-control" placeholder="Enter role"  require        >
                                 </div> 
                                 <div class="form-group">
-                                    <input type="text" name="  team_resum" class="form-control" placeholder="Enter resumer"  require        >
+                                    <input type="text" name=" team_resum" class="form-control" placeholder="Enter resumer"  require        >
 
                                 </div>
                                 <div class="form-group">
-                                    <input type="file" name=" team_img" class="form-control" placeholder="Enter e-mail"  require        >
+                                    <input type="file" name="team_img" class="form-control" placeholder="Enter e-mail"  require        >
                                 </div>   
                                 <div class="form-group">
-                                    <input type="file" name="   facebook_path  " class="form-control" placeholder=""  require        >
+                                    <input type="file" name=" facebook_path  " class="form-control" placeholder=""  require        >
                                 </div>  
                                 <div class="form-group">
                                     <input type="file" name=" linkdin_path  " class="form-control" placeholder=""  require        >

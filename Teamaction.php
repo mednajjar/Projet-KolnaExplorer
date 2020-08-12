@@ -82,4 +82,7 @@ include 'config.php';
         move_uploaded_file($_FILES['twitter_path']['tmp_name'],$upload);
         move_uploaded_file($_FILES['facebook_path']['tmp_name'],$upload);
         move_uploaded_file($_FILES['linkdin_path']['tmp_name'],$upload);
+
+
+        
 ?>
