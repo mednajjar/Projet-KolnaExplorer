@@ -1,9 +1,55 @@
-<?php
-include 'Teamaction.php';
-include 'config.php';
+ <?php
+// include 'Teamaction.php';
+// include 'Teamaction.php';
+    
+    
+    // if(isset($_POST['add'])){                    
+    
+    //     //test values on input
+    //     $team_firstName =valid_data ($_POST['team_firstName']);
+    //     $team_role= valid_data($_POST[' team_role']);
+    //     $team_resum=valid_data($_POST['team_resum']);
+    //     $team_img= $_FILES['team_img']['name'];
+    //     $facebook_path= $_FILES['facebook_path']['name'];
+    //     $linkdin_path= $_FILES['linkdin_path']['name'];
+    //     $twitter_path= $_FILES['twitter_path']['name'];
 
 
-?>
+
+    //     $upload="uploads/".$team_img;
+    //     $upload="uploads/".$facebook_path;
+    //     $upload="uploads/".$linkdin_path;
+    //     $upload="uploads/".$twitter_path;
+
+
+    //      //insert values in  db
+    //     $sth = $db->prepare("
+    //     INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,	twitter_patth )
+    //     VALUES(:team_img, :	team_firstName	, :team_role,:	team_resum,:facebook_path,:	linkdin_path:,:	twitter_patth)");
+
+
+    //     $sth->bindParam(':team_firstName',$team_firstName);
+    //     $sth->bindParam(':team_role',$team_role);
+    //     $sth->bindParam(':team_resum',$team_resum);
+
+    //     $sth->bindParam(':team_img',$team_img);
+    //     $sth->bindParam(':twitter_path',$twitter_path);
+    //     $sth->bindParam(':facebook_path',$facebook_path);
+    //     $sth->bindParam(':linkdin_path',$linkdin_path);
+    //     $sth->execute();
+
+
+    //     move_uploaded_file($_FILES['team_img']['tmp_name'],$upload);
+    //     move_uploaded_file($_FILES['twitter_path']['tmp_name'],$upload);
+    //     move_uploaded_file($_FILES['facebook_path']['tmp_name'],$upload);
+    //     move_uploaded_file($_FILES['linkdin_path']['tmp_name'],$upload);
+
+
+        
+?> 
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +99,15 @@ include 'config.php';
                     <div class="row">
                         <div class="col-md-4">
                             <h3 class="text-center text-inf">Add Record</h3>
-                            <form action="Teamaction.php" method="post"  enctype="">
+                            <form action=" teampage.php"    method="post"  enctype="multipart/form-data">
+                                <?php if (!empty($msg)) : ?>
+                                <div class="alert <?php echo $css_class; ?>">
+                                <?php echo $msg; ?>
+
+                                
+                                </div>
+                                <?php endif; ?> 
+
                                 <div class="form-group">
                                     <input type="text" name="team_firstName" class="form-control" placeholder="firstname"  require        >
                                 </div>
@@ -142,14 +196,8 @@ include 'config.php';
 		</div>
 	</div>
 
-<!-- <?php
 
 
-
-
-
-
-?> -->
 
 
 </body>

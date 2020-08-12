@@ -1,6 +1,6 @@
 
 
-
+<!-- 
 // include 'config.php'
 
 // if(isset($_POST['add'])) {
@@ -26,25 +26,20 @@
 //     $stmt->execute();
 
 
-// }
-
+// } -->
 
 <?php
+$msg=" ";
+$css_class=" ";
 
-$id=" ";
-   $team_firstName="";
-   $team_img="";
-   $team_resum="";
-   $team_role="";
-   $facebook_path="";
-   $linkdin_path="";
-   $twitter_path="";
-include 'config.php';
+// include 'config.php';
     
     
     if(isset($_POST['add'])){                    
     
         //test values on input
+
+
         $team_firstName =valid_data ($_POST['team_firstName']);
         $team_role= valid_data($_POST[' team_role']);
         $team_resum=valid_data($_POST['team_resum']);
@@ -55,34 +50,50 @@ include 'config.php';
 
 
 
-        $upload="uploads/".$team_img;
-        $upload="uploads/".$facebook_path;
-        $upload="uploads/".$linkdin_path;
-        $upload="uploads/".$twitter_path;
+        $upload=time().'_'."uploads/".$team_img;
+        $upload=time().'_'".uploads/".$facebook_path;
+        $upload=time().'_'."uploads/".$linkdin_path;
+        $upload=time().'_'."uploads/".$twitter_path;
 
 
          //insert values in  db
-        $sth = $db->prepare("
-        INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,	twitter_patth )
-        VALUES(:team_img, :	team_firstName	, :team_role,:	team_resum,:facebook_path,:	linkdin_path:,:	twitter_patth)");
+        // $sth = $db->prepare("
+        // INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,	twitter_patth )
+        // VALUES(:team_img, :	team_firstName	, :team_role,:	team_resum,:facebook_path,:	linkdin_path:,:	twitter_patth)");
 
 
-        $sth->bindParam(':team_firstName',$team_firstName);
-        $sth->bindParam(':team_role',$team_role);
-        $sth->bindParam(':team_resum',$team_resum);
+        // $sth->bindParam(':team_firstName',$team_firstName);
+        // $sth->bindParam(':team_role',$team_role);
+        // $sth->bindParam(':team_resum',$team_resum);
 
-        $sth->bindParam(':team_img',$team_img);
-        $sth->bindParam(':twitter_path',$twitter_path);
-        $sth->bindParam(':facebook_path',$facebook_path);
-        $sth->bindParam(':linkdin_path',$linkdin_path);
-        $sth->execute();
-
-
-        move_uploaded_file($_FILES['team_img']['tmp_name'],$upload);
-        move_uploaded_file($_FILES['twitter_path']['tmp_name'],$upload);
-        move_uploaded_file($_FILES['facebook_path']['tmp_name'],$upload);
-        move_uploaded_file($_FILES['linkdin_path']['tmp_name'],$upload);
+        // $sth->bindParam(':team_img',$team_img);
+        // $sth->bindParam(':twitter_path',$twitter_path);
+        // $sth->bindParam(':facebook_path',$facebook_path);
+        // $sth->bindParam(':linkdin_path',$linkdin_path);
+        // $sth->execute();
 
 
+        // $var1=move_uploaded_file($_FILES['team_img']['tmp_name'],$upload1);
+        // $var2=move_uploaded_file($_FILES['twitter_path']['tmp_name'],$upload2);
+        // $var3=move_uploaded_file($_FILES['facebook_path']['tmp_name'],$upload3);
+        // $var4=move_uploaded_file($_FILES['linkdin_path']['tmp_name'],$upload4);
+
+
+                // move_uploaded_file($_FILES['team_img']['tmp_name'],$upload1);
+
+
+
+        if (move_uploaded_file($_FILES['team_img']['tmp_name'],$upload));
+         {
+            $msg="image uploadded";
+            $css_class="alert-success";
+        }
         
-?>
+
+        else {
+            $msg="Failed to upload to upload";
+            $css_class="alert-danger";
+    
+        }        
+
+?> 
