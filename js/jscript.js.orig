@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+// demmarer bxslider
+
+$(document).ready(function () {
+    $('.slider').bxSlider({
+
+        auto: true,
+        pager: false,
+        border: 0,
+    });
+});
+=======
+>>>>>>> 106fea6be886156f7c25ac25d4c08cd3556cb8fb

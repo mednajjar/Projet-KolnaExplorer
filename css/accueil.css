@@ -1097,7 +1097,64 @@ ul li .active {
   margin: 8% auto;
 }
 
-.gaSec__gaTit--galbtn {
+.gaSec__gaSld {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.fixedimg {
+  position: fixed;
+  width: 100%;
+  top: 2.5%;
+  z-index: 1111;
+}
+
+@media screen and (min-width: 1660px) {
+  .fixedimg {
+    top: 2.2%;
+  }
+}
+
+@media screen and (max-width: 1660px) and (min-width: 1400px) {
+  .fixedimg {
+    top: 1.5%;
+  }
+}
+
+@media screen and (max-width: 1401px) and (min-width: 999px) {
+  .fixedimg {
+    top: -.2%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 867px) {
+  .fixedimg {
+    top: 4%;
+  }
+}
+
+@media screen and (max-width: 866px) and (min-width: 840px) {
+  .fixedimg {
+    top: 1%;
+  }
+}
+
+@media screen and (max-width: 839px) {
+  .fixedimg {
+    display: none;
+  }
+}
+
+.fixedimg__phoneimg {
+  width: 250px;
+}
+
+.galbtn {
   margin-top: 4%;
   width: 8%;
   background: #698474;
@@ -1110,7 +1167,7 @@ ul li .active {
 }
 
 @media screen and (max-width: 1300px) {
-  .gaSec__gaTit--galbtn {
+  .galbtn {
     margin-top: 7%;
     font-size: 2vw;
     padding: 1%;
@@ -1119,78 +1176,10 @@ ul li .active {
 }
 
 @media screen and (max-width: 875px) {
-  .gaSec__gaTit--galbtn {
+  .galbtn {
     font-size: 3vw;
     padding: 1.5%;
     width: 25%;
-  }
-}
-
-.gaSec__gaSld {
-  position: relative;
-  width: 85%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.gaSec__gaSld--galImg {
-  width: 12%;
-}
-
-@media screen and (max-width: 1300px) {
-  .gaSec__gaSld--galImg {
-    width: 18%;
-  }
-}
-
-@media screen and (max-width: 875px) {
-  .gaSec__gaSld--galImg {
-    width: 45%;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .gaSec__gaSld--galImg2 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1300px) {
-  .gaSec__gaSld--galImg3 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 875px) {
-  .gaSec__gaSld--galImg1 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 875px) {
-  .gaSec__gaSld--galImg4 {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 875px) {
-  .gaSec__gaSld--galImg5 {
-    display: none;
-  }
-}
-
-.gaSec__gaSld--galImg1 {
-  position: absolute;
-  width: 13%;
-}
-
-@media screen and (max-width: 1300px) {
-  .gaSec__gaSld--galImg1 {
-    width: 20%;
   }
 }
 
@@ -1198,7 +1187,7 @@ ul li .active {
 .teaSec {
   width: 100%;
   height: auto;
-  background-image: url(/Assets/bg1.png);
+  background-image: url(../Assets/bg1.png);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1474,6 +1463,71 @@ ul li .active {
   cursor: pointer;
 }
 
+.imgHero .bx-wrapper {
+  border: 0;
+  box-shadow: none;
+  margin: 0;
+}
+
+.imgHero .bx-wrapper .bx-viewport {
+  height: 420px;
+}
+
+.swiper-container {
+  width: 90%;
+  margin: 0 auto;
+  height: 520px;
+  padding-top: 1%;
+}
+
+@media screen and (max-width: 414px) {
+  .swiper-container {
+    width: 98%;
+    height: auto;
+  }
+}
+
+.swiper-slide {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 465px;
+}
+
+@media screen and (max-width: 414px) {
+  .swiper-slide {
+    width: 90%;
+    height: auto;
+    margin: 0% 8% 0% 0%;
+  }
+}
+
+.swiper-slide__imgsld {
+  border-radius: 8px;
+  margin-top: 1.6%;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 867px) {
+  .swiper-slide__imgsld {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 866px) and (min-width: 840px) {
+  .swiper-slide__imgsld {
+    margin-top: 5.5%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .swiper-slide__imgsld {
+    width: 100%;
+    height: auto;
+    margin: 0% 8% 0% 0%;
+  }
+}
+
 /*------------------------------footer---------------------------------*/
 .sectionFooter {
   width: 100%;
@@ -1485,7 +1539,7 @@ ul li .active {
   width: 100%;
   height: 30vw;
   background: #BAC7A7;
-  background-image: url(/Assets/bg__newsletter.png);
+  background-image: url(../Assets/bg__newsletter.png);
   background-position: inherit;
   background-repeat: no-repeat;
   background-size: cover;
