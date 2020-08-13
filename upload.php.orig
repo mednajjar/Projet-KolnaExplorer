@@ -13,16 +13,10 @@ if(isset($_POST['submit'])){
     
     $fileExt = explode('.', $fileName);
     $fileActualExt = strtolower(end($fileExt));
-<<<<<<< HEAD
     
 
     $allowed = array('jpg', 'jpeg', 'png', 'gif');
     
-=======
-
-    $allowed = array('jpg', 'jpeg', 'png', 'gif');
-
->>>>>>> 106fea6be886156f7c25ac25d4c08cd3556cb8fb
     if(in_array($fileActualExt, $allowed)){
         if($fileError === 0){
             if($fileSize < 2000000){
@@ -30,12 +24,8 @@ if(isset($_POST['submit'])){
                if(move_uploaded_file($fileTmpName, $fileDestination)){
                     
                     $insert = $db->query("INSERT into images (image) VALUES ('".$fileName."')");
-<<<<<<< HEAD
                     // header("location: homepage.php?uploadsuccess");
                     $error = "Your image ".$fileName." is loaded with successful";
-=======
-                    header("location: homepage.php?uploadsuccess");
->>>>>>> 106fea6be886156f7c25ac25d4c08cd3556cb8fb
 
                }else{
                     $error = "Your file cannot uploaded to the server!";
@@ -52,8 +42,50 @@ if(isset($_POST['submit'])){
     }else{
         $error = "You cannot upload files of this type!";
     }
+}
 <<<<<<< HEAD
+// ---------------------------------------------upload image on galerie table--------------------------------------------------
+$msg = "";
+if(isset($_POST['upload'])){
+    $file = $_FILES['file'];
+
+    $fileName = $_FILES['file']['name'];
+    $fileTmpName = $_FILES['file']['tmp_name'];
+    $fileSize = $_FILES['file']['size'];
+    $fileError = $_FILES['file']['error'];
+    $fileType = $_FILES['file']['type'];
+    
+    $fileExt = explode('.', $fileName);
+    $fileActualExt = strtolower(end($fileExt));
+    
+
+    $allowed = array('jpg', 'jpeg', 'png', 'gif');
+    
+    if(in_array($fileActualExt, $allowed)){
+        if($fileError === 0){
+            if($fileSize < 2000000){
+                $fileDestination = 'uploads/'.$fileName;
+               if(move_uploaded_file($fileTmpName, $fileDestination)){
+                    
+                    $insert = $db->query("INSERT into galerie (admin_id, gal_img) VALUES ('2','".$fileName."')");
+                    // header("location: homepage.php?uploadsuccess");
+                    $msg = "Your image ".$fileName." is loaded with successful";
+
+               }else{
+                    $msg = "Your file cannot uploaded to the server!";
+               }
+                
+                
+            }else{
+                $msg = "Your file is bigger than 2MB!";
+            }
+        }else{
+            $msg = "There was an error uploading your file!";
+        }
+
+    }else{
+        $msg = "You cannot upload files of this type!";
+    }
 }
 =======
-}
->>>>>>> 106fea6be886156f7c25ac25d4c08cd3556cb8fb
+>>>>>>> a5e6646e10a80885cf5ecc858d1ada08d6072b17
