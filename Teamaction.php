@@ -32,7 +32,7 @@
 $msg=" ";
 $css_class=" ";
 
-// include 'config.php';
+include 'config.php';
     
     
     if(isset($_POST['add'])){                    
@@ -85,15 +85,24 @@ $css_class=" ";
 
         if (move_uploaded_file($_FILES['team_img']['tmp_name'],$upload));
          {
-            $msg="image uploadded";
-            $css_class="alert-success";
+            $sql="INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,	twitter_patth )VALUE('$team_img','$team_firstName','$team_role','$team_resum','$facebook_path','$linkdin_path','$twitter_path') ";
+            if (mysqli_query($sql,$db)) {
+                
+                $msg="image uploadded";
+                $css_class="alert-success";
+            }
+            else {
+                $msg="Database erreur:Failed to upload to upload";
+                $css_class="alert-danger";
+        
+            }        
+    
+
+            // $msg="image uploadded";
+            // $css_class="alert-success";
         }
         
 
-        else {
-            $msg="Failed to upload to upload";
-            $css_class="alert-danger";
-    
-        }        
+               c       dvfeferghfhjkyihuorjrhnf;gbg,vkvhvj      
 
 ?> 

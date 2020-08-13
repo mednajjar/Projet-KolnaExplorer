@@ -140,7 +140,7 @@
                             </form>
                         </div>
                         <div class="col-md-8">
-                            <h2>Record presente in data base</h2>
+                                <h2>Record presente in data base</h2>
 
                             <table>
                                         <thead>
@@ -182,7 +182,7 @@
                                         </tr>
                                        
                                         </tbody>
-                                        </table>
+                            </table>
 
 
 
