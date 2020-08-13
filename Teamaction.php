@@ -29,14 +29,24 @@
 // } -->
 
 <?php
+
+
+include 'config.php'
+
+
+
 $msg=" ";
 $css_class=" ";
 
-include 'config.php';
     
     
-    if(isset($_POST['add'])){                    
-    
+    if(isset($_POST['add'])){      
+
+        echo "<pre>",print_r( $_FILES['team_img']['name'] ),"<pre>";      
+      
+
+
+
         //test values on input
 
 
@@ -44,16 +54,12 @@ include 'config.php';
         $team_role= valid_data($_POST[' team_role']);
         $team_resum=valid_data($_POST['team_resum']);
         $team_img= $_FILES['team_img']['name'];
-        $facebook_path= $_FILES['facebook_path']['name'];
-        $linkdin_path= $_FILES['linkdin_path']['name'];
-        $twitter_path= $_FILES['twitter_path']['name'];
-
-
+        $facebook_path= $_POST['facebook_path'];
+        $linkdin_path= $_POST['linkdin_path'];
+        $twitter_path= $_POST['twitter_path'];
 
         $upload=time().'_'."uploads/".$team_img;
-        $upload=time().'_'".uploads/".$facebook_path;
-        $upload=time().'_'."uploads/".$linkdin_path;
-        $upload=time().'_'."uploads/".$twitter_path;
+  
 
 
          //insert values in  db
@@ -73,17 +79,14 @@ include 'config.php';
         // $sth->execute();
 
 
-        // $var1=move_uploaded_file($_FILES['team_img']['tmp_name'],$upload1);
-        // $var2=move_uploaded_file($_FILES['twitter_path']['tmp_name'],$upload2);
-        // $var3=move_uploaded_file($_FILES['facebook_path']['tmp_name'],$upload3);
-        // $var4=move_uploaded_file($_FILES['linkdin_path']['tmp_name'],$upload4);
-
+        // move_uploaded_file($_FILES['team_img']['tmp_name'],$upload);
+      
 
                 // move_uploaded_file($_FILES['team_img']['tmp_name'],$upload1);
 
 
 
-        if (move_uploaded_file($_FILES['team_img']['tmp_name'],$upload));
+        if (move_uploaded_file($_FILES['team_img']['tmp_name'],$upload))
          {
             $sql="INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,	twitter_patth )VALUE('$team_img','$team_firstName','$team_role','$team_resum','$facebook_path','$linkdin_path','$twitter_path') ";
             if (mysqli_query($sql,$db)) {
@@ -95,14 +98,17 @@ include 'config.php';
                 $msg="Database erreur:Failed to upload to upload";
                 $css_class="alert-danger";
         
-            }        
+            }  
+            
+        }
+
+
+    }
     
 
-            // $msg="image uploadded";
-            // $css_class="alert-success";
-        }
+           
         
 
-               c       dvfeferghfhjkyihuorjrhnf;gbg,vkvhvj      
+                
 
 ?> 

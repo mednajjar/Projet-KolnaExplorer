@@ -1,5 +1,84 @@
  <?php
-// include 'Teamaction.php';
+include 'config.php';
+
+$msg=" ";
+$css_class=" ";
+
+    
+    
+    if(isset($_POST['add'])){      
+
+        echo "<pre>",print_r( $_FILES['team_img']['name'] ),"<pre>";      
+      
+
+
+
+        //test values on input
+
+
+        $team_firstName =valid_data ($_POST['team_firstName']);
+        $team_role= valid_data($_POST[' team_role']);
+        $team_resum=valid_data($_POST['team_resum']);
+        $team_img= $_FILES['team_img']['name'];
+        $facebook_path= $_POST['facebook_path'];
+        $linkdin_path= $_POST['linkdin_path'];
+        $twitter_path= $_POST['twitter_path'];
+
+        $upload=time().'_'."uploads/".$team_img;
+
+        
+        if (move_uploaded_file($_FILES['team_img']['tmp_name'],$upload))
+         {
+            $sql="INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,	twitter_patth )VALUE('$team_img','$team_firstName','$team_role','$team_resum','$facebook_path','$linkdin_path','$twitter_path') ";
+            if (mysqli_query($sql,$db)) {
+                
+                $msg="image uploadded";
+                $css_class="alert-success";
+            }
+            else {
+                $msg="Database erreur:Failed to upload to upload";
+                $css_class="alert-danger";
+        
+            }  
+            
+        }
+
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // include 'Teamaction.php';
     
     
@@ -99,7 +178,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <h3 class="text-center text-inf">Add Record</h3>
-                            <form action=" teampage.php"    method="post"  enctype="multipart/form-data">
+                            <form action="  "    method="post"  enctype="multipart/form-data">
                                 <?php if (!empty($msg)) : ?>
                                 <div class="alert <?php echo $css_class; ?>">
                                 <?php echo $msg; ?>
@@ -122,13 +201,13 @@
                                     <input type="file" name="team_img" class="form-control" placeholder="Enter e-mail"  require        >
                                 </div>   
                                 <div class="form-group">
-                                    <input type="file" name=" facebook_path  " class="form-control" placeholder=""  require        >
+                                    <input type="text" name=" facebook_path  " class="form-control" placeholder=""  require        >
                                 </div>  
                                 <div class="form-group">
-                                    <input type="file" name=" linkdin_path  " class="form-control" placeholder=""  require        >
+                                    <input type="text" name=" linkdin_path  " class="form-control" placeholder=""  require        >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="file" name="  	twitter_patth  " class="form-control" placeholder=""  require       >
+                                    <input type="text" name="  	twitter_patth  " class="form-control" placeholder=""  require       >
                                 </div>
                                 <div class="form-group">
                                 <input type="submit" name=" add" class="form-control" placeholder=" Record"  require       >
