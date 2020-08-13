@@ -1,14 +1,14 @@
 <?php
 require_once 'config.php';
 
-try {
-    $sql = 'SELECT id, image FROM images ORDER BY id';
+// try {
+//     $sql = 'SELECT * FROM images ORDER BY id';
 
-    $q = $db->query($sql);
-    $q->setFetchMode(PDO::FETCH_ASSOC);
-} catch (PDOException $e) {
-    die("Could not connect to the database $dsn :" . $e->getMessage());
-}
+//     $q = $db->query($sql);
+//     $q->setFetchMode(PDO::FETCH_ASSOC);
+// } catch (PDOException $e) {
+//     die("Could not connect to the database $dsn :" . $e->getMessage());
+// }
 ?>
 <!DOCTYPE html>
 <html>

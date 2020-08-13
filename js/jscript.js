@@ -1,168 +1,48 @@
-// ----------------------------------------------------------------------
-var home = document.getElementById("homePage");
-var events = document.getElementById("eventPage");
-var gal = document.getElementById("galPage");
-var dest = document.getElementById("destPage");
-var team = document.getElementById("teamPage");
-var partner = document.getElementById("partnerPage");
-var post = document.getElementById("postPage");
-var category = document.getElementById("categoryPage");
-var media = document.getElementById("mediaPage");
-var admin = document.getElementById("adminPage");
-var dash = document.getElementById("dash");
+// demmarer bxslider
+$('.sliderHero').bxSlider({
+    controls: false,
+    auto: true,
+    pager: false,
+    border: 0,
 
 
-function dashboard() {
-    dash.style.display = "block";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
+});
+
+// $('.multiple_slider').bxSlider({
+//     adaptiveHeight: true,
+//     controls: false,
+//     auto: true,
+//     slideMargin: 24,
+//     moveSlides: 5,
+//     pager: false,
+//     maxSlides: 5,
+//     minSlides: 1,
+//     speed: 5500,
+//     adaptiveHeight: true,
+//     oneToOneTouch: false,
+//     slideWidth: 240,
 
 
-function homepage() {
-    dash.style.display = "none";
-    home.style.display = "block";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
+// });
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    spaceBetween: 30,
+    slidesPerView: 3,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
 
-function Events() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "block";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
-
-function galerie() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "block";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
-
-function destination() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "block";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
-
-function group() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "block";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
-
-function partners() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "block";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
-
-function posts() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "block";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
-
-function categorys() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "block";
-    media.style.display = "none";
-    admin.style.display = "none";
-}
-
-function Media() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "block";
-    admin.style.display = "none";
-}
-
-function administrateur() {
-    dash.style.display = "none";
-    home.style.display = "none";
-    events.style.display = "none";
-    gal.style.display = "none";
-    dest.style.display = "none";
-    team.style.display = "none";
-    partner.style.display = "none";
-    post.style.display = "none";
-    category.style.display = "none";
-    media.style.display = "none";
-    admin.style.display = "block";
-}
+});
