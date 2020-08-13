@@ -227,16 +227,13 @@ ul li .active {
   margin: 5% auto;
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-template-areas: 'txtHeader imgHero'
- 'btnHeader imgHero';
+  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
 }
 
 @media screen and (max-width: 875px) {
   .headerHero {
     grid-template-columns: 100%;
-    grid-template-areas: 'txtHeader'
- 'imgHero'
- 'btnHeader';
+    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
   }
 }
 
@@ -373,8 +370,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 25%;
-  grid-template-areas: "cart1 cart2 cart3"
- "btn1 btn2 btn3";
+  grid-template-areas: "cart1 cart2 cart3" "btn1 btn2 btn3";
 }
 
 @media screen and (max-width: 875px) {
@@ -382,12 +378,7 @@ ul li .active {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8%;
-    grid-template-areas: "cart1"
- "btn1"
- "cart2"
- "btn2"
- "cart3"
- "btn3";
+    grid-template-areas: "cart1" "btn1" "cart2" "btn2" "cart3" "btn3";
   }
 }
 
@@ -735,10 +726,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "even1 img"
- "even2 img"
- "even3 even"
- ". BTN";
+  grid-template-areas: "even1 img" "even2 img" "even3 even" ". BTN";
 }
 
 @media screen and (max-width: 875px) {
@@ -746,12 +734,7 @@ ul li .active {
     height: 200%;
     grid-template-columns: 1fr;
     grid-template-rows: 22% 40% 15% 22% 22% 10%;
-    grid-template-areas: "even1"
- "img"
- "even"
- "even2"
- "even3"
- "BTN";
+    grid-template-areas: "even1" "img" "even" "even2" "even3" "BTN";
     margin-bottom: 38%;
   }
 }
@@ -906,8 +889,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "A B"
- "C D";
+  grid-template-areas: "A B" "C D";
 }
 
 .acEvenR2__location {
@@ -1227,8 +1209,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50% 50%;
-  grid-template-areas: "team1 team2 team3"
- "team4 team5 team6";
+  grid-template-areas: "team1 team2 team3" "team4 team5 team6";
 }
 
 @media screen and (max-width: 1300px) {
@@ -1703,8 +1684,7 @@ form {
     height: 40vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "fo2 fo3 fo4"
- "fo1 . fo5";
+    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
   }
 }
 
@@ -1974,4 +1954,4 @@ form {
   color: blue;
 }
 
-/*# sourceMappingURL=accueil.css.map */
+/*# sourceMappingURL=../false/accueil.css.map */

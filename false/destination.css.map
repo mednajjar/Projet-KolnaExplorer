@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "destination.css",
+	"file": "../css/destination.css",
 	"sources": [
 		"../scss/destination.scss",
 		"../scss/_menu.scss",

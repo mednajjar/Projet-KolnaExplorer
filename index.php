@@ -406,14 +406,16 @@
 
 
             <h1 class="footerSec__Tit1">Abonnez-vous à notre newsletter</h1>
-
-
-            <form>
+            
+            <?php include 'newslettre.php' ; ?>
+            <form action="index.php" method="POST">
                 <div class="formNewsletter">
-                    <input class="formInput" type="text" id="lname" name="lname" placeholder=" Entrer votre email">
-                    <input class="formBtn" type="submit" value="Abonner" onclick="location.href='#';">
+                    <input class="formInput" type="text" id="lname" name="email" placeholder=" Entrer votre email" required>
+                    <input class="formBtn" type="submit" value="Abonner" name="abonner">
                 </div>
+                
             </form>
+            <p class="footerSec__msg"><?php if(isset($email_error)) echo $email_error; ?></p>
         </div>
 
         <!-----------------------------------------------------last part----------------------------------------------------------------->

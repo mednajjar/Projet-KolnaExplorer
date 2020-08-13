@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "propos.css",
+	"file": "../css/propos.css",
 	"sources": [
 		"../scss/propos.scss"
 	],

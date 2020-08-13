@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "event.css",
+	"file": "../css/event.css",
 	"sources": [
 		"../scss/event.scss",
 		"../scss/_menu.scss",

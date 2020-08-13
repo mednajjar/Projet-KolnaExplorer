@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "admin.css",
+	"file": "../css/admin.css",
 	"sources": [
 		"../scss/admin.scss"
 	],

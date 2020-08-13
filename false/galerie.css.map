@@ -1,6 +1,6 @@
 {
 	"version": 3,
-	"file": "galerie.css",
+	"file": "../css/galerie.css",
 	"sources": [
 		"../scss/galerie.scss",
 		"../scss/_menu.scss",

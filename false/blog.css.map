@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "activites.css",
+	"file": "../css/blog.css",
 	"sources": [
-		"../scss/activites.scss"
+		"../scss/blog.scss"
 	],
 	"names": [],
 	"mappings": ""
