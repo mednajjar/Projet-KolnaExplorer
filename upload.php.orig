@@ -43,7 +43,6 @@ if(isset($_POST['submit'])){
         $error = "You cannot upload files of this type!";
     }
 }
-<<<<<<< HEAD
 // ---------------------------------------------upload image on galerie table--------------------------------------------------
 $msg = "";
 if(isset($_POST['upload'])){
@@ -86,6 +85,8 @@ if(isset($_POST['upload'])){
     }else{
         $msg = "You cannot upload files of this type!";
     }
+<<<<<<< HEAD
 }
 =======
->>>>>>> a5e6646e10a80885cf5ecc858d1ada08d6072b17
+}
+>>>>>>> 004c11be19d09777f490c7daecb2c1b73c10ba5a
