@@ -16,14 +16,18 @@
         $message ="
         <html>
             <body>
-                <table style='width:600px;'>
-                    <tbody>
-                     
-                        <tr>
-                            <td style='width:150px'><strong>Email ID: </strong></td>
-                            <td style='width:400px'>$email</td>
-                        </tr>
-                    </tbody>
+            
+                <h2 style='text-align:center'>kolna Explorer</h2>
+                
+                <table style='width:40%; margin:auto; font-size:3vw' border='1'>
+                <tr style='text-align:center'>
+                    <th></th>
+                    <th>subscribers</th>
+                </tr>
+                <tr style='text-align:center'>
+                    <td><b>Email</b></td>
+                    <td>$email</td>
+                </tr>
                 </table>
             </body>
         </html>
