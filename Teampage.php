@@ -2,7 +2,6 @@
 
 
 
-include 'Teamaction.php';
 
 // $msg=" ";
 // $css_class=" ";
@@ -48,6 +47,74 @@ include 'Teamaction.php';
 
 
 //     }
+
+
+
+
+
+
+// Create database connection
+include 'config.php'
+
+// $db = mysqli_connect("localhost", "root", "", " Kolnaexplorer");
+
+
+
+// Initialize message variable
+
+$msg = "";
+
+// If upload button is clicked ...
+if (isset($_POST['add'])) {
+
+
+    $target = "images/".basename($team_img);
+
+    $db = mysqli_connect("localhost", "root", "", " Kolnaexplorer");
+
+
+    // Get image name
+    $team_img = $_FILES['team_img']['name'];
+    // Get text
+    $team_firstName = mysqli_real_escape_string($db, $_POST['team_firstName']);
+    $team_role = mysqli_real_escape_string($db, $_POST['team_role']);
+    $team_resum = mysqli_real_escape_string($db, $_POST['team_resum']);
+    $facebook_path  = mysqli_real_escape_string($db, $_POST['facebook_path ']);
+    $linkdin_path = mysqli_real_escape_string($db, $_POST['linkdin_path']);
+    $twitter_path = mysqli_real_escape_string($db, $_POST['twitter_patth']);
+
+
+
+
+    // $team_firstName =  $_POST['team_firstName'];
+    // $team_role =  $_POST['team_role'];
+    // $team_resum = $_POST['team_resum'];
+    // $facebook_path  =  $_POST['facebook_path '];
+    // $linkdin_path =  $_POST['linkdin_path'];
+    // $twitter_path =  $_POST['twitter_patth'];
+
+
+    // image file directory
+
+
+    // $target = "images/".basename($team_img);
+
+     $sql="INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,twitter_patth)VALUE('$team_img','$team_firstName','$team_role','$team_resum','$facebook_path','$linkdin_path','$twitter_path') ";
+
+    // $sql = "INSERT INTO images (image, image_text) VALUES ('$image', '$image_text')";
+
+    // execute query
+    mysqli_query($db, $sql);
+
+    if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
+        $msg = "Image uploaded successfully";
+    }else{
+        $msg = "Failed to upload image";
+    }
+}
+
+
+// $result = mysqli_query($db, "SELECT * FROM team");
     
 
 
@@ -181,8 +248,7 @@ include 'Teamaction.php';
                     <div class="row">
                         <div class="col-md-4">
                             <h3 class="text-center text-inf">Add Record</h3>
-                            <form action=" teampage.php "    method="post"  enctype="multipart/form-data">
-                            
+                            <form method="POST" action=" teampage.php" enctype="multipart/form-data">                            
 
                                 <div class="form-group">
                                     <input type="text" name="team_firstName" class="form-control" placeholder="firstname"  require        >
@@ -204,18 +270,16 @@ include 'Teamaction.php';
                                     <input type="text" name=" linkdin_path  " class="form-control" placeholder=""  require        >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="text" name="  	twitter_patth  " class="form-control" placeholder=""  require       >
+                                    <input type="text" name="  twitter_path " class="form-control" placeholder=""  require       >
                                 </div>
                                 <div class="form-group">
                                 <input type="submit" name=" add" class="form-control" placeholder=" Record"  require       >
                             </div>
                             </div>
-                             <!-- <div class="form-group">
-                                <input type="submit" name=" add" class="form-control" placeholder=" Record"  require       >
-                            </div> -->
+                          
                             </form>
                         </div>
-                        <div class="col-md-8">
+                        <!-- <div class="col-md-8">
                                 <h2>Record presente in data base</h2>
 
                             <table>
@@ -262,7 +326,7 @@ include 'Teamaction.php';
 
 
 
-                        </div>
+                        </div> -->
 
 
                     </div>
