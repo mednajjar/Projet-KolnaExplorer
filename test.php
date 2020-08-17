@@ -71,8 +71,8 @@ if(isset($_REQUEST["name"])){
 }
 ?>
 <form method="post" action="<?php echo $_SERVER["PHP_SELF"];?>">
-    <label for="inputName">Name:</label>
-    <input type="text" name="name" id="inputName">
-    <input type="submit" value="Submit">
+            <label for="inputName">Name:</label>
+            <input type="text" name="name" id="inputName">
+            <input type="submit" value="Submit">
 </form>
 </body>
