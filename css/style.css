@@ -273,13 +273,13 @@ ul li .active {
   margin: 5% auto;
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
+  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
 }
 
 @media screen and (max-width: 875px) {
   .headerHero {
     grid-template-columns: 100%;
-    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
+    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
   }
 }
 
@@ -416,7 +416,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 25%;
-  grid-template-areas: "cart1 cart2 cart3" "btn1 btn2 btn3";
+  grid-template-areas: "cart1 cart2 cart3" "btn1 btn2 btn3";
 }
 
 @media screen and (max-width: 875px) {
@@ -424,7 +424,7 @@ ul li .active {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8%;
-    grid-template-areas: "cart1" "btn1" "cart2" "btn2" "cart3" "btn3";
+    grid-template-areas: "cart1" "btn1" "cart2" "btn2" "cart3" "btn3";
   }
 }
 
@@ -774,7 +774,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: "even1 img" "even2 img" "even3 even" ". BTN";
+  grid-template-areas: "even1 img" "even2 img" "even3 even" ". BTN";
 }
 
 @media screen and (max-width: 875px) {
@@ -782,7 +782,7 @@ ul li .active {
     height: 200%;
     grid-template-columns: 1fr;
     grid-template-rows: 22% 40% 15% 22% 22% 10%;
-    grid-template-areas: "even1" "img" "even" "even2" "even3" "BTN";
+    grid-template-areas: "even1" "img" "even" "even2" "even3" "BTN";
     margin-bottom: 38%;
   }
 }
@@ -945,7 +945,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "A B" "C D";
+  grid-template-areas: "A B" "C D";
 }
 
 .acEvenR2__location {
@@ -1309,7 +1309,7 @@ ul li .active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 50% 50%;
-  grid-template-areas: "team1 team2 team3" "team4 team5 team6";
+  grid-template-areas: "team1 team2 team3" "team4 team5 team6";
 }
 
 @media screen and (max-width: 1300px) {
@@ -1742,7 +1742,7 @@ form {
     height: 40vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
+    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
   }
 }
 
@@ -2354,13 +2354,13 @@ ul li .active {
   margin: 5% auto;
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
+  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
 }
 
 @media screen and (max-width: 875px) {
   .headerHero {
     grid-template-columns: 100%;
-    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
+    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
   }
 }
 
@@ -2862,7 +2862,7 @@ form {
     height: 40vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
+    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
   }
 }
 
@@ -3416,13 +3416,13 @@ ul li .active {
   margin: 5% auto;
   display: grid;
   grid-template-columns: 45% 55%;
-  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
+  grid-template-areas: 'txtHeader imgHero' 'btnHeader imgHero';
 }
 
 @media screen and (max-width: 875px) {
   .headerHero {
     grid-template-columns: 100%;
-    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
+    grid-template-areas: 'txtHeader' 'imgHero' 'btnHeader';
   }
 }
 
@@ -3559,7 +3559,7 @@ ul li .active {
     width: 64%;
     margin-bottom: 12%;
     grid-template-columns: 100%;
-    grid-template-areas: "EventImg" "EventContent";
+    grid-template-areas: "EventImg" "EventContent";
   }
 }
 
@@ -4005,7 +4005,7 @@ form {
     height: 40vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
+    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
   }
 }
 
@@ -4301,7 +4301,7 @@ form {
 .asideBar {
   position: relative;
   width: 13%;
-  background: #da5959;
+  background: black;
   color: white;
   height: 100vh;
   font-size: 1vw;
@@ -4382,6 +4382,10 @@ form {
   left: 13%;
 }
 
+.topBar .homePage {
+  background-color: blue;
+}
+
 @media screen and (max-width: 960px) {
   .topBar {
     height: 4vw;
@@ -4459,21 +4463,72 @@ form {
   margin: 0 auto;
 }
 
-#adminPage,
-#mediaPage,
-#categoryPage,
-#postPage,
-#partnerPage,
-#teamPage,
-#destPage,
-#galPage,
-#eventPage,
-#homePage {
+.formDiv {
+  position: relative;
+  width: 40%;
+  margin: 6% auto;
+}
+
+.formDiv__title {
+  font-size: 1.4vw;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.formDiv__myForm {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1vw;
+}
+
+#subBtn[type="submit"] {
   display: none;
 }
 
-p {
-  color: #f8fafa;
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 2% 6%;
+}
+
+.uploadBtn {
+  width: 26%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.uploadBtn:hover {
+  color: white;
+  background: #6a6ae4;
+}
+
+.sectionImg {
+  width: 90%;
+  margin: 4% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sectionImg__imgSlide {
+  width: 22%;
+  height: auto;
+  border: 1px solid gray;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titleSlide {
+  text-align: center;
 }
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400';
 * {
@@ -4709,5 +4764,10 @@ th, td {
     z-index: -1;
     position: relative;
   }
+}
+
+.form-control {
+  height: 100px;
+  width: 150px;
 }
 /*# sourceMappingURL=style.css.map */

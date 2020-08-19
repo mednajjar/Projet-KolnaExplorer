@@ -1,62 +1,18 @@
- <?php
+ 
 
 
 
 
-// $msg=" ";
-// $css_class=" ";
-
-    
-    
-//     if(isset($_POST['add'])){      
-
-//         echo "<pre>",print_r( $_FILES['team_img']['name'] ),"<pre>";      
-      
 
 
-
-//         //test values on input
-
-
-//         $team_firstName =valid_data ($_POST['team_firstName']);
-//         $team_role= valid_data($_POST[' team_role']);
-//         $team_resum=valid_data($_POST['team_resum']);
-//         $team_img= $_FILES['team_img']['name'];
-//         $facebook_path= $_POST['facebook_path'];
-//         $linkdin_path= $_POST['linkdin_path'];
-//         $twitter_path= $_POST['twitter_path'];
-
-//         $upload=time().'_'."uploads/".$team_img;
-
-        
-//         if (move_uploaded_file($_FILES['team_img']['tmp_name'],$upload))
-//          {
-//             $sql="INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,	twitter_patth )VALUE('$team_img','$team_firstName','$team_role','$team_resum','$facebook_path','$linkdin_path','$twitter_path') ";
-//             if (mysqli_query($sql,$db)) {
-                
-//                 $msg="image uploadded";
-//                 $css_class="alert-success";
-//             }
-//             else {
-//                 $msg="Database erreur:Failed to upload to upload";
-//                 $css_class="alert-danger";
-        
-//             }  
-            
-//         }
-
-
-//     }
-
-
-
-
+<?php
 
 
 // Create database connection
-include 'config.php'
+// include 'config.php'
 
-// $db = mysqli_connect("localhost", "root", "", " Kolnaexplorer");
+$db = mysqli_connect("localhost", "root", "", "Kolnaexplorer");
+
 
 
 
@@ -68,42 +24,35 @@ $msg = "";
 if (isset($_POST['add'])) {
 
 
-    $target = "images/".basename($team_img);
 
-    $db = mysqli_connect("localhost", "root", "", " Kolnaexplorer");
-
-
-    // Get image name
     $team_img = $_FILES['team_img']['name'];
-    // Get text
-    $team_firstName = mysqli_real_escape_string($db, $_POST['team_firstName']);
-    $team_role = mysqli_real_escape_string($db, $_POST['team_role']);
-    $team_resum = mysqli_real_escape_string($db, $_POST['team_resum']);
-    $facebook_path  = mysqli_real_escape_string($db, $_POST['facebook_path ']);
-    $linkdin_path = mysqli_real_escape_string($db, $_POST['linkdin_path']);
-    $twitter_path = mysqli_real_escape_string($db, $_POST['twitter_patth']);
 
-
-
-
-    // $team_firstName =  $_POST['team_firstName'];
-    // $team_role =  $_POST['team_role'];
-    // $team_resum = $_POST['team_resum'];
-    // $facebook_path  =  $_POST['facebook_path '];
-    // $linkdin_path =  $_POST['linkdin_path'];
-    // $twitter_path =  $_POST['twitter_patth'];
-
-
-    // image file directory
 
 
     // $target = "images/".basename($team_img);
 
-     $sql="INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,twitter_patth)VALUE('$team_img','$team_firstName','$team_role','$team_resum','$facebook_path','$linkdin_path','$twitter_path') ";
 
-    // $sql = "INSERT INTO images (image, image_text) VALUES ('$image', '$image_text')";
 
-    // execute query
+    // Get image name
+    // Get text
+
+
+    $team_firstName = mysqli_real_escape_string($db, $_POST['team_firstName']);
+    $team_role = mysqli_real_escape_string($db, $_POST['team_role']);
+    $team_resum = mysqli_real_escape_string($db, $_POST['team_resum']);
+    $facebook_path  = mysqli_real_escape_string($db, $_POST['facebook_path']);
+    $linkdin_path = mysqli_real_escape_string($db, $_POST['linkdin_path']);
+    $twitter_path = mysqli_real_escape_string($db, $_POST['twitter_path']);
+
+
+
+    $target = "images/".basename($team_img);
+
+   
+
+     $sql="INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,twitter_path)VALUE('$team_img','$team_firstName','$team_role','$team_resum','$facebook_path','$linkdin_path','$twitter_path') ";
+
+
     mysqli_query($db, $sql);
 
     if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
@@ -114,7 +63,12 @@ if (isset($_POST['add'])) {
 }
 
 
-// $result = mysqli_query($db, "SELECT * FROM team");
+$result = mysqli_query($db, "SELECT * FROM team");
+
+
+
+
+?>
     
 
 
@@ -149,53 +103,9 @@ if (isset($_POST['add'])) {
 
 
 
-// include 'Teamaction.php';
-    
-    
-    // if(isset($_POST['add'])){                    
-    
-    //     //test values on input
-    //     $team_firstName =valid_data ($_POST['team_firstName']);
-    //     $team_role= valid_data($_POST[' team_role']);
-    //     $team_resum=valid_data($_POST['team_resum']);
-    //     $team_img= $_FILES['team_img']['name'];
-    //     $facebook_path= $_FILES['facebook_path']['name'];
-    //     $linkdin_path= $_FILES['linkdin_path']['name'];
-    //     $twitter_path= $_FILES['twitter_path']['name'];
-
-
-
-    //     $upload="uploads/".$team_img;
-    //     $upload="uploads/".$facebook_path;
-    //     $upload="uploads/".$linkdin_path;
-    //     $upload="uploads/".$twitter_path;
-
-
-    //      //insert values in  db
-    //     $sth = $db->prepare("
-    //     INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,	twitter_patth )
-    //     VALUES(:team_img, :	team_firstName	, :team_role,:	team_resum,:facebook_path,:	linkdin_path:,:	twitter_patth)");
-
-
-    //     $sth->bindParam(':team_firstName',$team_firstName);
-    //     $sth->bindParam(':team_role',$team_role);
-    //     $sth->bindParam(':team_resum',$team_resum);
-
-    //     $sth->bindParam(':team_img',$team_img);
-    //     $sth->bindParam(':twitter_path',$twitter_path);
-    //     $sth->bindParam(':facebook_path',$facebook_path);
-    //     $sth->bindParam(':linkdin_path',$linkdin_path);
-    //     $sth->execute();
-
-
-    //     move_uploaded_file($_FILES['team_img']['tmp_name'],$upload);
-    //     move_uploaded_file($_FILES['twitter_path']['tmp_name'],$upload);
-    //     move_uploaded_file($_FILES['facebook_path']['tmp_name'],$upload);
-    //     move_uploaded_file($_FILES['linkdin_path']['tmp_name'],$upload);
 
 
         
-?> 
 
 
 
@@ -273,7 +183,7 @@ if (isset($_POST['add'])) {
                                     <input type="text" name="  twitter_path " class="form-control" placeholder=""  require       >
                                 </div>
                                 <div class="form-group">
-                                <input type="submit" name=" add" class="form-control" placeholder=" Record"  require       >
+                                <input type="submit" name=" add" class="form-control1 " placeholder=" Record"  require     >
                             </div>
                             </div>
                           

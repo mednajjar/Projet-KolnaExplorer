@@ -376,7 +376,7 @@ form {
     height: 40vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
+    grid-template-areas: "fo2 fo3 fo4" "fo1 . fo5";
   }
 }
 
