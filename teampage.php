@@ -13,6 +13,8 @@
 
 $db = mysqli_connect("localhost", "root", "", "Kolnaexplorer");
 
+// include 'config.php'
+
 
 
 
@@ -20,29 +22,50 @@ $db = mysqli_connect("localhost", "root", "", "Kolnaexplorer");
 
 $msg = "";
 
+
+
+
 // If upload button is clicked ...
+
+
 if (isset($_POST['add'])) {
 
 
 
-    $team_img = $_FILES['team_img']['name'];
 
 
 
-    // $target = "images/".basename($team_img);
 
 
 
-    // Get image name
-    // Get text
+            $team_img = $_FILES['team_img']['name'];
+
+            $target = "images/".basename($team_img);
 
 
-    $team_firstName = mysqli_real_escape_string($db, $_POST['team_firstName']);
-    $team_role = mysqli_real_escape_string($db, $_POST['team_role']);
-    $team_resum = mysqli_real_escape_string($db, $_POST['team_resum']);
-    $facebook_path  = mysqli_real_escape_string($db, $_POST['facebook_path']);
-    $linkdin_path = mysqli_real_escape_string($db, $_POST['linkdin_path']);
-    $twitter_path = mysqli_real_escape_string($db, $_POST['twitter_path']);
+            $teamusername = $_POST['teamusername'];
+
+
+
+            $teamrole = $_POST['teamrole'];
+
+
+            $teamresum = $_POST['teamresum'];
+
+            $facebookpath  =  $_POST['facebookpath'];
+
+            $linkdinpath =  $_POST['linkdinpath'];
+
+            $twitterpath =  $_POST['twitterpath'];
+
+    // $facebook_path  = mysqli_real_escape_string($db, $_POST['facebook_path']);
+
+    // $linkdin_path = mysqli_real_escape_string($db, $_POST['linkdin_path']);
+
+    // $twitter_path = mysqli_real_escape_string($db, $_POST['twitter_path']);
+
+
+    
 
 
 
@@ -50,7 +73,7 @@ if (isset($_POST['add'])) {
 
    
 
-     $sql="INSERT INTO team(team_img, team_firstName, team_role,team_resum,facebook_path,linkdin_path,twitter_path)VALUE('$team_img','$team_firstName','$team_role','$team_resum','$facebook_path','$linkdin_path','$twitter_path') ";
+     $sql="INSERT INTO team(team_img, teamusername, teamrole,teamresum,facebookpath,linkdinpath,twitterpath)VALUE('$team_img','$teamusername','$teamrole','$teamresum','$facebookpath','$linkdinpath','$twitterpath') ";
 
 
     mysqli_query($db, $sql);
@@ -63,7 +86,14 @@ if (isset($_POST['add'])) {
 }
 
 
+
+
+
+
 $result = mysqli_query($db, "SELECT * FROM team");
+
+
+
 
 
 
@@ -143,8 +173,10 @@ $result = mysqli_query($db, "SELECT * FROM team");
 			</nav>
 		</div>
 
+    
+
 		<div class="main-content">
-			<!-- <h1></h1> -->
+	
 			
       <div class="">
 				<div class="">
@@ -158,86 +190,42 @@ $result = mysqli_query($db, "SELECT * FROM team");
                     <div class="row">
                         <div class="col-md-4">
                             <h3 class="text-center text-inf">Add Record</h3>
-                            <form method="POST" action=" teampage.php" enctype="multipart/form-data">                            
+                            <form method="POST" action=" teampage.php" enctype="multipart/form-data"> 
 
                                 <div class="form-group">
-                                    <input type="text" name="team_firstName" class="form-control" placeholder="firstname"  require        >
+                                        <input type="file" name="team_img" class="form-control" >
+                                    </div>                              
+
+                                <div class="form-group">
+                                    <input type="text" name="teamusername" class="form-control" placeholder="firstname"      >
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="team_role" class="form-control" placeholder="Enter role"  require        >
+                                    <input type="text" name="teamrole" class="form-control" placeholder="Enter role"         >
                                 </div> 
                                 <div class="form-group">
-                                    <input type="text" name=" team_resum" class="form-control" placeholder="Enter resumer"  require        >
+                                    <input type="text" name=" teamresum" class="form-control" placeholder="Enter resumer"        >
 
                                 </div>
+
                                 <div class="form-group">
-                                    <input type="file" name="team_img" class="form-control" placeholder="Enter e-mail"  require        >
-                                </div>   
-                                <div class="form-group">
-                                    <input type="text" name=" facebook_path  " class="form-control" placeholder=""  require        >
+                                    <input type="text" name=" facebookpath  " class="form-control" placeholder="entre path facebook"        >
                                 </div>  
                                 <div class="form-group">
-                                    <input type="text" name=" linkdin_path  " class="form-control" placeholder=""  require        >
+                                    <input type="text" name=" linkdinpath  " class="form-control" placeholder="entrer path linkdin"     >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="text" name="  twitter_path " class="form-control" placeholder=""  require       >
+                                    <input type="text" name="  twitterpath " class="form-control" placeholder="enter path twitter"        >
                                 </div>
+                                
+                                
                                 <div class="form-group">
-                                <input type="submit" name=" add" class="form-control1 " placeholder=" Record"  require     >
+                                <input type="submit" name=" add" class="form-control1 "     >
                             </div>
                             </div>
                           
                             </form>
                         </div>
-                        <!-- <div class="col-md-8">
-                                <h2>Record presente in data base</h2>
-
-                            <table>
-                                        <thead>
-                                            <tr>
-                                            <th>#</th>
-                                            <th>team_img </th>
-                                            <th>team_firstName</th>
-                                            <th> team_role</th>
-                                            <th>   	team_resum  </th>
-                                            <th>facebook_path</th>
-                                            <th> linkdin_path</th>
-                                            <th>twitter_patth</th>    
-                                            <th>action</th>     
- 
-
-                                            </tr>
-                                        </thead><tbody>
-                                        <tr>
-                                            <td><img src="" alt="" width="25px"></td>
-                                            <td>29</td>
-                                            <td>khalid saaf</td>
-                                            <td> web developper</td>
-                                            <td> hello word</td>
-                                            <td><img src="" alt="" width="25px"></td>
-                                            <td><img src="" alt="" width="25px"></td>
-                                            <td><img src="" alt="" width="25px"></td>
-                                            <td> 
-                                                <a href="#"  style="background-color: rgb(25, 202, 18);"> Detail</a>
-                                                <a href="#"   style="background-color: rgb(214, 65, 28);" > Delete</a>
-                                                <a href="#"  style="background-color: rgb(23, 42, 216);" > Edit</a>
-
-                                            </td>
-
-
-
-
-
-
-                                        </tr>
-                                       
-                                        </tbody>
-                            </table>
-
-
-
-                        </div> -->
-
+                       
 
                     </div>
                     
