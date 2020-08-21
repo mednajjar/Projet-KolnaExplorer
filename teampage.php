@@ -5,96 +5,89 @@
 
 
 
+
+
+
 <?php
 
 
-// Create database connection
-// include 'config.php'
-
-$db = mysqli_connect("localhost", "root", "", "Kolnaexplorer");
-
-// include 'config.php'
-
-
-
-
 // Initialize message variable
+
 
 $msg = "";
 
 
 
 
-// If upload button is clicked ...
+// php code to Insert data into mysql database from input text
+if(isset($_POST['add']))
+{
+    $hostname = "localhost";
+    $username = "root";
+    $password = "";
+    $databaseName = "kolnaexplorer";
+        
+    // get values form input image
 
+    $team_img = $_FILES['team_img']['name'];
+    $target = "images/".basename($team_img);
 
-if (isset($_POST['add'])) {
-
-
-
-
-
-            $team_img = $_FILES['team_img']['name'];
-            $target = "images/".basename($team_img);
-
-
-            $teamusername = $_POST['teamusername'];
-
-
-
-            $teamrole = $_POST['teamrole'];
-
-
-            $teamresum = $_POST['teamresum'];
-
-            $facebookpath  =  $_POST['facebookpath'];
-
-            $linkdinpath =  $_POST['linkdinpath'];
-
-            $twitterpath =  $_POST['twitterpath'];
-
-    // $facebook_path  = mysqli_real_escape_string($db, $_POST['facebook_path']);
-
-    // $linkdin_path = mysqli_real_escape_string($db, $_POST['linkdin_path']);
-
-    // $twitter_path = mysqli_real_escape_string($db, $_POST['twitter_path']);
 
 
     
+    // get values form input text and number
+
+
+    $teamusername = $_POST['teamusername'];
+    $teamrole = $_POST['teamrole'];
+    $teamresum = $_POST['teamresum'];
+    $facebookpath = $_POST['facebookpath'];
+    $linkdinpath = $_POST['linkdinpath'];
+    $twitterpath = $_POST['twitterpath'];
+
+
+    
+    // connect to mysql database using mysqli
+
+    $connect = mysqli_connect($hostname, $username, $password, $databaseName);
+    
+    // mysql query to insert data
+
+    $query = "INSERT INTO `team`(`team_img`, `teamusername`, `teamrole`, `teamresum`, `facebookpath`, `linkdinpath`, `twitterpath`) VALUES ('$team_img','$teamusername','$teamrole','$teamresum','$facebookpath','$linkdinpath','$twitterpath')";
+    
+    // $result = mysqli_query($connect,$query);
+
+        $res=mysqli_query($connect,$query);
+
+
+        if($res)
+        {
+            echo 'Data Inserted';
+        }
+        
+        else{
+            echo 'Data Not Inserted';
+        }
 
 
 
     $target = "images/".basename($team_img);
 
-   
 
-     $sql="INSERT INTO team(team_img, teamusername, teamrole,teamresum,facebookpath,linkdinpath,twitterpath)VALUE('$team_img','$teamusername','$teamrole','$teamresum','$facebookpath','$linkdinpath','$twitterpath') ";
-
-
-    mysqli_query($db, $sql);
 
     if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
         $msg = "Image uploaded successfully";
     }else{
         $msg = "Failed to upload image";
     }
+    
 }
 
-
-
-
-
-
-$result = mysqli_query($db, "SELECT * FROM team");
-
-
-
-
-
+$result = mysqli_query($connect, "SELECT * FROM team");
 
 
 ?>
-    
+
 
 
 
@@ -155,7 +148,7 @@ $result = mysqli_query($db, "SELECT * FROM team");
 	<div class="nav-btn">Menu</div>
 	<div class="container">
 		
-		<div class="sidebar">
+		 <div class="sidebar">
 			<nav>
 				<a href="#">Team<span>page</span></a>
 				<ul>
@@ -166,7 +159,7 @@ $result = mysqli_query($db, "SELECT * FROM team");
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
-		</div>
+		</div> 
 
     
 
