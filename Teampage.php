@@ -34,12 +34,7 @@ if (isset($_POST['add'])) {
 
 
 
-
-
-
-
             $team_img = $_FILES['team_img']['name'];
-
             $target = "images/".basename($team_img);
 
 
@@ -233,6 +228,10 @@ $result = mysqli_query($db, "SELECT * FROM team");
 			</div>
 		</div>
 	</div>
+
+
+
+
 
 
 
