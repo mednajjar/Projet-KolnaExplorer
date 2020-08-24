@@ -21,6 +21,7 @@ $msg = "";
 
 // php code to Insert data into mysql database from input text
 if(isset($_POST['add']))
+
 {
     $hostname = "localhost";
     $username = "root";
@@ -30,6 +31,7 @@ if(isset($_POST['add']))
     // get values form input image
 
     $team_img = $_FILES['team_img']['name'];
+
     $target = "images/".basename($team_img);
 
 
@@ -39,10 +41,15 @@ if(isset($_POST['add']))
 
 
     $teamusername = $_POST['teamusername'];
-    $teamrole = $_POST['teamrole'];
-    $teamresum = $_POST['teamresum'];
-    $facebookpath = $_POST['facebookpath'];
-    $linkdinpath = $_POST['linkdinpath'];
+
+    $teamrole =$_POST['teamrole'];
+
+    $teamresum =  $_POST['teamresum'];
+
+    $facebookpath =  $_POST['facebookpath'];
+
+    $linkdinpath =  $_POST['linkdinpath'];
+
     $twitterpath = $_POST['twitterpath'];
 
 
@@ -55,19 +62,24 @@ if(isset($_POST['add']))
 
     $query = "INSERT INTO `team`(`team_img`, `teamusername`, `teamrole`, `teamresum`, `facebookpath`, `linkdinpath`, `twitterpath`) VALUES ('$team_img','$teamusername','$teamrole','$teamresum','$facebookpath','$linkdinpath','$twitterpath')";
     
+    $res=mysqli_query($connect,$query);
+
+    
+    
     // $result = mysqli_query($connect,$query);
 
-        $res=mysqli_query($connect,$query);
+        // $res=mysqli_query($connect,$query);
 
 
-        if($res)
-        {
-            echo 'Data Inserted';
-        }
+        // if($res)
+        // {
+        //     echo 'Data Inserted';
+        // }
         
-        else{
-            echo 'Data Not Inserted';
-        }
+        // else{
+        //     echo 'Data Not Inserted';
+        // }
+
 
 
 
