@@ -50,7 +50,7 @@
     <section class="sectionTeam">
         
         <img class=" sectionTeam-photo  "src="Assets/explorer.jpg" alt="">
-        <div><h1 class="sectionTeam-title">MEET OUR TEAM</h1></div>
+        <div><h1 class="sectionTeam-title" id="text">  </h1></div>
 
     </section>
             <!----------------------Fin sectionTeam---------------------->
@@ -60,25 +60,33 @@
     <section class="sectionTeam2">
         
             <div class="sectionTeam2-block0"><h1 class="   sectionTeam2-block0__title ">Ours Team</h1></div>
-            <div class="sectionTeam2-block1">
-             <div class="block1-team1">
+        <div class="sectionTeam2-block1">
+
+         <div class="block1-team1">
             <img  class="block1-team1__photo" src="Assets/800px-Matt_Mullenweg-100x100.jpg" alt="" >
             <div class="logoteam">
                 <a  href=" https://twitter.com/login?lang=fr" target="_blank"><img class=" logoteam--icone " src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
                 <a  href="https://fr-fr.facebook.com/" target="_blank" > <img  class=" logoteam--icone " src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
                 <a   href="https://www.instagram.com/accounts/login/?hl=fr" target="_blank"    >  <img  class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
                 <a   href="https://fr.linkedin.com/" target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
-                </div>
-           
             </div>
+           
+         
 
-            <div class="block1-team2">
+        <div class="block1-team2">
             <hr class="block1-team2--ligne  ">
             <h1 class="block1-team2__tite1">Nom et Prénon</h1>
             <h2 class="block1-team2__tite2">Role</h2>
             <p   class="block1-team2__tite3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
-            </div>
+         </div>
+            
         </div>
+
+</div>
+
+
+        
+    
         <div class="sectionTeam2-block2">
             <div class="block1-team1">
             <img class="block1-team1__photo" src="Assets/Jonathan_Ive_OTRS-100x100.jpg" alt="">
@@ -228,7 +236,12 @@
     </div>
 
                      <!----------------------Fin Footer---------------------->
-                     <script src="/js/script.js"></script>
+
+
+
+                     <!-- <script src="/js/script.js"></script> -->
+                     <script src="/js/team.js"></script>
+
 
 
 </body>
