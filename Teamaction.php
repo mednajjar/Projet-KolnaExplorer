@@ -31,7 +31,6 @@
 <?php
 
 
-include 'config.php'
 
 
 
@@ -104,48 +103,103 @@ include 'config.php'
         //     }  
             
         // }
+        
 
 
 
 
-        <?php
-  $msg = "";
-  $msg_class = "";
-  if (isset($_POST['save_profile'])) {
-    // for the database
-    $bio = stripslashes($_POST['bio']);
-    $profileImageName = time() . '-' . $_FILES["profileImage"]["name"];
-    // For image upload
-    $target_dir = "images/";
-    $target_file = $target_dir . basename($profileImageName);
-    // VALIDATION
-    // validate image size. Size is calculated in Bytes
-    if($_FILES['profileImage']['size'] > 200000) {
-      $msg = "Image size should not be greated than 200Kb";
-      $msg_class = "alert-danger";
-    }
-    // check if file exists
-    if(file_exists($target_file)) {
-      $msg = "File already exists";
-      $msg_class = "alert-danger";
-    }
-    // Upload image only if no errors
-    if (empty($error)) {
-      if(move_uploaded_file($_FILES["profileImage"]["tmp_name"], $target_file)) {
-        $sql = "INSERT INTO users SET profile_image='$profileImageName', bio='$bio'";
-        if(mysqli_query($conn, $sql)){
-          $msg = "Image uploaded and saved in the Database";
-          $msg_class = "alert-success";
-        } else {
-          $msg = "There was an error in the database";
-          $msg_class = "alert-danger";
+
+        $msg = "";
+
+
+
+
+        // php code to Insert data into mysql database from input text
+
+
+
+        
+        if(isset($_POST['add']))
+        {
+            $hostname = "localhost";
+            $username = "root";
+            $password = "";
+            $databaseName = "kolnaexplorer";
+                
+            // get values form input image
+        
+            $team_img = $_FILES['team_img']['name'];
+            $target = "images/".basename($team_img);
+        
+        
+        
+            
+            // get values form input text and number
+        
+        
+            $teamusername = $_POST['teamusername']; 
+            $teamrole = $_POST['teamrole'];
+            $teamresum = $_POST['teamresum'];
+
+
+            $facebook = $_POST['facebook'];
+            $linkdin = $_POST['linkdin'];
+            $twitter = $_POST['twitter'];
+        
+        
+            
+            // connect to mysql database using mysqli
+        
+            $connect = mysqli_connect($hostname, $username, $password, $databaseName);
+            
+            // mysql query to insert data
+        
+            $query = "INSERT INTO team(`team_img`, `teamusername`, `teamrole`, `teamresum`) VALUES ('$team_img','$teamusername','$teamrole','$teamresum')";
+            
+            $result = mysqli_query($connect,$query);
+        
+                // $res=mysqli_query($connect,$query);
+        
+        
+                if($result)
+
+                {
+                    echo 'Data Inserted';
+                }
+                
+                else{
+                    echo 'Data Not Inserted';
+                }
+        
+        
+        
+            $target = "images/".basename($team_img);
+        
+        
+        
+            if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
+                $msg = "Image uploaded successfully";
+                
+            }else{
+                $msg = "Failed to upload image";
+            }
+            
         }
-      } else {
-        $error = "There was an erro uploading the file";
-        $msg = "alert-danger";
-      }
-    }
-  }
+        
+        $result = mysqli_query($connect, "SELECT * FROM team");
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
     
     
@@ -155,4 +209,3 @@ include 'config.php'
 
                 
 
-?> 

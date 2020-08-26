@@ -14,76 +14,77 @@
 // Initialize message variable
 
 
-$msg = "";
+// $msg = "";
 
 
 
 
-// php code to Insert data into mysql database from input text
-if(isset($_POST['add']))
-{
-    $hostname = "localhost";
-    $username = "root";
-    $password = "";
-    $databaseName = "kolnaexplorer";
+// // php code to Insert data into mysql database from input text
+// if(isset($_POST['add']))
+// {
+//     $hostname = "localhost";
+//     $username = "root";
+//     $password = "";
+//     $databaseName = "kolnaexplorer";
         
-    // get values form input image
+//     // get values form input image
 
-    $team_img = $_FILES['team_img']['name'];
-    $target = "images/".basename($team_img);
+//     $team_img = $_FILES['team_img']['name'];
+//     $target = "images/".basename($team_img);
 
-
-
-    
-    // get values form input text and number
-
-
-    $teamusername = $_POST['teamusername'];
-    $teamrole = $_POST['teamrole'];
-    $teamresum = $_POST['teamresum'];
-    $facebookpath = $_POST['facebookpath'];
-    $linkdinpath = $_POST['linkdinpath'];
-    $twitterpath = $_POST['twitterpath'];
 
 
     
-    // connect to mysql database using mysqli
+//     // get values form input text and number
 
-    $connect = mysqli_connect($hostname, $username, $password, $databaseName);
+
+//     $teamusername = $_POST['teamusername'];
+//     $teamrole = $_POST['teamrole'];
+//     $teamresum = $_POST['teamresum'];
+//     $facebook_path = $_POST['facebook_path'];
+//     $linkdin_path = $_POST['linkdin_path'];
+//     $twitter_path = $_POST['twitter_path'];
+
+
     
-    // mysql query to insert data
+//     // connect to mysql database using mysqli
 
-    $query = "INSERT INTO `team`(`team_img`, `teamusername`, `teamrole`, `teamresum`, `facebookpath`, `linkdinpath`, `twitterpath`) VALUES ('$team_img','$teamusername','$teamrole','$teamresum','$facebookpath','$linkdinpath','$twitterpath')";
+//     $connect = mysqli_connect($hostname, $username, $password, $databaseName);
     
-    // $result = mysqli_query($connect,$query);
+//     // mysql query to insert data
 
-        $res=mysqli_query($connect,$query);
+//     $query = "INSERT INTO `team`(`team_img`, `teamusername`, `teamrole`, `teamresum`, `facebook_path`, `linkdin_path`, `twitter_path`) VALUES ('$team_img','$teamusername','$teamrole','$teamresum','$facebook_path','$linkdin_path','$twitter_path')";
+    
+//     $result = mysqli_query($connect,$query);
+
+//         // $res=mysqli_query($connect,$query);
 
 
-        if($res)
-        {
-            echo 'Data Inserted';
-        }
+//         // if($res)
+//         // {
+//         //     echo 'Data Inserted';
+//         // }
         
-        else{
-            echo 'Data Not Inserted';
-        }
+//         // else{
+//         //     echo 'Data Not Inserted';
+//         // }
 
 
 
-    $target = "images/".basename($team_img);
+//     $target = "images/".basename($team_img);
 
 
 
-    if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
-        $msg = "Image uploaded successfully";
-    }else{
-        $msg = "Failed to upload image";
-    }
+//     if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
+//         $msg = "Image uploaded successfully";
+        
+//     }else{
+//         $msg = "Failed to upload image";
+//     }
     
-}
+// }
 
-$result = mysqli_query($connect, "SELECT * FROM team");
+// $result = mysqli_query($connect, "SELECT * FROM team");
 
 
 ?>
@@ -178,17 +179,17 @@ $result = mysqli_query($connect, "SELECT * FROM team");
                     <div class="row">
                         <div class="col-md-4">
                             <h3 class="text-center text-inf">Add Record</h3>
-                            <form method="POST" action=" teampage.php" enctype="multipart/form-data"> 
+                            <form method="POST" action="Teamaction.php" enctype="multipart/form-data"> 
 
                                 <div class="form-group">
                                         <input type="file" name="team_img" class="form-control" >
                                     </div>                              
 
                                 <div class="form-group">
-                                    <input type="text" name="teamusername" class="form-control" placeholder="firstname"      >
+                                    <input type="text" name=" teamusername " class="form-control" placeholder="firstname"      >
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="teamrole" class="form-control" placeholder="Enter role"         >
+                                    <input type="text" name=" teamrole" class="form-control" placeholder="Enter role"         >
                                 </div> 
                                 <div class="form-group">
                                     <input type="text" name=" teamresum" class="form-control" placeholder="Enter resumer"        >
@@ -196,13 +197,13 @@ $result = mysqli_query($connect, "SELECT * FROM team");
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="text" name=" facebookpath  " class="form-control" placeholder="entre path facebook"        >
+                                    <input type="text" name=" facebook  " class="form-control" placeholder="entre path facebook"        >
                                 </div>  
                                 <div class="form-group">
-                                    <input type="text" name=" linkdinpath  " class="form-control" placeholder="entrer path linkdin"     >
+                                    <input type="text" name=" linkdin " class="form-control" placeholder="entrer path linkdin"     >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="text" name="  twitterpath " class="form-control" placeholder="enter path twitter"        >
+                                    <input type="text" name="  twitter " class="form-control" placeholder="enter path twitter"        >
                                 </div>
                                 
                                 

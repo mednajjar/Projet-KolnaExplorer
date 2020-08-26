@@ -60,8 +60,8 @@
     <section class="sectionTeam2">
         
             <div class="sectionTeam2-block0"><h1 class="   sectionTeam2-block0__title ">Ours Team</h1></div>
-            <div class="sectionTeam2-block1">
-             <div class="block1-team1">
+    <div class="sectionTeam2-block1">
+        <div class="block1-team1">
             <img  class="block1-team1__photo" src="Assets/800px-Matt_Mullenweg-100x100.jpg" alt="" >
             <div class="logoteam">
                 <a  href=" https://twitter.com/login?lang=fr" target="_blank"><img class=" logoteam--icone " src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
@@ -70,15 +70,15 @@
                 <a   href="https://fr.linkedin.com/" target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
                 </div>
            
-            </div>
+        </div>
 
-            <div class="block1-team2">
+        <div class="block1-team2">
             <hr class="block1-team2--ligne  ">
             <h1 class="block1-team2__tite1">Nom et Prénon</h1>
             <h2 class="block1-team2__tite2">Role</h2>
             <p   class="block1-team2__tite3 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
-            </div>
         </div>
+    </div>
         <div class="sectionTeam2-block2">
             <div class="block1-team1">
             <img class="block1-team1__photo" src="Assets/Jonathan_Ive_OTRS-100x100.jpg" alt="">
