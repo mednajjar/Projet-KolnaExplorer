@@ -179,7 +179,7 @@ include 'Teamaction.php';
                         <h3 class="text-center text-dark"> bienvenue page team</h3>
                     </div>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="block">
                             <h3 class="text-center text-inf">Add Record</h3>
                             <form method="POST" action="Teamaction.php" enctype="multipart/form-data"> 
 
