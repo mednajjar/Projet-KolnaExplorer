@@ -11,6 +11,8 @@
 <?php
 
 
+include 'Teamaction.php';
+
 // Initialize message variable
 
 
@@ -182,35 +184,35 @@
                             <form method="POST" action="Teamaction.php" enctype="multipart/form-data"> 
 
                                 <div class="form-group">
-                                        <input type="file" name="team_img" class="form-control" >
-                                    </div>                              
-
+                                    <input type="file" name="team_img" class="form-control" >
+                                </div>                              
                                 <div class="form-group">
-                                    <input type="text" name=" teamusername " class="form-control" placeholder="firstname"      >
+                                    <input type="text" name="team_firstName" class="form-control" placeholder="Entrer username"  >
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name=" teamrole" class="form-control" placeholder="Enter role"         >
+                                    <input type="text" name="team_role" class="form-control" placeholder="Enter role"         >
                                 </div> 
                                 <div class="form-group">
-                                    <input type="text" name=" teamresum" class="form-control" placeholder="Enter resumer"        >
-
+                                    <input type="text" name="team_resum" class="form-control" placeholder="Enter resumer"        >
                                 </div>
 
+                                </div>
                                 <div class="form-group">
-                                    <input type="text" name=" facebook  " class="form-control" placeholder="entre path facebook"        >
+                                    <input type="text" name="facebook_path" class="form-control" placeholder="entre path facebook"        >
                                 </div>  
                                 <div class="form-group">
-                                    <input type="text" name=" linkdin " class="form-control" placeholder="entrer path linkdin"     >
+                                    <input type="text" name="linkdin_path" class="form-control" placeholder="entrer path linkdin"     >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="text" name="  twitter " class="form-control" placeholder="enter path twitter"        >
+                                    <input type="text" name="twitter_path" class="form-control" placeholder="enter path twitter"        >
                                 </div>
-                                
-                                
+                                </div> <div class="form-group">
+                                    <input type="text" name="instagram_path" class="form-control" placeholder="enter path twitter"        >
+                                </div>                                
                                 <div class="form-group">
-                                <input type="submit" name=" add" class="form-control1 "     >
-                            </div>
-                            </div>
+                                <input type="submit" name="add" class="form-control1">
+                                </div>
+                
                           
                             </form>
                         </div>

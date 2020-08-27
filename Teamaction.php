@@ -109,88 +109,135 @@
 
 
 
-        $msg = "";
+        // $msg = "";
 
 
 
 
-        // php code to Insert data into mysql database from input text
+        // // php code to Insert data into mysql database from input text
 
 
 
         
-        if(isset($_POST['add']))
-        {
-            $hostname = "localhost";
-            $username = "root";
-            $password = "";
-            $databaseName = "kolnaexplorer";
+        // if(isset($_POST['add']))
+        // {
+        //     $hostname = "localhost";
+        //     $username = "root";
+        //     $password = "";
+        //     $databaseName = "kolnaexplorer";
                 
-            // get values form input image
+        //     // get values form input image
         
-            $team_img = $_FILES['team_img']['name'];
-            $target = "images/".basename($team_img);
-        
-        
-        
-            
-            // get values form input text and number
-        
-        
-            $teamusername = $_POST['teamusername']; 
-            $teamrole = $_POST['teamrole'];
-            $teamresum = $_POST['teamresum'];
+        //     $ team_img = $_FILES['team_img']['name'];
 
 
-            $facebook = $_POST['facebook'];
-            $linkdin = $_POST['linkdin'];
-            $twitter = $_POST['twitter'];
+        //     $target = "images/".basename($team_img);
+        
         
         
             
-            // connect to mysql database using mysqli
-        
-            $connect = mysqli_connect($hostname, $username, $password, $databaseName);
-            
-            // mysql query to insert data
-        
-            $query = "INSERT INTO team(`team_img`, `teamusername`, `teamrole`, `teamresum`) VALUES ('$team_img','$teamusername','$teamrole','$teamresum')";
-            
-            $result = mysqli_query($connect,$query);
-        
-                // $res=mysqli_query($connect,$query);
+        //     // get values form input text and number
         
         
-                if($result)
+        //     $teamusername = $_POST['teamusername']; 
+        //     $teamrole = $_POST['teamrole'];
+        //     $teamresum = $_POST['teamresum'];
 
-                {
-                    echo 'Data Inserted';
-                }
+
+        //     $facebook = $_POST['facebook'];
+        //     $linkdin = $_POST['linkdin'];
+        //     $twitter = $_POST['twitter'];
+        //     $instagram=$_POST['instagram'];
+        
+        
+            
+        //     // connect to mysql database using mysqli
+        
+        //     $connect = mysqli_connect($hostname, $username, $password, $databaseName);
+            
+        //     // mysql query to insert data
+        
+        //     $query = "INSERT INTO team(`team_img`, `teamusername`, `teamrole`, `teamresum`,`facebook`,`linkdin`,`twitter`,` instagram`) VALUES ('$team_img','$teamusername','$teamrole','$teamresum','$facebook','$linkdin','$twitter','$instagram')";
+            
+        //     // $result = mysqli_query($connect,$query);
+        
+        //         $res=mysqli_query($connect,$query);
+        
+        
+        //         if($res)
+
+        //         {
+        //             echo 'Data Inserted';
+        //         }
                 
-                else{
-                    echo 'Data Not Inserted';
-                }
+        //         else{
+        //             echo 'Data Not Inserted';
+        //         }
         
         
         
-            $target = "images/".basename($team_img);
+        //     $target = "images/".basename($team_img);
         
         
         
-            if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
-                $msg = "Image uploaded successfully";
+        //     if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
+        //         $msg = "Image uploaded successfully";
                 
-            }else{
-                $msg = "Failed to upload image";
-            }
+        //     }else{
+        //         $msg = "Failed to upload image";
+        //     }
             
-        }
+        // }
         
-        $result = mysqli_query($connect, "SELECT * FROM team");
+        // $result = mysqli_query($connect, "SELECT * FROM team");
 
 
 
 
+
+
+         // Create database connection
+  $db = mysqli_connect("localhost", "root", "", "Kolnaexplorer");
+
+  // Initialize message variable
+  $msg = "";
+
+  // If upload button is clicked ...
+  if (isset($_POST['add'])) {
+  	// Get image name
+  	$team_img = $_FILES['team_img']['name'];
+      // Get text
+      
+      $team_firstName = $_POST['team_firstName'];
+
+      $team_role = $_POST['team_role'];
+
+      $team_resum = $_POST['team_resum'];
+
+      $facebook_path=$_POST['facebook_path'];
+      $linkdin_path =$_POST['linkdin_path'];
+      $twitter_path = $_POST['twitter_path'];
+      $instagram_path =$_POST['instagram_path'];
+
+
+
+  	// image file directory
+  	$target = "images/".basename($team_img);
+
+  	$sql = "INSERT INTO team (team_img,team_firstName,team_role,team_resum,facebook_path,linkdin_path,twitter_path,instagram_path) VALUES ('".$team_img."','".$team_firstName."','".$team_role."','".$team_resum."','".$facebook_path."','".$linkdin_path."','".$twitter_path."','".$instagram_path."')";
+  	// execute query
+  	mysqli_query($db, $sql);
+
+  	if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
+  		$msg = "Image uploaded successfully";
+  	}else{
+  		$msg = "Failed to upload image";
+  	}
+  }
+
+
+
+  $result = mysqli_query($db, "SELECT * FROM team");
 
 
 
