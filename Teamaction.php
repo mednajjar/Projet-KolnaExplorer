@@ -11,6 +11,7 @@
 
          // Create database connection
   $db = mysqli_connect("localhost", "root", "", "Kolnaexplorer");
+  // include "config.php";
 
   // Initialize message variable
   $msg = "";
