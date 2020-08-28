@@ -1,7 +1,7 @@
 
 <?php
 
-include_once ('Teamaction.php'); 
+include "Teamaction.php"; 
 
 ?>
 <!DOCTYPE html>
@@ -67,34 +67,37 @@ include_once ('Teamaction.php');
         
             <div class="sectionTeam2-block0"><h1 class="   sectionTeam2-block0__title ">Ours Team</h1></div>
 
-<div class="sectionTeam2-block1">
-    <?php 
-       while($rows=mysql_fetch_assoc($result)) 
+            <div class="sectionTeam2-block1">
+    <?php while($rows=mysql_fetch_array($result)) 
 		{ 
 		?>
     
-        <div class="block1-team1">
-            <img  class="block1-team1__photo" src=" <?php echo $rows['team_img']; ?>" alt="" >
-            <div class="logoteam">
-                <a  href=" <?php echo $rows['twitter_path']; ?> " target="_blank"><img class=" logoteam--icone " src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
-                <a  href=" <?php echo $rows['facebook_path']; ?>" target="_blank" > <img  class=" logoteam--icone " src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
-                <a   href="<?php echo $rows['instagram_path']; ?> " target="_blank"    >  <img  class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
-                <a   href="<?php echo $rows['linkdin_path']; ?> " target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
-                </div>
-           
-        </div>
+    <div class="block1-team1">
+        <img  class="block1-team1__photo" src= "/images<?php echo $rows['team_img']; ?>" alt="" >
+        <div class="logoteam">
+            <a  href=" <?php echo $rows['twitter_path']; ?>" target="_blank"><img class=" logoteam--icone " src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
+            <a  href="<?php echo $rows['facebook_path']; ?>" target="_blank" > <img  class=" logoteam--icone " src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
+            <a   href="<?php echo $rows['instagram_path']; ?>" target="_blank"    >  <img  class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
+            <a   href="<?php echo $rows['linkdin_path'] ; ?>" target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
+            </div>
+       
+    </div>
 
-        <div class="block1-team2">
-            <hr class="block1-team2--ligne  ">
-            <h1 class="block1-team2__tite1"> <?php echo $rows['team_firstName']; ?></h1>
-            <h2 class="block1-team2__tite2"> <?php echo $rows['team_role']; ?>  </h2>
-            <p   class="block1-team2__tite3 "><?php echo $rows['team_resum']; ?> </p>
-        </div>
+    <div class="block1-team2">
+        <hr class="block1-team2--ligne  ">
+        <h1 class="block1-team2__tite1"><?php echo $rows['team_firstName']; ?></h1>
+        <h2 class="block1-team2__tite2"><?php echo $rows['team_role']; ?></h2>
+        <p   class="block1-team2__tite3 "><?php echo $rows['team_resum']; ?></p>
+    </div>
 
-        <?php 
-               } 
-          ?>
+
+ 
 </div>
+ 
+    <?php 
+      } 
+        ?> 
+    
 <!-- <div class="sectionTeam2-block1">
     
     <div class="block1-team1">
@@ -118,8 +121,8 @@ include_once ('Teamaction.php');
     <?php 
     
       ?> 
-</div> -->
-<!-- 
+</div> 
+
         <div class="sectionTeam2-block2">
             <div class="block1-team1">
             <img class="block1-team1__photo" src="Assets/Jonathan_Ive_OTRS-100x100.jpg" alt="">

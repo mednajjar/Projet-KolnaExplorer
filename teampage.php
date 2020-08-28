@@ -181,7 +181,7 @@ include 'Teamaction.php';
                     <div class="row">
                         <div class="block">
                             <h3 class="text-center text-inf">Add Record</h3>
-                            <form method="POST" action="Teamaction.php" enctype="multipart/form-data"> 
+                            <form method="POST" action="Teampage.php" enctype="multipart/form-data"> 
 
                                 <div class="form-group">
                                     <input type="file" name="team_img" class="form-control" >
