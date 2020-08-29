@@ -2,6 +2,8 @@
 <?php
 
 include "Teamaction.php"; 
+$result = mysqli_query($db, "SELECT * FROM team");
+
 
 ?>
 <!DOCTYPE html>
