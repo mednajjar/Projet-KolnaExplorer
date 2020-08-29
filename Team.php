@@ -15,9 +15,10 @@ $result = mysqli_query($db, "SELECT * FROM team");
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&family=Playfair+Display+SC&display=swap" rel="stylesheet">
     
-    
-    <link rel="stylesheet" href="css/Team.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <link rel="stylesheet" href="css/Team.css">
+    <link rel="stylesheet" href="css/style.css">
 
 
 
@@ -241,7 +242,7 @@ $result = mysqli_query($db, "SELECT * FROM team");
     </div>
 
                      <!----------------------Fin Footer---------------------->
-                     <script src="/js/script.js"></script>
+                     <script src="./js/script.js"></script>
 
 
 </body>
