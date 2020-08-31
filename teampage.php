@@ -11,82 +11,12 @@
 <?php
 
 
-include 'Teamaction.php';
-
-// Initialize message variable
-
-
-// $msg = "";
+include 'action.php';
 
 
 
 
-// // php code to Insert data into mysql database from input text
-// if(isset($_POST['add']))
-// {
-//     $hostname = "localhost";
-//     $username = "root";
-//     $password = "";
-//     $databaseName = "kolnaexplorer";
-        
-//     // get values form input image
 
-//     $team_img = $_FILES['team_img']['name'];
-//     $target = "images/".basename($team_img);
-
-
-
-    
-//     // get values form input text and number
-
-
-//     $teamusername = $_POST['teamusername'];
-//     $teamrole = $_POST['teamrole'];
-//     $teamresum = $_POST['teamresum'];
-//     $facebook_path = $_POST['facebook_path'];
-//     $linkdin_path = $_POST['linkdin_path'];
-//     $twitter_path = $_POST['twitter_path'];
-
-
-    
-//     // connect to mysql database using mysqli
-
-//     $connect = mysqli_connect($hostname, $username, $password, $databaseName);
-    
-//     // mysql query to insert data
-
-//     $query = "INSERT INTO `team`(`team_img`, `teamusername`, `teamrole`, `teamresum`, `facebook_path`, `linkdin_path`, `twitter_path`) VALUES ('$team_img','$teamusername','$teamrole','$teamresum','$facebook_path','$linkdin_path','$twitter_path')";
-    
-//     $result = mysqli_query($connect,$query);
-
-//         // $res=mysqli_query($connect,$query);
-
-
-//         // if($res)
-//         // {
-//         //     echo 'Data Inserted';
-//         // }
-        
-//         // else{
-//         //     echo 'Data Not Inserted';
-//         // }
-
-
-
-//     $target = "images/".basename($team_img);
-
-
-
-//     if (move_uploaded_file($_FILES['team_img']['tmp_name'], $target)) {
-//         $msg = "Image uploaded successfully";
-        
-//     }else{
-//         $msg = "Failed to upload image";
-//     }
-    
-// }
-
-// $result = mysqli_query($connect, "SELECT * FROM team");
 
 
 ?>
@@ -216,7 +146,55 @@ include 'Teamaction.php';
                           
                             </form>
                         </div>
+
+                            <div>
+                                <table class="team_table"> 
+                                    <tr> 
+                                        <th colspan="10"><h2>Student Record</h2></th> 
+                                        </tr> 
+                                            <th> ID </th> 
+                                            <th> team_img </th> 
+                                            <th> team_firstName </th> 
+                                            <th> team_role </th> 
+                                            <th> team_resum </th> 
+                                            <th> facebook_path </th> 
+                                            <th> linkdin_path </th> 
+                                            <th> twitter_path </th> 
+                                            <th> instagram_path</th> 
+
+
+                                            
+                                        </tr> 
+                                        
+                                        <?php 
+                                        
+                                        $result = mysqli_query($db, "SELECT * FROM team");
+
+                                        while($rows=mysql_fetch_assoc($result)) 
+                                        { 
+                                        ?> 
+                                        <tr> <td><?php echo $rows['ID']; ?></td> 
+                                        <td><?php echo $rows['team_img']; ?></td> 
+                                        <td><?php echo $rows['team_firstName']; ?></td> 
+                                        <td><?php echo $rows['team_role']; ?></td> 
+                                        <td><?php echo $rows['team_resum']; ?></td> 
+                                        <td><?php echo $rows['facebook_path']; ?></td> 
+                                        <td><?php echo $rows['linkdin_path']; ?></td> 
+                                        <td><?php echo $rows['twitter_path']; ?></td> 
+                                        <td><?php echo $rows['instagram_path']; ?></td> 
+
+                                        </tr> 
+                                    <?php 
+                                            } 
+                                        ?> 
+
+                                    </table> 
+                                        </div>    
+                        
                        
+
+                    </div>
+                    <div>
                        
 
                     </div>
