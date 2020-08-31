@@ -59,7 +59,7 @@
                    <!----------------------sectionTeam2----------------------> 
     <section class="sectionTeam2">
         
-            <div class="sectionTeam2-block0"><h1 class="   sectionTeam2-block0__title ">Ours Team</h1></div>
+            <div class="sectionTeam2-block0"><h1 class="   sectionTeam2-block0__title " > Our Team</h1></div>
         
             <div class="sectionTeam2-block1">
             <div class="block1-team1">

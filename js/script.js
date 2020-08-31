@@ -20,6 +20,10 @@ const navSlide = () => {
 
 }
 
+
+
+alert("bonjour tout le monde");
+
 var i=0,text;
   text = "  MEET OUR TEAM "
 
