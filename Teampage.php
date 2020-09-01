@@ -8,18 +8,7 @@
 
 
 
-<?php
 
-
-include 'action.php';
-
-
-
-
-
-
-
-?>
 
 
 
@@ -111,7 +100,7 @@ include 'action.php';
                     <div class="row">
                         <div class="block">
                             <h3 class="text-center text-inf">Add Record</h3>
-                            <form method="POST" action="Teampage.php" enctype="multipart/form-data"> 
+                            <form method="POST" action="teampage.php" enctype="multipart/form-data"> 
 
                                 <div class="form-group">
                                     <input type="file" name="team_img" class="form-control" >
@@ -142,6 +131,43 @@ include 'action.php';
                                 <div class="form-group">
                                 <input type="submit" name="add" class="form-control1">
                                 </div>
+
+                                <?php
+                                    include 'action.php';
+                                    ?>
+                                 <div>
+                                 <table>
+                                    <tr>
+                                        <th>id</th>
+                                        <th>image</th>
+                                        <th>firstName</th>
+                                        <th>role</th>
+                                        <th>resum</th>
+                                        <th>facebook</th>
+                                        <th>linkdin</th>
+                                        <th>twitter</th>
+                                        <th>instagram</th>
+                                        <th colspan="2">action</th>
+
+
+                                    </tr>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+
+                                    </tr>
+                                    
+                                  
+                                    </table>
+                                 </div>   
                 
                           
                             </form>

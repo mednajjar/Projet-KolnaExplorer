@@ -54,6 +54,9 @@
   $result = mysqli_query($db, "SELECT * FROM team");
 
 
+  // print_r($result->fetch_assoc());
+
+
 
 
 

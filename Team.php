@@ -60,8 +60,14 @@
     <section class="sectionTeam2">
         
             <div class="sectionTeam2-block0"><h1 class="   sectionTeam2-block0__title " > Our Team</h1></div>
+
+
+
+
+    
+
         
-            <div class="sectionTeam2-block1">
+     <div class="sectionTeam2-block1">
             <div class="block1-team1">
             <img class="block1-team1__photo" src="Assets/Jonathan_Ive_OTRS-100x100.jpg" alt="">
             <div class="logoteam">
@@ -77,7 +83,7 @@
             <h2   class="block1-team2__tite2">Role</h2>
             <p   class="block1-team2__tite3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
             </div>
-            </div>
+    </div>
 
         <div class="sectionTeam2-block2">
             <div class="block1-team1">
@@ -228,7 +234,7 @@
     </div>
 
                      <!----------------------Fin Footer---------------------->
-                     <script src="/js/script.js"></script>
+        <script src="./js/script.js"></script>
 
 
 </body>
