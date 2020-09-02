@@ -16,6 +16,15 @@ session_start();
   // Initialize message variable
   $msg = "";
 
+  $team_img = "";
+  $team_firstName = "";
+  $team_role = "";
+  $team_resum = "";
+  $facebook_path="";
+  $linkdin_path ="";
+  $twitter_path ="";
+  $instagram_path ="";
+
   // If upload button is clicked ...
   if (isset($_POST['add'])) {
   	// Get image name
@@ -69,6 +78,43 @@ session_start();
     $_SESSION['message']="reccord has benn delete";
     $_SESSION['msg_type']="danger";
     header("location:teampage.php");
+
+
+  }
+
+
+
+  // $team_img = "";
+  // $team_firstName = "";
+  // $team_role = "";
+  // $team_resum = "";
+  // $facebook_path="";
+  // $linkdin_path ="";
+  // $twitter_path ="";
+  // $instagram_path ="";
+  if (isset($_GET['edit'])) {
+    $id=$_GET['edit'];
+    $result=$sql2=("SELECT FROM team where id=$id");
+    // mysqli_query($db, $result);
+
+
+
+    $_SESSION['message']="reccord has benn delete";
+    $_SESSION['msg_type']="danger";
+    header("location:teampage.php");
+    if (count($result)==1) {
+      $row==$result->fetch_array();
+
+      $team_img = $row['team_img'];
+      $team_firstName = $row['team_firstName'];
+      $team_role = $row['team_role'];
+      $team_resum = $row['team_resum'];
+      $facebook_path=$row['facebook_path'];
+      $linkdin_path =$row['linkdin_path'];
+      $twitter_path = $row['twitter_path'];
+      $instagram_path =$row['instagram_path'];
+
+    }
 
 
   }

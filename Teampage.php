@@ -85,30 +85,30 @@
                             <form method="POST" action="teampage.php" enctype="multipart/form-data"> 
 
                                 <div class="form-group">
-                                    <input type="file" name="team_img" class="form-control" >
+                                    <input type="file" name="team_img" value="<?php echo $team_img;?>" class="form-control" >
                                 </div>                              
                                 <div class="form-group">
-                                    <input type="text" name="team_firstName" class="form-control" placeholder="Entrer username"  >
+                                    <input type="text" name="team_firstName" value= "<?php echo $team_firstName;?>" class="form-control" placeholder="Entrer username"  >
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="team_role" class="form-control" placeholder="Enter role"         >
+                                    <input type="text" name="team_role" value= "<?php echo $team_role;?>" class="form-control" placeholder="Enter role"         >
                                 </div> 
                                 <div class="form-group">
-                                    <input type="text" name="team_resum" class="form-control" placeholder="Enter resumer"        >
+                                    <input type="text" name="team_resum" value= "<?php echo $team_resum;?>" class="form-control" placeholder="Enter resumer"        >
                                 </div>
 
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="facebook_path" class="form-control" placeholder="entre path facebook"        >
+                                    <input type="text" name="facebook_path" value= "<?php echo $facebook_path;?>" class="form-control" placeholder="entre path facebook"        >
                                 </div>  
                                 <div class="form-group">
-                                    <input type="text" name="linkdin_path" class="form-control" placeholder="entrer path linkdin"     >
+                                    <input type="text" name="linkdin_path" value= "<?php echo $linkdin_path;?>" class="form-control" placeholder="entrer path linkdin"     >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="text" name="twitter_path" class="form-control" placeholder="enter path twitter"        >
+                                    <input type="text" name="twitter_path" value= "<?php echo $twitter_path;?>" class="form-control" placeholder="enter path twitter"        >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="text" name="instagram_path" class="form-control" placeholder="enter path twitter"        >
+                                    <input type="text" name="instagram_path" value= "<?php echo $instagram_path; ?>" class="form-control" placeholder="enter path twitter"        >
                                 </div>                                
                                 <div class="form-group">
                                 <input type="submit" name="add" class="form-control1">
