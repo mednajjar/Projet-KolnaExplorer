@@ -16,7 +16,7 @@
     <!--------------------------------------------** M E N u **----------------------------------------------->
     <nav>
         <div class="logo">
-            <img class="logo__logo" src="Assets/Image 1.png" alt="">
+            <img class="logo__logo" src="./Assets/Image 1.png" alt="">
         </div>
         </div>
         <ul class="navMenu">

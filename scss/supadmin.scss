@@ -73,7 +73,8 @@
     position: absolute;
     width: 87%;
     height: 3vw;
-    background-color: rgba(12, 12, 11, 0.8);;
+    background-color: rgba(12, 12, 11, 0.8);
+    ;
     top: 0;
     left: 13%;
     color: white;
@@ -113,8 +114,41 @@
         }
     }
 
+    &__myLogout {
+        position: absolute;
+        font-size: 1.2vw;
+        right: 2%;
+        top: 12%;
+        background: red;
+        padding: .5% 1.5%;
+        border-radius: 4px;
+        cursor: pointer;
+
+        @media screen and (max-width:960px){
+            font-size: 1.6vw;
+            top: 15%;
+        }
+        @media screen and (max-width:680px){
+            font-size: 2vw;
+            top: 13%;
+            padding: .5% 1.7%;
+        }
+        @media screen and (max-width:500px){
+            font-size: 2.5vw;
+            top: 13%;
+            padding: .5% 2.2%;
+        }
+        @media screen and (max-width:400px){
+            font-size: 3vw;
+            top: 8%;
+            padding: .5% 3%;
+        }
+
+    }
+
 
 }
+
 
 .homePage {
 
@@ -127,6 +161,8 @@
     scrollbar-color: rebeccapurple green;
     scrollbar-width: thin;
     overflow-x: hidden;
+    padding-bottom: 5%;
+
 
     &__homeTitle {
         width: 100%;
@@ -134,9 +170,10 @@
         margin-top: 6%;
         color: rgb(106, 106, 228);
         font-size: 30px;
-        @media screen and (max-width:800px) and (min-width:300px){
+
+        @media screen and (max-width:800px) and (min-width:300px) {
             font-size: 3.5vw;
-            
+
         }
     }
 
@@ -151,7 +188,7 @@
     &__illustimg {
         width: 60%;
         height: auto;
-        margin: 0 auto;
+        margin: 2% auto;
 
     }
 
@@ -166,6 +203,7 @@
         font-size: 1.4vw;
         text-align: center;
         padding-bottom: 3%;
+        color: yellowgreen;
 
         @media screen and (max-width:1260px) {
             font-size: 2vw;
@@ -252,19 +290,23 @@
 }
 
 
-#subBtn[type="submit"] {
-    display: none;
-}
-
 .custom-file-upload {
     border: 1px solid #ccc;
     display: inline-block;
     padding: 2% 6%;
 
+    &__subBtn1 {
+        display: none;
+    }
+
+    &__subBtn2 {
+        display: none;
+    }
+
 
 }
 
-.uploadBtn {
+.uploadBtn1 {
     width: 26%;
     text-align: center;
     cursor: pointer;
@@ -276,7 +318,24 @@
     }
 }
 
-.uploadBtn:hover {
+.uploadBtn2 {
+    width: 26%;
+    text-align: center;
+    cursor: pointer;
+
+    @media screen and (max-width:710px) {
+        margin-left: 35%;
+        margin-top: 3%;
+
+    }
+}
+
+.uploadBtn1:hover {
+    color: white;
+    background: rgb(106, 106, 228);
+}
+
+.uploadBtn2:hover {
     color: white;
     background: rgb(106, 106, 228);
 }
@@ -310,9 +369,594 @@
 
 .sectionGalerie {
     width: 100%;
-    margin-top: 2%;
+    margin-top: 5%;
 }
 
 .titleSlideGal {
     margin-top: 6%;
+}
+
+// ------------------------------------------------
+table {
+
+    border-collapse: collapse;
+    width: 40%;
+    margin: 0 auto;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+
+}
+
+th .selAllClmn {
+    display: flex;
+    flex-direction: column;
+
+    &__chekAll {
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#galerieTable {
+    width: 80%;
+
+}
+
+// .labelButton {
+//     width: 100%;
+//     text-align: center;
+
+//     &__labelDelete {
+//         margin: auto;
+//         border: 1px solid gray;
+//         padding: 1%;
+//         padding-left: 5%;
+//         padding-right: 5%;
+//     }
+//     &__imgdel{
+//         padding-right: 1%;
+//         align-self: center;
+//     }
+
+
+
+// }
+// .labelButton__labelDelete:hover{
+//     color: white;
+//     background: rgb(106, 106, 228);
+// }
+.labelBtns {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.btnFrm {
+    width: 100%;
+    margin: 2%;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.colorRed {
+    background: rgba(255, 0, 0, 0.466);
+}
+
+.colorRed:hover {
+    background: rgb(255, 0, 0);
+}
+
+.colorBlue {
+    background: rgba(85, 85, 243, 0.479);
+}
+
+.colorBlue:hover {
+    background: rgb(85, 85, 243);
+}
+
+.btnFrm:hover {
+    color: white;
+}
+
+.sectionActivity {
+    width: 100%;
+    padding-bottom: 2%;
+
+    &__titleTop {
+        margin-top: 6%;
+        text-align: center;
+        color: yellowgreen;
+
+        @media screen and (min-width:800px) and (max-width:1300px) {
+
+            font-size: 2.5vw;
+        }
+
+        @media screen and (min-width:500px) and (max-width:799px) {
+
+            font-size: 3vw;
+        }
+
+        @media screen and (min-width:320px) and (max-width:499px) {
+
+            font-size: 3.8vw;
+        }
+    }
+}
+
+
+.formActivity {
+    width: 50%;
+    height: 30vw;
+    margin: 4% auto;
+    border: 1px solid black;
+    margin-bottom: 4%;
+    font-size: .9vw;
+
+    @media screen and (min-width:1000px) and (max-width:1300px) {
+
+        width: 70%;
+        height: 38vw;
+    }
+
+    @media screen and (min-width:800px) and (max-width:999px) {
+
+        width: 82%;
+        height: 44vw;
+    }
+
+    @media screen and (min-width:600px) and (max-width:799px) {
+
+        width: 96%;
+        height: 53vw;
+    }
+
+    @media screen and (min-width:320px) and (max-width:599px) {
+
+        width: 96%;
+        height: 78vw;
+    }
+
+
+    &__titleUpload {
+        text-align: center;
+        margin-bottom: 1%;
+        font-size: 14px;
+    }
+
+}
+
+.activityForm {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+
+
+
+    &__uploadFile {
+        border: 1px solid black;
+        width: 100%;
+        padding: 1%;
+        text-align: center;
+    }
+
+    &__labelName {
+        display: flex;
+        flex-direction: column;
+        margin: 3% 0% 1% 0%;
+        font-size: 14px;
+        letter-spacing: .7pt;
+    }
+
+
+    &__proTitle {
+        width: 40%;
+        padding: 1%;
+        border: 1px solid black;
+        font-size: 14px;
+        background: none;
+        letter-spacing: .7pt;
+
+        @media screen and (min-width:320px) and (max-width:599px) {
+
+            width: 60%;
+
+        }
+
+    }
+
+
+    &__description {
+        height: 10vw;
+        padding: 1%;
+        border: 1px solid black;
+        font-size: 14px;
+        background: none;
+        letter-spacing: .7pt;
+
+        @media screen and (min-width:320px) and (max-width:599px) {
+
+            height: 20vw;
+
+        }
+    }
+
+    &__sendBtn {
+        width: 20%;
+        margin: 5% auto;
+        padding: 1%;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 600;
+        background: none;
+        border: 1px solid black;
+        cursor: pointer;
+        letter-spacing: .7pt;
+
+    }
+
+    &__sendBtn:hover {
+        color: white;
+        background: rgb(106, 106, 228);
+    }
+
+}
+
+.formActivityBorder {
+    width: 50%;
+    height: 17vw;
+    margin: 10% auto 3%;
+    border: 1px solid black;
+    border-radius: 4px;
+
+    @media screen and (min-width:700px) and (max-width:1300px) {
+        width: 70%;
+        height: 24vw;
+    }
+
+    @media screen and (min-width:400px) and (max-width:699px) {
+        height: 35vw;
+        width: 85%;
+    }
+
+    @media screen and (min-width:320px) and (max-width:399px) {
+        height: 44vw;
+        width: 95%;
+    }
+
+}
+
+.form1 {
+    @media screen and (max-width:1180px) {
+        overflow-x: scroll;
+    }
+}
+
+.editActivityForm {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__titleImg {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    &__divImg {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &__labelName {
+        width: 100%;
+        margin-left: 2%;
+    }
+
+    &__imgTitle {
+        width: 100%;
+        padding: 1%;
+        margin: 2%;
+    }
+
+    &__upldBtn {
+        width: 30%;
+        padding: 1%;
+        margin: 2% auto;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+
+    &__upldBtn:hover {
+        background: cornflowerblue;
+        color: cornsilk;
+    }
+
+}
+
+.returnPage {
+    width: 100%;
+    text-align: center;
+}
+
+.formActivityBorder2 {
+    height: 21vw;
+
+    @media screen and (min-width:700px) and (max-width:1300px) {
+        width: 70%;
+        height: 33vw;
+    }
+
+    @media screen and (min-width:400px) and (max-width:699px) {
+        height: 50vw;
+        width: 85%;
+    }
+
+    @media screen and (min-width:320px) and (max-width:399px) {
+        height: 56vw;
+        width: 95%;
+    }
+}
+
+.formDestination {
+    height: 62vw;
+
+    @media screen and (min-width:1301px) and (max-width:1700px) {
+        height: 65vw;
+    }
+
+    @media screen and (min-width:1000px) and (max-width:1300px) {
+        height: 80vw;
+    }
+
+    @media screen and (min-width:800px) and (max-width:999px) {
+        height: 91vw;
+    }
+
+    @media screen and (min-width:600px) and (max-width:799px) {
+        height: 110vw;
+
+    }
+
+    @media screen and (max-width:599px) {
+        height: 146vw;
+
+    }
+
+    @media screen and (max-width:450px) {
+        height: 164vw;
+
+    }
+
+    @media screen and (max-width:350px) {
+        height: 174vw;
+
+    }
+
+}
+
+.formDestination2 {
+    @media screen and (min-width:1501px) and (max-width:2300px) {
+        height: 70vw;
+    }
+
+    @media screen and (min-width:1301px) and (max-width:1500px) {
+        height: 74vw;
+    }
+
+    @media screen and (min-width:1000px) and (max-width:1300px) {
+        height: 92vw;
+    }
+
+    @media screen and (min-width:800px) and (max-width:999px) {
+        height: 107vw;
+    }
+
+    @media screen and (min-width:600px) and (max-width:799px) {
+        height: 128vw;
+    }
+
+    @media screen and (max-width:599px) {
+        height: 164vw;
+    }
+
+    @media screen and (max-width:450px) {
+        height: 184vw;
+    }
+
+    @media screen and (max-width:350px) {
+        height: 194vw;
+    }
+}
+
+.FormEvents {
+    height: 42vw;
+
+    @media screen and (max-width:1500px) {
+        height: 40vw;
+    }
+
+    @media screen and (max-width:1300px) {
+        height: 50vw;
+    }
+
+    @media screen and(max-width:999px) {
+        height: 58vw;
+    }
+
+    @media screen and (max-width:799px) {
+        height: 72vw;
+
+    }
+
+    @media screen and (max-width:599px) {
+        height: 90vw;
+
+    }
+
+    @media screen and (max-width:499px) {
+        height: 112vw;
+
+    }
+}
+
+.FormEvents2 {
+    height: 42vw;
+
+    @media screen and (max-width:2030px) {
+        height: 44vw;
+    }
+
+    @media screen and (max-width:1700px) {
+        height: 48vw;
+    }
+
+    @media screen and (max-width:1500px) {
+        height: 54vw;
+    }
+
+    @media screen and (max-width:1300px) {
+        height: 63vw;
+    }
+
+    @media screen and(max-width:999px) {
+        height: 74vw;
+    }
+
+    @media screen and (max-width:799px) {
+        height: 86vw;
+    }
+
+    @media screen and (max-width:599px) {
+        height: 106vw;
+    }
+
+    @media screen and (max-width:499px) {
+        height: 126vw;
+    }
+}
+
+.FormTeam {
+    height: 50vw;
+
+    @media screen and (max-width:1500px) {
+        height: 52vw;
+    }
+
+    @media screen and (max-width:1300px) {
+        height: 65vw;
+    }
+
+    @media screen and(max-width:999px) {
+        height: 80vw;
+    }
+
+    @media screen and (max-width:799px) {
+        height: 94vw;
+
+    }
+
+    @media screen and (max-width:599px) {
+        height: 115vw;
+
+    }
+
+    @media screen and (max-width:499px) {
+        height: 124vw;
+
+    }
+
+    @media screen and (max-width:399px) {
+        height: 146vw;
+
+    }
+}
+
+.FormTeam2 {
+    @media screen and (max-width:1590px) {
+        height: 54vw;
+    }
+
+    @media screen and (max-width:1300px) {
+        height: 70vw;
+    }
+
+    @media screen and(max-width:999px) {
+        height: 85vw;
+    }
+
+    @media screen and (max-width:799px) {
+        height: 100vw;
+
+    }
+
+    @media screen and (max-width:599px) {
+        height: 120vw;
+
+    }
+
+    @media screen and (max-width:499px) {
+        height: 131vw;
+
+    }
+
+    @media screen and (max-width:399px) {
+        height: 146vw;
+
+    }
+}
+
+.formPartner {
+    height: 15vw;
+
+    @media screen and (max-width:1500px) {
+        height: 19vw;
+    }
+
+    @media screen and (max-width:1300px) {
+        height: 25vw;
+    }
+
+    @media screen and(max-width:999px) {
+        height: 30vw;
+    }
+
+    @media screen and (max-width:799px) {
+        height: 36vw;
+
+    }
+
+    @media screen and (max-width:599px) {
+        height: 40vw;
+
+    }
+
+    @media screen and (max-width:499px) {
+        height: 46vw;
+
+    }
+
+    @media screen and (max-width:399px) {
+        height: 50vw;
+
+    }
 }

@@ -1,3 +1,7 @@
+<?php
+ include 'config.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +41,7 @@
                 </ul>
             </li>
 
-            <li><a href="glerie.php">Galerie</a></li>
+            <li><a href="galerie.php">Galerie</a></li>
             <li><a href="blog.php">Blog</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
@@ -58,14 +62,14 @@
         </div>
         <!---------------------------------------------------------------------------------------------------------------->
         <div class="btnheader">
-            <input type="button" class="btnH1" onclick="location.href='#';" value="Devenir membre" />
-            <input type="button" class="btnH1 btnH2" onclick="location.href='#';" value="À propos de nous" />
+            <input type="button" class="btnH1" onclick="location.href='contact.php';" value="Devenir membre" />
+            <input type="button" class="btnH1 btnH2" onclick="location.href='propos';" value="À propos de nous" />
         </div>
         <!---------------------------------------------------------------------------------------------------------------->
         <div class="imgHero">
         <ul class="sliderHero">
             <?php
-            include 'config.php';
+           
             $query = $db->query("SELECT * FROM images ORDER BY id DESC LIMIT 3");
                      if($query->rowCount() > 0){
                        while($row = $query->fetch(PDO::FETCH_ASSOC)){
@@ -88,98 +92,78 @@
     <!------------------------------------** S E C T I O N - A C T I V I T E S **---------------------------------------->
     <div class="acActivites">
         <h1 class="actit" id="titActiv">Nos Acitivités</h1>
+        
         <div class="blocCart">
-            <div class="blocCart__cart1">
-                <div class="bCart">
-                    <div class="blcImg"><img class="blcImg__ico" src="./Assets/sports.png" alt="sport"></div>
-                    <h3 class="bCart__Title">Randonnée</h3>
-                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor optio reiciendis dolore praesentium!</p>
-                </div>
+        <?php 
+       
+            $query = $db->query("SELECT * FROM activity ORDER BY act_id DESC LIMIT 3");
+                        if($query->rowCount() > 0){
+                        while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                            $icone = 'uploads/'.$row["act_icone"];
+                            $title = $row['act_title'];
+                            $desc = $row['act_desc'];
+        
+        
+            echo "<div class='blocCart__cart1'>
+            
+           
+            
+                    <div class='bCart'>                    
+                        <div class='blcImg'><img class='blcImg__ico' src='$icone' alt='sport'></div>
+                        <h1 class='bCart__Title'>$title</h1>
+                        <p class='bCart__Parag'>$desc</p>
+                    </div>";
+        ?>    
+                    <div class="divBtn1">
+                        <input type="button" class="btnCart" onclick="location.href='activitie.php';" value="Voir plus" />
+                    </div>
+          
             </div>
-            <div class="divBtn1">
-                <input type="button" class="btnCart" onclick="location.href='#';" value="Voir plus" />
-            </div>
-
-
-            <div class="blocCart__cart2">
-                <div class="bCart">
-                    <div class="blcImg"><img class="blcImg__ico" src="./Assets/iconfinder.png" alt="inconfinder"></div>
-                    <h3 class="bCart__Title">Développement humain</h3>
-                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor optio reiciendis dolore praesentium!</p>
-                </div>
-            </div>
-            <div class="divBtn2">
-                <input type="button" class="btnCart" onclick="location.href='#';" value="Voir plus" />
-            </div>
-
-
-
-            <div class="blocCart__cart3">
-                <div class="bCart">
-                    <div class="blcImg"><img class="blcImg__ico" src="./Assets/people.png" alt="people"></div>
-                    <h3 class="bCart__Title">Afforestation</h3>
-                    <p class="bCart__Parag">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</br> Omnis dolor optio reiciendis dolore praesentium!</p>
-                </div>
-            </div>
-            <div class="divBtn3">
-                <input type="button" class="btnCart" onclick="location.href='#';" value="Voir plus" />
-            </div>
-
+            <?php
+       }
+    }
+       ?>
 
         </div>
+       
     </div>
     <!--------------------------------** F I N - S E C T I O N - A C T I V I T E S **------------------------------------>
     <!----------------------------------** S E C T I O N - D E S T I N A T I O N **-------------------------------------->
     <div class="acDestination">
         <h1 class="actit2">Destination populaire</h1>
         <div class="blocC">
-            <div class="blocCart__c1">
-                <div class="bCart2">
-                    <div class="blcImg2"><img class="blcImg2__ico2" src="./Assets/dest3.png" alt="sport"></div>
-                    <div class="acBlcTit">
-                        <h2 class="acBlcTit__titH">Randonnée</h2>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                    </div>
+        <?php 
+       
+       $query = $db->query("SELECT * FROM destination ORDER BY dest_id DESC LIMIT 3");
+                   if($query->rowCount() > 0){
+                   while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                       $image = 'uploads/'.$row["dest_img"];
+                       $title = $row['dest_title_destination'];
+                       $info1 = $row['dest_info1'];
+                       $info2 = $row['dest_info2'];
+                       $info3 = $row['dest_info3'];
+                      
+                      
+            echo"<div class='blocCart__c1'>
+                <div class='bCart2'>
+                    <div class='blcImg2'><img class='blcImg2__ico2' src='$image' alt='sport'></div>
+                    <div class='acBlcTit'>
+                        <h2 class='acBlcTit__titH'>$title</h2>
+                        <h3 class='acBlcTit__acInfo'><a href='#'>$info1</a></h3>
+                        <h3 class='acBlcTit__acInfo'><a href='#'>$info2</a></h3>
+                        <h3 class='acBlcTit__acInfo'><a href='#'>$info3</a></h3>
+                    </div>";
+            ?>
                     <div class="divBtn">
-                        <input type="button" class="btnCart2" onclick="location.href='#';" value="Voir plus" />
+                        <input type="button" class="btnCart2" onclick="location.href='destination.php';" value="Voir plus" />
                     </div>
                 </div>
-
-            </div>
-
-            <div class="blocCart__c2 ">
-                <div class="bCart2">
-                    <div class="blcImg2"><img class="blcImg2__ico2" src="./Assets/dest1.png" alt="inconfinder">
-                    </div>
-                    <div class="acBlcTit">
-                        <h2 class="acBlcTit__titH">Développement humain</h2>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                    </div>
-                    <div class="divBtn">
-                        <input type="button" class="btnCart2" onclick="location.href='#';" value="Voir plus" />
-                    </div>
                 </div>
+            <?php
+                   }
+                }
 
-            </div>
-
-
-            <div class="blocCart__c3">
-                <div class="bCart2">
-                    <div class="blcImg2"><img class="blcImg2__ico2" src="./Assets/dest2.png" alt="people"></div>
-                    <div class="acBlcTit">
-                        <h2 class="acBlcTit__titH">Afforestation</h2>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                        <h3 class="acBlcTit__acInfo"><a href="#">Information1</a></h3>
-                    </div>
-                    <div class="divBtn">
-                        <input type="button" class="btnCart2" onclick="location.href='#';" value="Voir plus" />
-                    </div>
-                </div>
+            ?>
 
             </div>
 
@@ -189,32 +173,107 @@
     <!--------------------------------** E V E N E M E N T - D E S T I N A T I O N **---------------------------------->
     <div class="acEven">
         <h1 class="acEven__evenTit">Nos événements</h1>
-        <div class="blcEven">
-
-            <div class="acEvent1">
-                <h3 class="evenAc">Event1</h3>
-                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum obcaecati.
+        <div class="blcEven" id="myDIV">
+        <?php
+           
+           $query = $db->query("SELECT * FROM events WHERE event_id=8");
+                    if($query->rowCount() > 0){
+                      while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                          $title = $row["event_title"];
+                          $descrip = $row["event_desc"];
+                   
+                          ?>
+            <div id="eventId1" class="acEvent1 myBtnEvent Active" onclick="myFunction1()">
+                <h3 class="evenAc"><?php echo $title ?></h3>
+                <p class="evenAc__paragraph"><?php echo $descrip ?></p>
+            </div>
+            <?php
+                      }}
+            ?>
+            <?php
+           
+           $query = $db->query("SELECT * FROM events WHERE event_id=9");
+                    if($query->rowCount() > 0){
+                      while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                          $title = $row["event_title"];
+                          $descrip = $row["event_desc"];
+                   
+                          ?>
+            <div id="eventId2" class="acEvent2 myBtnEvent" onclick="myFunction2()">
+                <h3 class="evenAc"><?php echo $title ?></h3>
+                <p class="evenAc__paragraph"><?php echo $descrip ?>
                 </p>
             </div>
-            <div class="acEvent2 ">
-                <h3 class="evenAc">Event2</h3>
-                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum obcaecati.
+            <?php
+                      }}
+            ?>
+            <?php
+           
+           $query = $db->query("SELECT * FROM events WHERE event_id=10");
+                    if($query->rowCount() > 0){
+                      while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                          $title = $row["event_title"];
+                          $descrip = $row["event_desc"];
+                   
+                          ?>
+            <div id="eventId3" class="acEvent3 myBtnEvent" onclick="myFunction3()">
+                <h3 class="evenAc"><?php echo $title ?></h3>
+                <p class="evenAc__paragraph"><?php echo $descrip ?>
                 </p>
             </div>
-            <div class="acEvent3 ">
-                <h3 class="evenAc">Event3</h3>
-                <p class="evenAc__paragraph">Lorem ipsum dolor sit amet, consectetur</br> adipisicing elit. Laborum obcaecati.
-                </p>
-            </div>
-
+            <?php
+                      }}
+            ?>
+        
             <div class="acEvenR">
-                <div class="acEvenR__imgEv"><img class="acEvenR__imgEv--taille" src="./Assets/event1.png" alt="event">
+            
+            
+                <div class="acEvenR__imgEv">
+                    <ul id="eventImg">
+                    <?php
+           
+           $query = $db->query("SELECT * FROM events WHERE event_id=8");
+           if($query->rowCount() > 0){
+             while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                 $image = 'uploads/'.$row["event_img"];
+                 ?>
+                    <li style="display:block; list-style:none"><img class="acEvenR__imgEv--taille" src="<?php echo $image ?>" alt="event"></li>
+                    <?php
+                      }}
+                    ?>
+                    <?php
+           
+           $query = $db->query("SELECT * FROM events WHERE event_id=9");
+           if($query->rowCount() > 0){
+             while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                 $image = 'uploads/'.$row["event_img"];
+                 ?>
+                    <li style="display:none; list-style:none"><img class="acEvenR__imgEv--taille" src="<?php echo $image ?>" alt="event"></li>
+                    <?php
+                      }}
+                    ?>
+                    <?php
+           
+           $query = $db->query("SELECT * FROM events WHERE event_id=10");
+           if($query->rowCount() > 0){
+             while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                 $image = 'uploads/'.$row["event_img"];
+                 ?>
+                    <li style="display:none; list-style:none"><img class="acEvenR__imgEv--taille" src="<?php echo $image ?>" alt="event"></li>
+                    <?php
+                      }}
+                    ?>
+                    </ul>
+                    
                 </div>
+               
             </div>
-            <!------------------------------// séparation des infos pour le mettre en grid //--------------------------------->
+           
+            <!------------------------------// séparation des infos pour le grid //--------------------------------->
+            
             <div class="acEvenR2">
                 <!---------------------------------------------------------------->
-                <div class="acEvenR2__location">
+                <div class="acEvenR2__location" id="activeHover2">
                     <div class="acLoca1">
                         <img class="acLoca1__icoLocation" src="./Assets/Location.png" alt="location">
                         <h3 class="acLoca1__titLocation">Event Location</h3>
@@ -222,7 +281,41 @@
                 </div>
                 <!--------------------------------------------------------------->
                 <div class="acPara1">
-                    <p>Beni mellal, Maroc</p>
+                    <ul id="myLocation">
+                    <?php
+           
+                        $query = $db->query("SELECT * FROM events WHERE event_id=8");
+                        if($query->rowCount() > 0){
+                            while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                                $location = $row["event_location"];
+                    ?>
+                        <li style="display:block; list-style:none"><p><?php echo $location ?></p></li>
+                        <?php
+                      }}
+                    ?>
+                    <?php
+           
+                        $query = $db->query("SELECT * FROM events WHERE event_id=9");
+                        if($query->rowCount() > 0){
+                            while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                                $location = $row["event_location"];
+                    ?>
+                        <li style="display:none; list-style:none"><p><?php echo $location ?></p></li>
+                        <?php
+                        }}
+                    ?>
+                    <?php
+           
+                        $query = $db->query("SELECT * FROM events WHERE event_id=10");
+                        if($query->rowCount() > 0){
+                            while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                                $location = $row["event_location"];
+                    ?>
+                        <li style="display:none; list-style:none"><p><?php echo $location ?></p></li>
+                        <?php
+                        }}
+                    ?>
+                    </ul>
                 </div>
                 <!--------------------------------------------------------------->
                 <div class="acEvenR2__Dat">
@@ -233,16 +326,51 @@
                 </div>
                 <!-------------------------------------------------->
                 <div class="acPara2">
-                    <p>24 January, 2021</p>
+                <ul id="exactDate">
+                    <?php
+           
+                        $query = $db->query("SELECT * FROM events WHERE event_id=8");
+                        if($query->rowCount() > 0){
+                            while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                                $date = $row["event_date"];
+                    ?>
+                    <li style="display:block; list-style:none"><p><?php echo $date ?></p></li>
+                    <?php
+                        }}
+                    ?>
+                    <?php
+           
+                        $query = $db->query("SELECT * FROM events WHERE event_id=9");
+                        if($query->rowCount() > 0){
+                            while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                                $date = $row["event_date"];
+                    ?>
+                    <li style="display:none; list-style:none"><p><?php echo $date ?></p></li>
+                    <?php
+                        }}
+                    ?>
+                    <?php
+           
+                        $query = $db->query("SELECT * FROM events WHERE event_id=10");
+                        if($query->rowCount() > 0){
+                            while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                                $date = $row["event_date"];
+                    ?>
+                    <li style="display:none; list-style:none"><p><?php echo $date ?></p></li>
+                    <?php
+                        }}
+                    ?>
                 </div>
                 <!--------------------------------------------------------------->
             </div>
+            
             <!-------------------------------------------------------------------------------------------------------------------->
             <div class="acEvenR__BtnE">
-                <input type="button" class="acEvenR__BtnE--B" onclick="location.href='#';" value="Voir plus" />
+                <input type="button" class="acEvenR__BtnE--B" onclick="location.href='event.php';" value="Voir plus" />
             </div>
-
+           
         </div>
+        
     </div>
     <!------------------------------** F I N - E V E N E M E N T - D E S T I N A T I O N **---------------------------------->
     <!-----------------------------------------------** N A T U R E **------------------------------------------------------->
@@ -255,8 +383,8 @@
                     <span>It's home.</span> "</h1>
                 <h2 class="descovNat__natTit2">Rejoignez-nous et venez découvrir la nature ensemble.</h2>
                 <div class="natBtn">
-                    <input type="button" class="natBtn__B1" onclick="location.href='#';" value="Devenir membre" />
-                    <input type="button" class="natBtn__B1 natBtn__B2" onclick="location.href='#';" value="Contactez nous" />
+                    <input type="button" class="natBtn__B1" onclick="location.href='contact.php';" value="Devenir membre" />
+                    <input type="button" class="natBtn__B1 natBtn__B2" onclick="location.href='contact.php';" value="Contactez nous" />
                 </div>
             </div>
         </div>
@@ -268,7 +396,7 @@
         <div class="swiper-container">
         <div class="swiper-wrapper">
             <?php
-            include 'config.php';
+           
             $query = $db->query("SELECT * FROM galerie ORDER BY gal_id DESC LIMIT 10");
                      if($query->rowCount() > 0){
                        while($row = $query->fetch(PDO::FETCH_ASSOC)){
@@ -300,101 +428,38 @@
         <h1 class="teaSec__teaTit">Notre équipe</h1>
         <!------------------------------------------------------------------->
         <div class="blocTea1">
-            <!------------------------------------------*** cart 1 ***------------------------------------------------>
-            <div class="teaCart1">
-                <div class="teamCartImg"><img class="teaCart__teaImg" src="./Assets/team1.png" alt=""></div>
-                <div class="teaCart__teaBlcinfo">
-                    <div class="teaCart__teaTitCart">
-                        <h2 class="teaCart__teaTitCart1">Nom & prénom</h2>
-                        <h3 class="teaCart__teaTitCart2">Rôle</h3>
+        <?php 
+       
+        $query = $db->query("SELECT * FROM team ORDER BY team_id DESC LIMIT 6");
+                   if($query->rowCount() > 0){
+                   while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                       $image = 'uploads/'.$row["team_img"];
+                       $fullName = $row['team_fullname'];
+                       $role = $row['team_role'];
+                       $facebook = $row['team_facebook'];
+                       $linkedin = $row['team_linkedin'];
+                       $twitter = $row['team_twitter'];
+         
+            echo"<div class='teaCart1'>
+                <div class='teamCartImg'><img class='teaCart__teaImg' src='$image' alt='team image'></div>
+                <div class='teaCart__teaBlcinfo'>
+                    <div class='teaCart__teaTitCart'>
+                        <h2 class='teaCart__teaTitCart1'>$fullName</h2>
+                        <h3 class='teaCart__teaTitCart2'>$role</h3>
                     </div>
-                </div>
+                </div>";
+            ?>
                 <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/linkedin.svg" alt="linkdin" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
+                    <img class="blcTeaIco__bTeaImg" src="./Assets/facebook.svg" alt="facebook" onclick="window.open('<?php echo $facebook; ?>','_blank')">
+                    <img class="blcTeaIco__bTeaImg" src="./Assets/linkedin.svg" alt="linkdin" onclick="window.open('<?php echo $linkedin; ?>', '_blank')">
+                    <img class="blcTeaIco__bTeaImg" src="./Assets/twitter.svg" alt="twitter" onclick="window.open('<?php echo $twitter; ?>','_blank')">
                 </div>
             </div>
-            <!------------------------------------------**************------------------------------------------------>
-            <!------------------------------------------*** cart 2 ***------------------------------------------------>
-            <div class="teaCart2">
-                <div class="teamCartImg"><img class="teaCart__teaImg" src="./Assets/team2.png" alt=""></div>
-                <div class="teaCart__teaBlcinfo">
-                    <div class="teaCart__teaTitCart">
-                        <h2 class="teaCart__teaTitCart1">Nom & prénom</h2>
-                        <h3 class="teaCart__teaTitCart2">Rôle</h3>
-                    </div>
-                </div>
-                <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
-                </div>
-            </div>
-            <!------------------------------------------**************------------------------------------------------>
-            <!------------------------------------------*** cart 3 ***------------------------------------------------>
-            <div class="teaCart3">
-                <div class="teamCartImg"><img class="teaCart__teaImg" src="./Assets/team3.png" alt=""></div>
-                <div class="teaCart__teaBlcinfo">
-                    <div class="teaCart__teaTitCart">
-                        <h2 class="teaCart__teaTitCart1">Nom & prénom</h2>
-                        <h3 class="teaCart__teaTitCart2">Rôle</h3>
-                    </div>
-                </div>
-                <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
-                </div>
-            </div>
-            <!------------------------------------------**************------------------------------------------------>
-            <!------------------------------------------*** cart 4 ***------------------------------------------------>
-            <div class="teaCart4">
-                <div class="teamCartImg"><img class="teaCart__teaImg" src="./Assets/team4.png" alt=""></div>
-                <div class="teaCart__teaBlcinfo">
-                    <div class="teaCart__teaTitCart">
-                        <h2 class="teaCart__teaTitCart1">Nom & prénom</h2>
-                        <h3 class="teaCart__teaTitCart2">Rôle</h3>
-                    </div>
-                </div>
-                <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
-                </div>
-            </div>
-            <!------------------------------------------**************------------------------------------------------>
-            <!------------------------------------------*** cart 5 ***------------------------------------------------>
-            <div class="teaCart5">
-                <div class="teamCartImg"><img class="teaCart__teaImg" src="./Assets/team5.png" alt=""></div>
-                <div class="teaCart__teaBlcinfo">
-                    <div class="teaCart__teaTitCart">
-                        <h2 class="teaCart__teaTitCart1">Nom & prénom</h2>
-                        <h3 class="teaCart__teaTitCart2">Rôle</h3>
-                    </div>
-                </div>
-                <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
-                </div>
-            </div>
-            <!------------------------------------------**************------------------------------------------------>
-            <!------------------------------------------*** cart 6 ***------------------------------------------------>
-            <div class="teaCart6">
-                <div class="teamCartImg"><img class="teaCart__teaImg" src="./Assets/team6.png" alt=""></div>
-                <div class="teaCart__teaBlcinfo">
-                    <div class="teaCart__teaTitCart">
-                        <h2 class="teaCart__teaTitCart1">Nom & prénom</h2>
-                        <h3 class="teaCart__teaTitCart2">Rôle</h3>
-                    </div>
-                </div>
-                <div class="blcTeaIco">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/facebook.svg" alt="facebook" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/linkedin.svg" alt="linkding" onclick="location.href='#';">
-                    <img class="blcTeaIco__bTeaImg" src="./Assets/twitter.svg" alt="twitter" onclick="location.href='#';">
-                </div>
-            </div>
+            <?php
+                   }
+                }
+            ?>
+        
             <!------------------------------------------**************------------------------------------------------>
         </div>
     </div>
@@ -421,19 +486,31 @@
         <!-----------------------------------------------------last part----------------------------------------------------------------->
         <div class="lastFooter">
             <h1 class="lastFooter__titpart">Nos partenaires</h1>
-            <div class="footerPart">
-                <img class="footerPart__imgPart" src="./Assets/Groupe85.png" alt="partenaire">
-                <img class="footerPart__imgPart" src="./Assets/Groupe85.png" alt="partenaire">
-                <img class="footerPart__imgPart" src="./Assets/Groupe85.png" alt="partenaire">
-                <img class="footerPart__imgPart" src="./Assets/Groupe85.png" alt="partenaire">
-            </div>
+            
+                <div class='footerPart'>
+            
+                <?php 
+       
+       $query = $db->query("SELECT * FROM partner ORDER BY part_id DESC LIMIT 4");
+         if($query->rowCount() > 0){
+         while($row = $query->fetch(PDO::FETCH_ASSOC)){
+             $image = 'uploads/'.$row["part_logo"];
+             echo"<img class='footerPart__imgPart' src='$image' alt='partenaire'>";
+            
+                  }
+                  ?>
+                  </div>
+                  <?php
+                } 
+                
+            ?>
             <div class="footerInfo">
                 <!----------------------------------------------------------------->
                 <div class="foBloc1">
                     <img class="foBloc1__footerLogo" src="./Assets/logo.png" alt="logo">
                     <div class="foBloc1__infoCont">
-                        <p><b>Email :</b> kolnaexplorer@gmail.com</p>
-                        <p><b>Phone :</b> +212-661-123-456</p>
+                        <p class="foBloc1__titleinfor"><b>Email :</b> kolnaexplorer@gmail.com</p>
+                        <p class="foBloc1__titleinfor"><b>Phone :</b> +212-661-123-456</p>
                     </div>
                     <div class="foBloc1__icofooter">
                         <img class="icofooter" src="./Assets/twitter-footer.png" alt="twitter">
@@ -462,9 +539,9 @@
                 </div>
                 <!---------------------------------------------------------------->
                 <div class="foBloc4">
-                    <h2 class="foBloc4__title"><a href="">Destinations</a></h2>
-                    <h2 class="foBloc4__title"><a href="">Galerie</a></h2>
-                    <h2 class="foBloc4__title"><a href="">Évènements</a></h2>
+                    <h2 class="foBloc4__title"><a href="destination.php">Destinations</a></h2>
+                    <h2 class="foBloc4__title"><a href="galerie.php">Galerie</a></h2>
+                    <h2 class="foBloc4__title"><a href="event.php">Évènements</a></h2>
 
                 </div>
                 <!---------------------------------------------------------------->
@@ -472,29 +549,31 @@
                     <button class="foBloc5__btnFtr btnFtr_marg" onclick="location.href='contact.php';"><img class="imgBTN"
                             src="./Assets/mail.png" alt="mail"> Contacter
                         nous</button>
-                    <button class="foBloc5__btnFtr" onclick="location.href='#';"><img class="imgBTN"
+                    <button class="foBloc5__btnFtr" onclick="location.href='contact.php';"><img class="imgBTN"
                             src="./Assets/sports.png" alt="sport"> Devenir membre</button>
                 </div>
                 <!---------------------------------------------------------------->
             </div>
 
         </div>
-        <div class="copyright">
-            <h5>Copyright © 2020 Designed <span class="copyright__spano">by YouCode Students</span> </h5>
-        </div>
+        
 
     </div>
+    <div class="copyright">
+            <h5>Copyright © 2020 Designed <span class="copyright__spano">by YouCode Students</span> </h5>
+        </div>
 
 
 
     <!-------------------------------------------** F I N - F O O T E R **--------------------------------------------------->
 
-
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/jquery.bxslider.min.js"></script>
     <script src="./js/jscript.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/event.js"></script>
 </body>
 
 </html>

@@ -159,7 +159,7 @@ form {
 //-----------------------------------------grid--------------------------------------------------
 .footerInfo {
 
-    width: 85%;
+    width: 90%;
     height: 14vw;
     margin: 6% auto 6%;
     display: grid;
@@ -177,14 +177,16 @@ form {
     }
 
     @media screen and (max-width:875px) {
-        height: 44vh;
+        height: 37vh;
         line-height: 2rem;
-        margin-bottom: 8%;
+        margin-bottom: 4%;
+        width: 90%;
     }
 
     @media screen and (max-width:400px) {
         line-height: 1.5rem;
         margin-bottom: 12%;
+        
     }
 
 }
@@ -208,6 +210,12 @@ form {
     &__footerLogo {
         width: 60%;
         height: auto;
+    }
+
+    &__titleinfor{
+        @media screen and (max-width:1300px) {
+            font-size: 1.8vw;
+        }
     }
 
 
@@ -239,17 +247,24 @@ form {
     &__title1 {
         font-size: 1.8vw;
 
+        @media screen and (max-width:1300px) {
+            font-size: 2.4vw;
+        }
+
         @media screen and (max-width:875px) {
-            font-size: 2.5vw;
+            font-size: 2.6vw;
         }
     }
 
     &__title2 {
         font-size: 1.2vw;
 
-
+        @media screen and (max-width:1300px) {
+            font-size: 1.6vw;
+            
+        }
         @media screen and (max-width:875px) {
-            font-size: 1.8vw;
+            font-size: 2vw;
         }
     }
 
@@ -277,6 +292,10 @@ form {
     &__title1 {
         font-size: 1.8vw;
 
+        @media screen and (max-width:1300px) {
+            font-size: 2.4vw;
+        }
+
         @media screen and (max-width:875px) {
             font-size: 2.5vw;
         }
@@ -285,8 +304,13 @@ form {
     &__title2 {
         font-size: 1.2vw;
 
+        @media screen and (max-width:1300px) {
+            font-size: 1.6vw;
+            
+        }
+
         @media screen and (max-width:875px) {
-            font-size: 1.8vw;
+            font-size: 2vw;
         }
     }
 
@@ -326,6 +350,10 @@ form {
 
     &__title {
         font-size: 1.8vw;
+
+        @media screen and (max-width:1300px) {
+            font-size: 2.4vw;
+        }
 
         @media screen and (max-width:875px) {
             font-size: 2.5vw;
