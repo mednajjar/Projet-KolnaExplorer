@@ -22,7 +22,7 @@ const navSlide = () => {
 
 
 
-alert("bonjour tout le monde");
+alert("Welcom page team");
 
 var i=0,text;
   text = "MEET OUR TEAM"

@@ -10,30 +10,12 @@
 
 
 
+<?php
+        include 'action.php';
 
+        //   print_r($result->fetch_assoc());
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                ?>
 
 
 
@@ -132,10 +114,7 @@
                                 <input type="submit" name="add" class="form-control1">
                                 </div>
 
-                                <?php
-                                    include 'action.php';
-                                    ?>
-                                 <div>
+                              
                                  <table>
                                     <tr>
                                         <th>id</th>
@@ -150,20 +129,26 @@
                                         <th colspan="2">action</th>
 
 
+                                   
                                     </tr>
-                                    <tr>
-                                        <td>Alfreds Futterkiste</td>
-                                        <td>Maria Anders</td>
-                                        <td>Germany</td>
-                                        <td>Germany</td>
-                                        <td>Germany</td>
-                                        <td>Germany</td>
-                                        <td>Germany</td>
-                                        <td>Germany</td>
-                                        <td>Germany</td>
-                                        <td>Germany</td>
+                                    <?php  while($row=$result->fetch_assoc()):  ?>
+                                <tr>
+                                <tr> <td><?php echo $row['id']; ?></td> 
+                                        <td><?php echo $row['team_img']; ?></td> 
+                                        <td><?php echo $row['team_firstName']; ?></td> 
+                                        <td><?php echo $row['team_role']; ?></td> 
+                                        <td><?php echo $row['team_resum']; ?></td> 
+                                        <td><?php echo $row['facebook_path']; ?></td> 
+                                        <td><?php echo $row['linkdin_path']; ?></td> 
+                                        <td><?php echo $row['twitter_path']; ?></td> 
+                                        <td><?php echo $row['instagram_path']; ?></td> 
+                                        <td>
+                                            <a href="teampage.php?edit=<?php echo $row['id']; ?>" class="btn btn-info">edit</a>
+                                            <a href="teampage.php?delete=<?php echo $row['id']; ?>" class="btn btn-info">delete</a>
 
+                                        </td>
                                     </tr>
+                                    <?php endwhile; ?>
                                     
                                   
                                     </table>

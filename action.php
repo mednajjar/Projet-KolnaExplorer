@@ -6,7 +6,7 @@
 <?php
 
 
-
+session_start();
 
 
          // Create database connection
@@ -34,6 +34,10 @@
       $instagram_path =$_POST['instagram_path'];
 
 
+      $_SESSION['message']="reccord has benn saved!";
+      $_SESSION['msg_type']="success";
+      header("location:teampage.php");
+
 
   	// image file directory
   	$target = "images/".basename($team_img);
@@ -55,6 +59,19 @@
 
 
   // print_r($result->fetch_assoc());
+
+
+
+  if (isset($_GET['delete'])) {
+    $id=$_GET['delete'];
+    $sql1=("DELETE FROM team where id=$id");
+    mysqli_query($db, $sql1);
+    $_SESSION['message']="reccord has benn delete";
+    $_SESSION['msg_type']="danger";
+    header("location:teampage.php");
+
+
+  }
 
 
 
