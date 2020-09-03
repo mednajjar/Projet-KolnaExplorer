@@ -69,46 +69,27 @@
 
         
 <div class="sectionTeam2-block1">
-    
-    <?php
-    // include 'config.php'
-    while($row=mysql_fetch_array($result))
-
-		{ 
-
-		?>
-    
-    <div class="block1-team1">
-    
-        <img  class="block1-team1__photo" src= "/images<?php echo $row['team_img']; ?>" alt="" >
-        <div class="logoteam">
-            <a  href="<?php echo $row['twitter_path']; ?>" target="_blank"><img class=" logoteam--icone " src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
-            <a  href="<?php echo $row['facebook_path']; ?>" target="_blank" > <img  class=" logoteam--icone " src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
-            <a   href="<?php echo $row['instagram_path']; ?>" target="_blank"    >  <img  class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
-            <a   href="<?php echo $row['linkdin_path'] ; ?>" target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
+            <div class="block1-team1">
+            <img class="block1-team1__photo" src="  " alt="">
+            <div class="logoteam">
+                <a  href="   " target="_blank"><img class=" logoteam--icone "src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
+                <a  href="  " target="_blank" > <img class=" logoteam--icone "src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
+                <a   href="  " target="_blank"    >  <img class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
+                <a   href="  " target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
+                </div>
             </div>
-       
-    </div>
-
-    <div class="block1-team2">
-        <hr class="block1-team2--ligne  ">
-        <h1 class="block1-team2__tite1"><?php echo $rows['team_firstName']; ?></h1>
-        <h2 class="block1-team2__tite2"><?php echo $rows['team_role']; ?></h2>
-        <p class="block1-team2__tite3 "><?php echo $rows['team_resum']; ?></p>
-    </div>
-
-    
+            <div class="block1-team2">
+                <hr  class=block1-team2--ligne>
+            <h1  class="block1-team2__tite1"  >  </h1>
+            <h2   class="block1-team2__tite2"> </h2>
+            <p   class="block1-team2__tite3"> </p>
+            </div>
 </div>
-    <?php 
-      } 
-        ?>
-        
-       
 
 
 
         
-     <!-- <div class="sectionTeam2-block1">
+      <!-- <div class="sectionTeam2-block1">
             <div class="block1-team1">
             <img class="block1-team1__photo" src="Assets/Jonathan_Ive_OTRS-100x100.jpg" alt="">
             <div class="logoteam">
@@ -183,7 +164,7 @@
             <p  class="block1-team2__tite3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
             </div>
         </div>
-           -->
+            -->
             
 
     
