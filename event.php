@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolna Explorer</title>
+    <!-- ------------------------------** jquery bxslider links **--------------------------------------------------- -->
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- -------------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="css/event.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -13,7 +17,7 @@
     <!--------------------------------------------** M E N u **----------------------------------------------->
     <nav>
         <div class="logo">
-            <img class="logo__logo" src="/Assets/Image 1.png" alt="">
+            <img class="logo__logo" src="./Assets/Image 1.png" alt="">
         </div>
 
         <ul class="navMenu">
@@ -53,7 +57,23 @@
         </div>
         <!---------------------------------------------------------------------------------------------------------------->
         <div class="imgHero">
-            <img class="imgHero__imgSld" src="/Assets/illustration1.png" alt="imgHeader">
+        <ul class="sliderHero">
+            <?php
+            include 'config.php';
+            $query = $db->query("SELECT * FROM images ORDER BY id DESC LIMIT 3");
+                     if($query->rowCount() > 0){
+                       while($row = $query->fetch(PDO::FETCH_ASSOC)){
+                           $imageURL = 'uploads/'.$row["image"];
+                    
+                           ?>
+                           <img class="imgHero__imgSld"  src=" <?php echo $imageURL ; ?>" alt="">
+                           <?php
+                       
+          
+               }
+            }
+               ?>
+        </ul>
         </div>
         <!---------------------------------------------------------------------------------------------------------------->
 
@@ -285,7 +305,8 @@
 
 
 
-
+    <script src="./js/jquery.bxslider.min.js"></script>
+    <script src="./js/jscript.js"></script>
     <script src="/js/script.js"></script>
 </body>
 

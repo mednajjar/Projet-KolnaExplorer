@@ -72,8 +72,6 @@
   position: absolute;
   width: 87%;
   height: 3vw;
-  border: 2px solid black;
-  border-left: none;
   background-color: rgba(12, 12, 11, 0.8);
   top: 0;
   left: 13%;
@@ -127,6 +125,48 @@
   }
 }
 
+.topBar__myLogout {
+  position: absolute;
+  font-size: 1.2vw;
+  right: 2%;
+  top: 12%;
+  background: red;
+  padding: .5% 1.5%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+  .topBar__myLogout {
+    font-size: 1.6vw;
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .topBar__myLogout {
+    font-size: 2vw;
+    top: 13%;
+    padding: .5% 1.7%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topBar__myLogout {
+    font-size: 2.5vw;
+    top: 13%;
+    padding: .5% 2.2%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .topBar__myLogout {
+    font-size: 3vw;
+    top: 8%;
+    padding: .5% 3%;
+  }
+}
+
 .homePage {
   position: fixed;
   width: 87%;
@@ -137,6 +177,7 @@
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
   overflow-x: hidden;
+  padding-bottom: 5%;
 }
 
 .homePage__homeTitle {
@@ -162,7 +203,7 @@
 .homePage__illustimg {
   width: 60%;
   height: auto;
-  margin: 0 auto;
+  margin: 2% auto;
 }
 
 .formDiv {
@@ -175,6 +216,7 @@
   font-size: 1.4vw;
   text-align: center;
   padding-bottom: 3%;
+  color: yellowgreen;
 }
 
 @media screen and (max-width: 1260px) {
@@ -276,30 +318,52 @@
   }
 }
 
-#subBtn[type="submit"] {
-  display: none;
-}
-
 .custom-file-upload {
   border: 1px solid #ccc;
   display: inline-block;
   padding: 2% 6%;
 }
 
-.uploadBtn {
+.custom-file-upload__subBtn1 {
+  display: none;
+}
+
+.custom-file-upload__subBtn2 {
+  display: none;
+}
+
+.uploadBtn1 {
   width: 26%;
   text-align: center;
   cursor: pointer;
 }
 
 @media screen and (max-width: 710px) {
-  .uploadBtn {
+  .uploadBtn1 {
     margin-left: 35%;
     margin-top: 3%;
   }
 }
 
-.uploadBtn:hover {
+.uploadBtn2 {
+  width: 26%;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 710px) {
+  .uploadBtn2 {
+    margin-left: 35%;
+    margin-top: 3%;
+  }
+}
+
+.uploadBtn1:hover {
+  color: white;
+  background: #6a6ae4;
+}
+
+.uploadBtn2:hover {
   color: white;
   background: #6a6ae4;
 }
@@ -332,11 +396,650 @@
 
 .sectionGalerie {
   width: 100%;
-  margin-top: 2%;
+  margin-top: 5%;
 }
 
 .titleSlideGal {
   margin-top: 6%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 40%;
+  margin: 0 auto;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th .selAllClmn {
+  display: flex;
+  flex-direction: column;
+}
+
+th .selAllClmn__chekAll {
+  text-align: center;
+  margin: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+#galerieTable {
+  width: 80%;
+}
+
+.labelBtns {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.labelBtns a {
+  text-decoration: none;
+  color: black;
+}
+
+.btnFrm {
+  width: 100%;
+  margin: 2%;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.colorRed {
+  background: rgba(255, 0, 0, 0.466);
+}
+
+.colorRed:hover {
+  background: red;
+}
+
+.colorBlue {
+  background: rgba(85, 85, 243, 0.479);
+}
+
+.colorBlue:hover {
+  background: #5555f3;
+}
+
+.btnFrm:hover {
+  color: white;
+}
+
+.sectionActivity {
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+.sectionActivity__titleTop {
+  margin-top: 6%;
+  text-align: center;
+  color: yellowgreen;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .sectionActivity__titleTop {
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 799px) {
+  .sectionActivity__titleTop {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .sectionActivity__titleTop {
+    font-size: 3.8vw;
+  }
+}
+
+.formActivity {
+  width: 50%;
+  height: 30vw;
+  margin: 4% auto;
+  border: 1px solid black;
+  margin-bottom: 4%;
+  font-size: .9vw;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .formActivity {
+    width: 70%;
+    height: 38vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .formActivity {
+    width: 82%;
+    height: 44vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .formActivity {
+    width: 96%;
+    height: 53vw;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .formActivity {
+    width: 96%;
+    height: 78vw;
+  }
+}
+
+.formActivity__titleUpload {
+  text-align: center;
+  margin-bottom: 1%;
+  font-size: 14px;
+}
+
+.activityForm {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4%;
+}
+
+.activityForm__uploadFile {
+  border: 1px solid black;
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+}
+
+.activityForm__labelName {
+  display: flex;
+  flex-direction: column;
+  margin: 3% 0% 1% 0%;
+  font-size: 14px;
+  letter-spacing: .7pt;
+}
+
+.activityForm__proTitle {
+  width: 40%;
+  padding: 1%;
+  border: 1px solid black;
+  font-size: 14px;
+  background: none;
+  letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .activityForm__proTitle {
+    width: 60%;
+  }
+}
+
+.activityForm__description {
+  height: 10vw;
+  padding: 1%;
+  border: 1px solid black;
+  font-size: 14px;
+  background: none;
+  letter-spacing: .7pt;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  .activityForm__description {
+    height: 20vw;
+  }
+}
+
+.activityForm__sendBtn {
+  width: 20%;
+  margin: 5% auto;
+  padding: 1%;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+  border: 1px solid black;
+  cursor: pointer;
+  letter-spacing: .7pt;
+}
+
+.activityForm__sendBtn:hover {
+  color: white;
+  background: #6a6ae4;
+}
+
+.formActivityBorder {
+  width: 50%;
+  height: 17vw;
+  margin: 10% auto 3%;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1300px) {
+  .formActivityBorder {
+    width: 70%;
+    height: 24vw;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+  .formActivityBorder {
+    height: 35vw;
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  .formActivityBorder {
+    height: 44vw;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .form1 {
+    overflow-x: scroll;
+  }
+}
+
+.editActivityForm {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.editActivityForm__titleImg {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.editActivityForm__divImg {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.editActivityForm__labelName {
+  width: 100%;
+  margin-left: 2%;
+}
+
+.editActivityForm__imgTitle {
+  width: 100%;
+  padding: 1%;
+  margin: 2%;
+}
+
+.editActivityForm__upldBtn {
+  width: 30%;
+  padding: 1%;
+  margin: 2% auto;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.editActivityForm__upldBtn:hover {
+  background: cornflowerblue;
+  color: cornsilk;
+}
+
+.returnPage {
+  width: 100%;
+  text-align: center;
+}
+
+.formActivityBorder2 {
+  height: 21vw;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1300px) {
+  .formActivityBorder2 {
+    width: 70%;
+    height: 33vw;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 699px) {
+  .formActivityBorder2 {
+    height: 50vw;
+    width: 85%;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 399px) {
+  .formActivityBorder2 {
+    height: 56vw;
+    width: 95%;
+  }
+}
+
+.formDestination {
+  height: 62vw;
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1700px) {
+  .formDestination {
+    height: 65vw;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .formDestination {
+    height: 80vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .formDestination {
+    height: 91vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .formDestination {
+    height: 110vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .formDestination {
+    height: 146vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .formDestination {
+    height: 164vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .formDestination {
+    height: 174vw;
+  }
+}
+
+@media screen and (min-width: 1501px) and (max-width: 2300px) {
+  .formDestination2 {
+    height: 70vw;
+  }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+  .formDestination2 {
+    height: 74vw;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .formDestination2 {
+    height: 92vw;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+  .formDestination2 {
+    height: 107vw;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+  .formDestination2 {
+    height: 128vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .formDestination2 {
+    height: 164vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .formDestination2 {
+    height: 184vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .formDestination2 {
+    height: 194vw;
+  }
+}
+
+.FormEvents {
+  height: 42vw;
+}
+
+@media screen and (max-width: 1500px) {
+  .FormEvents {
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .FormEvents {
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .FormEvents {
+    height: 58vw;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .FormEvents {
+    height: 72vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .FormEvents {
+    height: 90vw;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .FormEvents {
+    height: 112vw;
+  }
+}
+
+.FormEvents2 {
+  height: 42vw;
+}
+
+@media screen and (max-width: 2030px) {
+  .FormEvents2 {
+    height: 44vw;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .FormEvents2 {
+    height: 48vw;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .FormEvents2 {
+    height: 54vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .FormEvents2 {
+    height: 63vw;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .FormEvents2 {
+    height: 74vw;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .FormEvents2 {
+    height: 86vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .FormEvents2 {
+    height: 106vw;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .FormEvents2 {
+    height: 126vw;
+  }
+}
+
+.FormTeam {
+  height: 50vw;
+}
+
+@media screen and (max-width: 1500px) {
+  .FormTeam {
+    height: 52vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .FormTeam {
+    height: 65vw;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .FormTeam {
+    height: 80vw;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .FormTeam {
+    height: 94vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .FormTeam {
+    height: 115vw;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .FormTeam {
+    height: 124vw;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .FormTeam {
+    height: 146vw;
+  }
+}
+
+@media screen and (max-width: 1590px) {
+  .FormTeam2 {
+    height: 54vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .FormTeam2 {
+    height: 70vw;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .FormTeam2 {
+    height: 85vw;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .FormTeam2 {
+    height: 100vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .FormTeam2 {
+    height: 120vw;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .FormTeam2 {
+    height: 131vw;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .FormTeam2 {
+    height: 146vw;
+  }
+}
+
+.formPartner {
+  height: 15vw;
+}
+
+@media screen and (max-width: 1500px) {
+  .formPartner {
+    height: 19vw;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .formPartner {
+    height: 25vw;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .formPartner {
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  .formPartner {
+    height: 36vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .formPartner {
+    height: 40vw;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .formPartner {
+    height: 46vw;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .formPartner {
+    height: 50vw;
+  }
 }
 
 /*# sourceMappingURL=../false/supadmin.css.map */

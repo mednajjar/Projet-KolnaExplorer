@@ -12,25 +12,6 @@ body {
     font-family: nunito, sans-serif;
 }
 
-
-
-@mixin btnCss {
-    width: 25%;
-    background: #678372;
-    border: none;
-    border-radius: 20px;
-    padding: 2%;
-    color: white;
-    font-weight: bold;
-    font-size: .9vw;
-    cursor: pointer;
-
-    @media screen and (max-width:875px) {
-        font-size: 2vw;
-    }
-
-}
-
 //---------------------------Menu----------------------------//
 @import '_menu.scss';
 //------------------------Header-Hero------------------------//
@@ -56,71 +37,67 @@ body {
 }
 
 .blocCart {
-    width: 85%;
+    width: 98%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 25%;
-    grid-template-areas: "cart1 cart2 cart3"
-        "btn1 btn2 btn3";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 
 
     @media screen and (max-width:875px) {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 8%;
-        grid-template-areas: "cart1"
-            "btn1"
-            "cart2"
-            "btn2"
-            "cart3"
-            "btn3";
+        flex-direction: column;
     }
 
     &__cart1 {
 
-        grid-area: cart1;
-
-
-    }
-
-    &__cart2 {
-        grid-area: cart2;
+        width: 30%;
 
         @media screen and (max-width:875px) {
-            margin-top: 5%;
+            width: 70%;
+            margin: 0 auto;
         }
+
+
 
     }
 
-    &__cart3 {
-        grid-area: cart3;
 
-        @media screen and (max-width:875px) {
-            margin-top: 5%;
-        }
-    }
 
     & .bCart {
-        width: 70%;
-        height: 95%;
+        width: 80%;
+        height: 18vw;
         margin: 0 auto;
         margin-top: 3%;
         padding: 5%;
         background: #D0DDD5;
 
-        // @media screen and (max-width:1300px) {
-        //     height: 36vh;
-        // }
+        @media screen and (min-width:1300px) and (max-width:1735px) {
+            height: 25vw;
+        }
+
+        @media screen and (min-width:876px) and (max-width:1299px) {
+            height: 26vw;
+        }
+
+        @media screen and (max-width:875px) {
+            margin-top: 14%;
+            height: 40vw;
+        }
+
+        @media screen and (max-width:480px) {
+
+            height: 46vw;
+        }
 
 
 
         &__Title {
-            font-size: 1.4vw;
-            margin-top: 2%;
-            margin-bottom: 2%; //-----------------------------------
+            margin-top: 42%;
+            margin-bottom: 2%;
+            margin-left: 2%;
 
-            @media screen and(max-width:1300px) {
+            @media screen and (min-width:876px) and (max-width:1299px) {
                 font-size: 2vw;
             }
 
@@ -131,10 +108,11 @@ body {
 
         &__Parag {
             margin-top: 3%;
-            font-size: 1vw;
+            margin-left: 2%;
 
-            @media screen and(max-width:1300px) {
-                font-size: 1.3vw;
+
+            @media screen and (min-width:876px) and (max-width:1299px) {
+                font-size: 1.5vw;
             }
 
             @media screen and (max-width:875px) {
@@ -149,88 +127,108 @@ body {
 
 .blcImg {
     position: relative;
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    background: white;
-    margin-bottom: 6%;
+    width: 36%;
+    height: auto;
+    margin-bottom: 36%;
 
 
 
     &__ico {
         position: absolute;
-        width: 70%;
+        width: 75%;
         height: auto;
-        transform: translate(22%, 20%);
-
-
+        border-radius: 50px;
+        background: white;
+        padding: 4%;
+        transform: translate(0%, 20%);
 
     }
 }
 
 
 .divBtn1 {
-
-    grid-area: btn1;
     text-align: center;
     margin-top: 3%;
 
     @media screen and (max-width:875px) {
         width: 100%;
         justify-self: center;
+
     }
 
     & .btnCart {
 
-        @include btnCss();
+        width: 25%;
+        background: #678372;
+        border: none;
+        border-radius: 20px;
+        padding: 2%;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        cursor: pointer;
+
+        @media screen and (max-width:1200px) {
+            width: 30%;
+            font-size: 12px;
+
+        }
+
+        @media screen and (max-width:875px) {
+            width: 35%;
+            font-size: 10px;
+
+        }
 
     }
 
 }
 
-.divBtn2 {
-    grid-area: btn2;
-    text-align: center;
-    margin-top: 3%;
+// .divBtn2 {
+//     grid-area: btn2;
+//     text-align: center;
+//     margin-top: 3%;
 
-    @media screen and (max-width:875px) {
-        width: 100%;
-        justify-self: center;
-    }
+//     @media screen and (max-width:875px) {
+//         width: 100%;
+//         justify-self: center;
+//     }
 
-    & .btnCart {
-        @include btnCss();
+//     & .btnCart {
+//         @include btnCss();
 
-    }
+//     }
 
-}
+// }
 
-.divBtn3 {
-    grid-area: btn3;
-    text-align: center;
-    margin-top: 3%;
+// .divBtn3 {
+//     grid-area: btn3;
+//     text-align: center;
+//     margin-top: 3%;
 
-    @media screen and (max-width:875px) {
-        width: 100%;
-        justify-self: center;
-    }
+//     @media screen and (max-width:875px) {
+//         width: 100%;
+//         justify-self: center;
+//     }
 
-    & .btnCart {
-        @include btnCss();
+//     & .btnCart {
+//         @include btnCss();
 
-    }
+//     }
 
-}
+// }
 
 
 /*-----------------------------Destination--------------------------------*/
 .acDestination {
-
-
-
     background-image: url(../Assets/bg.png);
     margin-top: 8%;
     padding-bottom: 4%;
+
+    @media screen and (max-width:875px) {
+        height: 124vw;
+
+    }
 
 
     & .actit2 {
@@ -247,53 +245,29 @@ body {
 .blocC {
     width: 85%;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "c1 c2 c3";
+    display: flex;
+
 
     @media screen and (max-width:875px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "c1""c2""3";
+        flex-direction: column;
+        position: relative;
+
     }
 }
 
 .blocCart__c1 {
     width: 90%;
-    grid-area: c1;
+    margin: 2%;
     justify-self: center;
+    align-self: center;
 
     @media screen and (max-width:875px) {
         width: 70%;
         margin-bottom: 5%;
-        display: block;
+        position: absolute;
+
     }
 }
-
-.blocCart__c2 {
-    width: 90%;
-    grid-area: c2;
-    justify-self: center;
-
-    @media screen and (max-width:875px) {
-        width: 70%;
-        margin-bottom: 5%;
-        display: none;
-    }
-}
-
-.blocCart__c3 {
-    width: 90%;
-    grid-area: c3;
-    justify-self: center;
-
-    @media screen and (max-width:875px) {
-        width: 70%;
-        margin-bottom: 5%;
-        display: none;
-    }
-}
-
 
 .bCart2 {
     background: white;
@@ -364,10 +338,10 @@ body {
 @mixin evenStyle {
     width: 70%;
     height: 90%;
-    background: #698474;
+    background: white;
     padding-top: 3%;
     padding-left: 3%;
-    color: white;
+    color: #698474;
     font-size: 1vw;
     align-items: center;
     cursor: pointer;
@@ -376,6 +350,9 @@ body {
 .acEven {
     width: 100%;
     padding-bottom: 4%;
+    @media screen and (max-width:875px) {
+        padding-bottom: 16%;
+    }
 
     &__evenTit {
         font-size: 6vw;
@@ -415,7 +392,7 @@ body {
             "even2"
             "even3"
             "BTN";
-        margin-bottom: 38%;
+        margin-bottom: 44%;
     }
 
 }
@@ -426,10 +403,12 @@ body {
 .acEvent1 {
     grid-area: even1;
     @include evenStyle();
+    border: 2px solid #698474;
 
     @media screen and (max-width:875px) {
 
         justify-self: center;
+        padding-bottom: 12%;
     }
 }
 
@@ -444,6 +423,7 @@ body {
     @media screen and (max-width:875px) {
 
         justify-self: center;
+        padding-bottom: 12%;
     }
 }
 
@@ -458,8 +438,14 @@ body {
     @media screen and (max-width:875px) {
 
         justify-self: center;
+        padding-bottom: 12%;
     }
 }
+
+.Active, .myBtnEvent:hover {
+    background-color: #698474;
+    color: white;
+  }
 
 .evenAc {
     padding-bottom: 3%;
@@ -485,6 +471,7 @@ body {
 }
 
 .acEvenR {
+   
     grid-area: img;
     width: 100%;
 
@@ -497,7 +484,7 @@ body {
 
 
     &__imgEv {
-
+      
         width: 70%;
         margin: 0 auto;
 
@@ -509,7 +496,8 @@ body {
     &__BtnE {
         grid-area: BTN;
         text-align: center;
-        margin-top: 0;
+        margin-top: -10px;
+        margin-bottom: 5%;
 
         @media screen and (max-width:875px) {
             align-self: end;
@@ -549,7 +537,7 @@ body {
         "C D";
 
     &__location {
-        width: 45%;
+        width: 50%;
         grid-area: A;
         justify-self: center;
         align-self: center;
@@ -763,171 +751,190 @@ body {
 .blocTea1 {
 
     width: 85%;
-    height: 60rem;
+    height: 70rem;
     margin: 6% auto 0%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: "team1 team2 team3"
-        "team4 team5 team6";
+    display: flex;
+    flex-wrap: wrap;
 
     @media screen and (max-width:1300px) {
+        height: 50rem;
+    }
+
+    @media screen and (max-width:1000px) {
         height: 40rem;
     }
 
-
     @media screen and (max-width:875px) {
-        height: 190rem;
-        padding-top: 3%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "team1""team2""team3"
-            "team4""team5""team6";
+        height: 32rem;
     }
 
-    @media screen and (max-width:470px) {
-        height: 150rem;
+    @media screen and (max-width:700px) {
+        height: 50rem;
     }
+
+    @media screen and (max-width:530px) {
+        height: 44rem;
+    }
+
+    @media screen and (max-width:450px) {
+        height: 120rem;
+    }
+
+    @media screen and (max-width:340px) {
+        height: 100rem;
+    }
+
+   
 
 }
 
 .teaCart1 {
     position: relative;
-    grid-area: team1;
-    width: 60%;
-    height: 60%;
+    width: 26%;
+    height: 16vw;
+    margin: 1% auto;
     justify-self: center;
     align-self: center;
     background: white;
     text-align: center;
     border: 2px solid #D0DDD5;
 
-    @media screen and (max-width:875px) {
-        width: 70%;
-        height: 65%;
+    // @media screen and (max-width:875px) {
+    //     width: 70%;
+    //     height: 65%;
 
+    // }
+
+    // @media screen and (max-width:470px) {
+
+    //     height: 50%;
+    // }
+    @media screen and (max-width:700px) {
+        width:40%;
+        height: 25vw;
     }
 
-    @media screen and (max-width:470px) {
-
-        height: 50%;
-    }
-}
-
-.teaCart2 {
-    position: relative;
-    grid-area: team2;
-    justify-self: center;
-    align-self: center;
-    width: 60%;
-    height: 60%;
-    background: white;
-    text-align: center;
-    border: 2px solid #D0DDD5;
-
-    @media screen and (max-width:875px) {
-        width: 70%;
-        height: 65%;
-
-    }
-
-    @media screen and (max-width:470px) {
-
-        height: 50%;
+    @media screen and (max-width:450px) {
+        width: 80%;
+        height: 48vw;
+        
     }
 }
 
-.teaCart3 {
-    position: relative;
-    grid-area: team3;
-    justify-self: center;
-    align-self: center;
-    width: 60%;
-    height: 60%;
-    background: white;
-    text-align: center;
-    border: 2px solid #D0DDD5;
+// .teaCart2 {
+    
+//     grid-area: team2;
+//     justify-self: center;
+//     align-self: center;
+//     width: 60%;
+//     height: 60%;
+//     background: white;
+//     text-align: center;
+//     border: 2px solid #D0DDD5;
 
-    @media screen and (max-width:875px) {
-        width: 70%;
-        height: 65%;
+//     @media screen and (max-width:875px) {
+//         width: 70%;
+//         height: 65%;
 
-    }
+//     }
 
-    @media screen and (max-width:470px) {
+//     @media screen and (max-width:470px) {
 
-        height: 50%;
-    }
-}
+//         height: 50%;
+//     }
+// }
 
-.teaCart4 {
-    position: relative;
-    grid-area: team4;
-    justify-self: center;
-    align-self: center;
-    width: 60%;
-    height: 60%;
-    background: white;
-    text-align: center;
-    border: 2px solid #D0DDD5;
+// .teaCart3 {
+//     position: relative;
+//     grid-area: team3;
+//     justify-self: center;
+//     align-self: center;
+//     width: 60%;
+//     height: 60%;
+//     background: white;
+//     text-align: center;
+//     border: 2px solid #D0DDD5;
 
-    @media screen and (max-width:875px) {
-        width: 70%;
-        height: 65%;
+//     @media screen and (max-width:875px) {
+//         width: 70%;
+//         height: 65%;
 
-    }
+//     }
 
-    @media screen and (max-width:470px) {
+//     @media screen and (max-width:470px) {
 
-        height: 50%;
-    }
-}
+//         height: 50%;
+//     }
+// }
 
-.teaCart5 {
-    position: relative;
-    grid-area: team5;
-    justify-self: center;
-    align-self: center;
-    width: 60%;
-    height: 60%;
-    background: white;
-    text-align: center;
-    border: 2px solid #D0DDD5;
+// .teaCart4 {
+//     position: relative;
+//     grid-area: team4;
+//     justify-self: center;
+//     align-self: center;
+//     width: 60%;
+//     height: 60%;
+//     background: white;
+//     text-align: center;
+//     border: 2px solid #D0DDD5;
 
-    @media screen and (max-width:875px) {
-        width: 70%;
-        height: 65%;
+//     @media screen and (max-width:875px) {
+//         width: 70%;
+//         height: 65%;
 
-    }
+//     }
 
-    @media screen and (max-width:470px) {
+//     @media screen and (max-width:470px) {
 
-        height: 50%;
-    }
-}
+//         height: 50%;
+//     }
+// }
 
-.teaCart6 {
-    position: relative;
-    grid-area: team6;
-    justify-self: center;
-    align-self: center;
-    width: 60%;
-    height: 60%;
-    background: white;
-    text-align: center;
-    border: 2px solid #D0DDD5;
+// .teaCart5 {
+//     position: relative;
+//     grid-area: team5;
+//     justify-self: center;
+//     align-self: center;
+//     width: 60%;
+//     height: 60%;
+//     background: white;
+//     text-align: center;
+//     border: 2px solid #D0DDD5;
 
-    @media screen and (max-width:875px) {
-        width: 70%;
-        height: 65%;
+//     @media screen and (max-width:875px) {
+//         width: 70%;
+//         height: 65%;
 
-    }
+//     }
 
-    @media screen and (max-width:470px) {
+//     @media screen and (max-width:470px) {
 
-        height: 50%;
-    }
-}
+//         height: 50%;
+//     }
+// }
+
+// .teaCart6 {
+//     position: relative;
+//     grid-area: team6;
+//     justify-self: center;
+//     align-self: center;
+//     width: 60%;
+//     height: 60%;
+//     background: white;
+//     text-align: center;
+//     border: 2px solid #D0DDD5;
+
+//     @media screen and (max-width:875px) {
+//         width: 70%;
+//         height: 65%;
+
+//     }
+
+//     @media screen and (max-width:470px) {
+
+//         height: 50%;
+//     }
+// }
 
 .teamCartImg {
     width: 100%;
@@ -964,30 +971,48 @@ body {
 }
 
 .teaCart__teaTitCart1 {
-    font-size: 1.7vw;
+    font-size: 1.8vw;
     margin-bottom: 2%;
 
-    @media screen and (max-width:875px) {
-        font-size: 4vw;
+    @media screen and (max-width:700px){
+        font-size: 2.5vw;
     }
 
-    @media screen and (max-width:470px) {
-
-        font-size: 5vw;
+    @media screen and (max-width:450px) {
+        font-size: 3.8vw;
+        
     }
+
+    // @media screen and (max-width:875px) {
+    //     font-size: 4vw;
+    // }
+
+    // @media screen and (max-width:470px) {
+
+    //     font-size: 5vw;
+    // }
 }
 
 .teaCart__teaTitCart2 {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 
-    @media screen and (max-width:875px) {
+    @media screen and (max-width:700px){
+        font-size: 2vw;
+    }
+
+    @media screen and (max-width:450px) {
         font-size: 3.2vw;
+        
     }
 
-    @media screen and (max-width:470px) {
+    // @media screen and (max-width:875px) {
+    //     font-size: 3.2vw;
+    // }
 
-        font-size: 4.2vw;
-    }
+    // @media screen and (max-width:470px) {
+
+    //     font-size: 4.2vw;
+    // }
 }
 
 .blcTeaIco {
@@ -1008,6 +1033,7 @@ body {
     }
 
 }
+
 
 .imgHero .bx-wrapper {
     border: 0;

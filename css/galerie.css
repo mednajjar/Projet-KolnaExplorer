@@ -275,6 +275,7 @@ ul li .active {
 .imgHero {
   grid-area: imgHero;
   justify-self: end;
+  z-index: -1111;
 }
 
 @media screen and (max-width: 875px) {
@@ -612,7 +613,7 @@ form {
 }
 
 .footerInfo {
-  width: 85%;
+  width: 90%;
   height: 14vw;
   margin: 6% auto 6%;
   display: grid;
@@ -633,9 +634,10 @@ form {
 
 @media screen and (max-width: 875px) {
   .footerInfo {
-    height: 44vh;
+    height: 37vh;
     line-height: 2rem;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
+    width: 90%;
   }
 }
 
@@ -670,6 +672,12 @@ form {
   height: auto;
 }
 
+@media screen and (max-width: 1300px) {
+  .foBloc1__titleinfor {
+    font-size: 1.8vw;
+  }
+}
+
 .foBloc1__infoCont {
   font-size: 1vw;
   text-align: left;
@@ -702,9 +710,15 @@ form {
   font-size: 1.8vw;
 }
 
+@media screen and (max-width: 1300px) {
+  .foBloc2__title1 {
+    font-size: 2.4vw;
+  }
+}
+
 @media screen and (max-width: 875px) {
   .foBloc2__title1 {
-    font-size: 2.5vw;
+    font-size: 2.6vw;
   }
 }
 
@@ -712,9 +726,15 @@ form {
   font-size: 1.2vw;
 }
 
+@media screen and (max-width: 1300px) {
+  .foBloc2__title2 {
+    font-size: 1.6vw;
+  }
+}
+
 @media screen and (max-width: 875px) {
   .foBloc2__title2 {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
 }
 
@@ -744,6 +764,12 @@ form {
   font-size: 1.8vw;
 }
 
+@media screen and (max-width: 1300px) {
+  .foBloc3__title1 {
+    font-size: 2.4vw;
+  }
+}
+
 @media screen and (max-width: 875px) {
   .foBloc3__title1 {
     font-size: 2.5vw;
@@ -754,9 +780,15 @@ form {
   font-size: 1.2vw;
 }
 
+@media screen and (max-width: 1300px) {
+  .foBloc3__title2 {
+    font-size: 1.6vw;
+  }
+}
+
 @media screen and (max-width: 875px) {
   .foBloc3__title2 {
-    font-size: 1.8vw;
+    font-size: 2vw;
   }
 }
 
@@ -800,6 +832,12 @@ form {
 
 .foBloc4__title {
   font-size: 1.8vw;
+}
+
+@media screen and (max-width: 1300px) {
+  .foBloc4__title {
+    font-size: 2.4vw;
+  }
 }
 
 @media screen and (max-width: 875px) {
