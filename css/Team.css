@@ -666,17 +666,13 @@ form {
 .sectionTeam2 {
   margin: 0 auto;
   margin-bottom: 100px;
-  display: grid;
-  grid-row-gap: 10px;
-  grid-column-gap: 50px;
-  grid-template-columns: 45% 45%;
-  grid-template-rows: 20% 40% 40%;
-  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
 }
 
 .sectionTeam2 .sectionTeam2-block0 {
-  grid-column: 1/3;
-  grid-row: 1/2;
   text-align: center;
   font-size: 30px;
   color: #BAC7A7;
@@ -730,170 +726,12 @@ form {
 
 .sectionTeam2 .sectionTeam2-block1 .block1-team2 .block1-team2__tite3 {
   font-family: 'Mulish', sans-serif;
-  color: #b81414;
+  color: #181414;
   font-size: 14px;
+  width: 40%;
 }
 
 .sectionTeam2 .sectionTeam2-block1 .block1-team2--ligne {
-  height: 2px;
-  width: 10%;
-  margin-bottom: 30px;
-  color: #bdbcb6;
-  background-color: #bdbcb6;
-}
-
-.sectionTeam2-block2 {
-  padding-left: 100px;
-  width: 90%;
-  align-self: center;
-  grid-column: 2/3;
-  grid-row: 2/3;
-  display: flex;
-  flex-direction: row;
-}
-
-.sectionTeam2-block2 .block1-team1 .block1-team1__photo {
-  border-radius: 50%;
-}
-
-.sectionTeam2-block2 .block1-team1 .logoteam {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-}
-
-.sectionTeam2-block2 .block1-team1 .logoteam .logoteam--icone {
-  width: 25px;
-  cursor: pointer;
-}
-
-.sectionTeam2-block2 .block1-team2 {
-  margin-top: 30px;
-  margin-left: 15px;
-}
-
-.sectionTeam2-block2 .block1-team2 .block1-team2__tite1 {
-  width: 70%;
-}
-
-.sectionTeam2-block2 .block1-team2 .block1-team2__tite2 {
-  color: rgba(202, 195, 195, 0.76);
-  font-family: 'EB Garamond', serif;
-}
-
-.sectionTeam2-block2 .block1-team2 .block1-team2__tite3 {
-  font-family: 'Mulish', sans-serif;
-  color: #b81414;
-  font-size: 14px;
-}
-
-.sectionTeam2-block2 .block1-team2 .block1-team2--ligne {
-  height: 2px;
-  width: 10%;
-  margin-bottom: 30px;
-  color: #bdbcb6;
-  background-color: #bdbcb6;
-}
-
-.sectionTeam2-block3 {
-  width: 90%;
-  align-self: center;
-  padding-left: 100px;
-  grid-column: 1/2;
-  grid-row: 3/4;
-  display: flex;
-  flex-direction: row;
-}
-
-.sectionTeam2-block3 .block1-team1 .block1-team1__photo {
-  border-radius: 50%;
-}
-
-.sectionTeam2-block3 .block1-team1 .logoteam {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-}
-
-.sectionTeam2-block3 .block1-team1 .logoteam .logoteam--icone {
-  width: 25px;
-  cursor: pointer;
-}
-
-.sectionTeam2-block3 .block1-team2 {
-  margin-top: 30px;
-  margin-left: 15px;
-}
-
-.sectionTeam2-block3 .block1-team2 .block1-team2__tite1 {
-  width: 70%;
-}
-
-.sectionTeam2-block3 .block1-team2 .block1-team2__tite2 {
-  color: rgba(202, 195, 195, 0.76);
-  font-family: 'EB Garamond', serif;
-}
-
-.sectionTeam2-block3 .block1-team2 .block1-team2__tite3 {
-  font-family: 'Mulish', sans-serif;
-  color: #b81414;
-  font-size: 14px;
-}
-
-.sectionTeam2-block3 .block1-team2 .block1-team2--ligne {
-  height: 2px;
-  width: 10%;
-  margin-bottom: 30px;
-  color: #bdbcb6;
-  background-color: #bdbcb6;
-}
-
-.sectionTeam2-block4 {
-  width: 90%;
-  align-self: center;
-  padding-left: 100px;
-  grid-column: 2/3;
-  grid-row: 3/4;
-  display: flex;
-  flex-direction: row;
-}
-
-.sectionTeam2-block4 .block1-team1 .block1-team1__photo {
-  border-radius: 50%;
-}
-
-.sectionTeam2-block4 .block1-team1 .logoteam {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-}
-
-.sectionTeam2-block4 .block1-team1 .logoteam .logoteam--icone {
-  width: 25px;
-  cursor: pointer;
-}
-
-.sectionTeam2-block4 .block1-team2 {
-  margin-top: 30px;
-  margin-left: 15px;
-}
-
-.sectionTeam2-block4 .block1-team2 .block1-team2__tite1 {
-  width: 70%;
-}
-
-.sectionTeam2-block4 .block1-team2 .block1-team2__tite2 {
-  color: rgba(202, 195, 195, 0.76);
-  font-family: 'EB Garamond', serif;
-}
-
-.sectionTeam2-block4 .block1-team2 .block1-team2__tite3 {
-  font-family: 'Mulish', sans-serif;
-  color: #b81414;
-  font-size: 14px;
-}
-
-.sectionTeam2-block4 .block1-team2 .block1-team2--ligne {
   height: 2px;
   width: 10%;
   margin-bottom: 30px;

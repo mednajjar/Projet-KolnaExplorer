@@ -1,5 +1,8 @@
 <?php
         include 'action.php';
+          $results = mysqli_query($db, "SELECT * FROM team");
+
+
 
 
                 ?>
@@ -67,24 +70,30 @@
         
             <div class="sectionTeam2-block0"><h1 class="   sectionTeam2-block0__title " > Our Team</h1></div>
 
-        
+    <?php while ($row = mysqli_fetch_array($results)) { ?>       
 <div class="sectionTeam2-block1">
             <div class="block1-team1">
-            <img class="block1-team1__photo" src="  " alt="">
+            <img class="block1-team1__photo" src="images/<?= $row['team_img'];?>" alt="">
             <div class="logoteam">
-                <a  href="   " target="_blank"><img class=" logoteam--icone "src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
-                <a  href="  " target="_blank" > <img class=" logoteam--icone "src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
-                <a   href="  " target="_blank"    >  <img class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
-                <a   href="  " target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
+                <a  href="<?php echo $row['twitter_path']; ?>" target="_blank"><img class=" logoteam--icone "src="Assets/twitter_tweet_logo_mint_icon_134949-1.png" alt=""></a>
+                <a  href="<?php echo $row['facebook_path']; ?>" target="_blank" > <img class=" logoteam--icone "src="Assets/facebook_fb_logo_mint_icon_134940-1.png" alt=""> </a>
+                <a   href="<?php echo $row['instagram_path']; ?>" target="_blank"    >  <img class=" logoteam--icone " src="Assets/instagram_ig_logo_mint_icon_134942-1.png" alt=""></a>
+                <a   href="<?php echo $row['linkdin_path']; ?>" target="_blank">   <img class=" logoteam--icone " src="Assets/linkedin_in_logo_mint_icon_134943-1.png" alt=""></a>
                 </div>
             </div>
             <div class="block1-team2">
                 <hr  class=block1-team2--ligne>
-            <h1  class="block1-team2__tite1"  >  </h1>
-            <h2   class="block1-team2__tite2"> </h2>
-            <p   class="block1-team2__tite3"> </p>
+            <h1  class="block1-team2__tite1"  ><?php echo $row['team_firstName']; ?></h1>
+            <h2   class="block1-team2__tite2"><?php echo $row['team_role']; ?></h2>
+            <p   class="block1-team2__tite3"><?php echo $row['team_resum']; ?></p>
             </div>
+
 </div>
+<?php } ?>
+
+
+
+
 
 
 
