@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kolna Explorer</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
 </head>
 
 <body>
@@ -72,7 +72,7 @@
             </div>
         </div>
         <!-- section top END -->
-        <!-- section form -->
+        <!-- section form  contact-->
         <div class="contact__container">
             <div class="contact__form">
 
@@ -114,27 +114,26 @@
 
                     <div class="contactForm__label1">
                         <label>Votre Nom<span class="text-danger"> *</span></label>
-                        <!-- <img src="Assets/name.png" alt="personne"> -->
-                        <input name="name" id="name" type="text" placeholder="First Name :" required>
+                        <img src="Assets/name.png" alt="personne">
+                        <input name="name" id="name" type="text" placeholder="       First Name :" required>
                     </div>
                     <div class="contactForm__label2">
                         <label>Votre Email<span class="text-danger"> *</span></label>
-                        <!-- <img src="Assets/gmail.png" alt="gmail"> -->
-                        <input name="email" id="email" type="email" placeholder="Your email :" required>
+                        <img src="Assets/gmail.png" alt="gmail">
+                        <input name="email" id="email" type="email" placeholder="        Your email :" required>
                     </div>
                     <div class="contactForm__label3">
                         <label>Sujet</label>
-                        <!-- <img src="Assets/subject.png" alt="subject"> -->
-                        <input name="subject" id="subject" type="text" placeholder="Sujet" required>
+                        <img src="Assets/subject.png" alt="subject">
+                        <input name="subject" id="subject" type="text" placeholder="     Sujet" required>
                     </div>
                     <div class="contactForm__label4">
                         <label>Message</label>
-                        <!-- <img src="Assets/msg.png" alt="message"> -->
-                        <textarea name="body" id="comments" placeholder="Votre Message :" required></textarea>
+                        <img src="Assets/msg.png" alt="message">
+                        <textarea name="body" id="comments" placeholder="   Votre Message :" required></textarea>
                     </div>
                     <div class="contactForm__labelSend">
-                        <input type="submit" id="submit" name="submit" class="form__btnSend" value="Envoyer le message"
-                            required>
+                        <input type="submit" id="submit" name="submit" class="form__btnSend" value="Envoyer le message" required>
                     </div>
                 </form>
 

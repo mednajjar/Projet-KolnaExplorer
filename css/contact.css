@@ -517,14 +517,14 @@ body {
 .contactForm__label1 img {
   position: absolute;
   margin-top: 28px;
-  margin-left: 220px;
+  margin-left: 5px;
 }
 
 .contactForm__label1 input {
   font-family: "Nunito", sans-serif;
   margin-top: 20px;
   height: 42px;
-  width: 90%;
+  width: 95%;
   padding-left: 2%;
 }
 
@@ -539,15 +539,15 @@ body {
 
 .contactForm__label2 img {
   margin-top: 32px;
-  margin-left: 240px;
+  margin-left: .5em;
   position: absolute;
 }
 
 .contactForm__label2 input {
   font-family: "Nunito", sans-serif;
   height: 42px;
-  margin-top: 18px;
   width: 100%;
+  margin-top: 20px;
   padding-left: 2%;
 }
 
@@ -562,6 +562,7 @@ body {
 }
 
 .contactForm__label3 input {
+  padding-left: 40px;
   margin-top: 20px;
   width: 100%;
   height: 42px;
@@ -570,7 +571,7 @@ body {
 
 .contactForm__label3 img {
   margin-top: 28px;
-  margin-left: 510px;
+  margin-left: .5em;
   position: absolute;
 }
 
@@ -595,7 +596,7 @@ body {
 
 .contactForm__label4 img {
   margin-top: 28px;
-  margin-left: 510px;
+  margin-left: .5em;
   position: absolute;
 }
 
@@ -742,6 +743,7 @@ body {
   }
   .contactForm__label2 img {
     margin-left: 118px;
+    display: none;
   }
   .contactForm__label2 input {
     margin-top: 20px;
