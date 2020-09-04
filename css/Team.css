@@ -699,6 +699,8 @@ form {
 
 .sectionTeam2 .container-team .sectionTeam2-block1 .block1-team1 .block1-team1__photo {
   border-radius: 50%;
+  width: 100px;
+  height: auto;
 }
 
 .sectionTeam2 .container-team .sectionTeam2-block1 .block1-team1 .logoteam {
@@ -783,6 +785,51 @@ form {
   }
   body .sectionTeam2 .container-team .sectionTeam2-block1 .block1-team2 {
     padding-top: -20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+  }
+  body .sectionTeam {
+    width: 100%;
+  }
+  body .sectionTeam .sectionTeam-title {
+    font-size: 25px;
+  }
+  body .sectionTeam2 {
+    height: auto;
+  }
+  body .sectionTeam2 .container-team {
+    display: flex;
+    flex-direction: column;
+  }
+  body .sectionTeam2 .container-team .sectionTeam2-block1 {
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  body .block1-team2 {
+    padding-left: 20%;
+  }
+  body .block1-team2 .block1-team2__tite3 {
+    font-size: 12px;
+    width: 100%;
+  }
+  body .block1-team2 .block1-team2__tite2 {
+    font-size: 16px;
+  }
+  body .block1-team2 .block1-team2__tite1 {
+    font-size: 22px;
+    width: 100%;
+  }
+  body .block1-team1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

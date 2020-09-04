@@ -89,6 +89,8 @@
             .block1-team1 {
                 .block1-team1__photo {
                     border-radius: 50%;
+                    width: 100px;
+                    height: auto;
                 }
                  .logoteam {
                 display: flex;
@@ -352,10 +354,8 @@
                 }
                 .sectionTeam2 {
                     height: auto;
-                    // display: flex;
-                    // flex-direction: row;
+                   
                     .container-team{
-                        // background-color: blue;
                         display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
@@ -384,88 +384,109 @@
 
 
 
-        // @media screen and (max-width:375px) {
-        //     body {
-        //         width: 100%;
-        //         .sectionTeam {
-        //             width: 100%;
-        //             .sectionTeam-title{
-        //                 font-size: 25px;
-        //             }
-        //         }
-        //         .sectionTeam2 {
-        //             margin-top:100px;
-        //             margin: 0 auto;
-        //             height: 1875px;
-        //             margin-bottom: 50px;
-        
+        @media screen and (max-width:375px) {
+            body {
+                width: 100%;
+                .sectionTeam {
+                    width: 100%;
+                    .sectionTeam-title{
+                        font-size: 25px;
+                    }
+                }
+                .sectionTeam2 {
+
+                    // margin-top:100px;
+                    // margin: 0 auto;
+                    height: auto;
+                    // margin-bottom: 50px;
+                    // background-color: chartreuse;
+                    .container-team{
+                        display: flex;
+                        flex-direction: column;
                     
-        //             .sectionTeam2-block1  {
-        //                 padding-left: 10px;
-        //                 text-align: justify;
-        //                 display: flex;
-        //                 flex-direction: column;
-        //                 justify-content: space-evenly;
+                    .sectionTeam2-block1  {
+                        padding-left: 10px;
+                        width: 100%;
+                        // text-align: justify;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
                        
                         
-        //             }
-        //             .sectionTeam2-block2  {
-        //                 padding-left: 10px;
-        //                 display: flex;
-        //                 flex-direction: column;
-        //                 justify-content: space-between;
-                     
-        
-        
-        
-        //             }
-        //             .sectionTeam2-block3 {
-        //                 padding-left: 10px;
-        //                 display: flex;
-        //                 flex-direction: column;
-                      
-        
-        
-        //             }
-        //             .sectionTeam2-block4 {
-        //                 padding-left: 10px;
-        //                 display: flex;
-        //                 flex-direction: column;
-                      
-        
-        
-        //             }
+                    }
+                   
+                   
+                   
                     
-        //         }
-        //         .block1-team2 {
-        //             width: 100%;
-        //             text-align: left;
+                }
+            }
+                .block1-team2 {
+                    padding-left: 20%;
+                    // display: block;
+                    // background-color: blue;
+                    // margin: 0;
+                    // position: absolute;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    
+                    // position: static;
+                    // -ms-transform: translateY(-50%);
+                    // transform: translateY(-50%);
+                    // margin: auto;
+                    // width: 60%;
+                    // text-align: center;
+                    // margin-left: auto;
+                    // margin-right: auto;
+                    // width: 50em;
+                    // width: 100%;
+                    // text-align: left;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+
         
-        //             .block1-team2__tite3 {
-        //                 font-size: 12px;
+                    .block1-team2__tite3 {
+                        font-size: 12px;
+                        width: 100%;
+                        // background-color: rgb(216, 224, 207);
+
+
+                        // text-align: center;
                         
-        //             }
-        //             .block1-team2__tite2 {
-        //                 font-size: 16px;
+                    }
+                    .block1-team2__tite2 {
+                        font-size: 16px;
+                        // text-align: center;
+
         
-        //             }
-        //             .block1-team2__tite1 {
-        //                 font-size: 22px;
+                    }
+                    .block1-team2__tite1 {
+                        font-size: 22px;
+                        width: 100%;
+                        // background-color: rgb(216, 224, 207);
+
+                        // text-align: center;
+
         
-        //             }
+                    }
                   
-        //     }
-        //         .block1-team1 {
-        //              padding-left: 70px;
+            }
+                .block1-team1 {
+                    
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                   
                    
                     
                    
                  
                     
-        //         }
+                }
         
-        //     }
+            }
           
-        // }
+        }
           
 

@@ -134,7 +134,7 @@
                                 <button class="btn-team" type="submit" name="save">Save</button>
                                 <?php endif ?>
                                 </div>
-                                </form>
+                                
 
 
                               
@@ -149,7 +149,7 @@
                                         <th>linkdin</th>
                                         <th>twitter</th>
                                         <th>instagram</th>
-                                        <th >action</th>
+                                        <th  >action</th>
 
                                    
                                     </tr>
@@ -185,7 +185,7 @@
 
                             
                         
-                       
+                        </form> 
 
                     </div>
                     <div>

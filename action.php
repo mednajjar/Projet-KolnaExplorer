@@ -78,19 +78,19 @@ session_start();
 
 		if (count($record) == 1) {
       // $n = mysqli_fetch_array($record);
-      $row=$record->fetch_array();
+      $n=$record->fetch_array();
 
-      $team_img = $row['team_img']; 
-      $team_firstName = $row['team_firstName'];
+      $team_img = $n['team_img']; 
+      $team_firstName = $n['team_firstName'];
 
-      $team_role = $row['team_role'];
+      $team_role = $n['team_role'];
 
-      $team_resum = $row['team_resum'];
+      $team_resum = $n['team_resum'];
 
-      $facebook_path=$row['facebook_path'];
-      $linkdin_path =$row['linkdin_path'];
-      $twitter_path = $row['twitter_path'];
-      $instagram_path =$row['instagram_path'];
+      $facebook_path=$n['facebook_path'];
+      $linkdin_path =$n['linkdin_path'];
+      $twitter_path = $n['twitter_path'];
+      $instagram_path =$n['instagram_path'];
       header("location:teampage.php");
 
 
