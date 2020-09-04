@@ -75,8 +75,7 @@
 	
 			
       <div class="">
-				<div class="">
-				
+				<div class="">	
 				</div>
 				<div class=" container-fluid ">
                     <div class=" row  justify-content-center "></div>
@@ -94,7 +93,7 @@
                     <div class="row">
                         <div class="block">
                             <h3 class="text-center text-inf">Add Record</h3>
-                            <form method="POST" action="action.php" enctype="multipart/form-data"> 
+                            <form method="POST" action="action.php" enctype="multipart/form-data" > 
 
                                 <div class="form-group">
                                     <input type="file" name="team_img" value="<?php echo $team_img;?>" class="form-control" >
@@ -120,7 +119,7 @@
                                     <input type="text" name="twitter_path" value= "<?php echo $twitter_path;?>" class="form-control" placeholder="enter path twitter"        >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="text" name="instagram_path" value= "<?php echo $instagram_path; ?>" class="form-control" placeholder="enter path isntagram"        >
+                                    <input type="text" name="instagram_path" value= "<?php echo $instagram_path; ?>" class="form-control" placeholder="enter path instagram"        >
                                 </div> 
                                 <div class="form-group">
                                 <?php if ($update == true): ?>
@@ -129,8 +128,8 @@
                                 <div class="form-group">
                                 <button class="btn-team" type="submit" name="save">Save</button>
                                 <?php endif ?>
-
                                 </div>
+                                </form>
 
 
                               
@@ -174,7 +173,7 @@
                                  </div>   
                 
                           
-                            </form>
+                          
                         </div>
 
                             

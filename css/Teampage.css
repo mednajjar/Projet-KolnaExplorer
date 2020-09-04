@@ -229,6 +229,11 @@ th, td {
   background-color: #d85519;
 }
 
+.form-control {
+  width: 200px;
+  height: 35px;
+}
+
 @media only screen and (max-width: 420px) {
   header {
     display: block;
