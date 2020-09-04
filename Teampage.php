@@ -14,7 +14,13 @@
                 //   print_r($result->fetch_assoc());
 
         include 'action.php';
-         $results = mysqli_query($db, "SELECT * FROM team"); ?>
+
+         $results = mysqli_query($db, "SELECT * FROM team");
+         
+                        //    print_r($results->fetch_assoc());
+
+         
+         ?>
 
 
 
@@ -148,7 +154,9 @@
                                    
                                     </tr>
                                 <tr>
-                                <?php while ($row = mysqli_fetch_array($results)) { ?>
+                                <?php 
+                                 $results = mysqli_query($db, "SELECT * FROM team");
+                                while ($row = mysqli_fetch_array($results)) { ?>
 
                                 <tr>    <td><?php echo $row['id']; ?></td> 
                                         <td><?php echo $row['team_img']; ?></td> 
