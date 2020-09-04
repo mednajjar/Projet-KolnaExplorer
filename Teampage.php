@@ -92,20 +92,19 @@
                             <?php endif ?>
                     <div class="row">
                         <div class="block">
-                            <h3 class="text-center text-inf">Add Record</h3>
                             <form method="POST" action="action.php" enctype="multipart/form-data" > 
 
                                 <div class="form-group">
-                                    <input type="file" name="team_img" value="<?php echo $team_img;?>" class="form-control" >
+                                    <input type="file" name="team_img" value="<?php echo $team_img;?>" class="form-control team-control" placeholder="Télécharger" >
                                 </div>                              
                                 <div class="form-group">
                                     <input type="text" name="team_firstName" value="<?php echo $team_firstName;?>" class="form-control" placeholder="Entrer username"  >
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="team_role" value= "<?php echo $team_role;?>" class="form-control" placeholder="Enter role"         >
+                                    <input type="text" name="team_role" value= "<?php echo $team_role;?>" class="form-control" placeholder="Enter role">
                                 </div> 
                                 <div class="form-group">
-                                    <textarea name="team_resum" value="<?php echo $team_resum;?>" id="" class="form-control" placeholder="Enter resumer" cols="30" rows="10"></textarea>
+                                    <textarea name="team_resum" value="<?php echo $team_resum;?>"  class="form-control" placeholder="Enter descriprion" cols="30" rows="20"></textarea>
                                 </div>
 
                                 </div>
@@ -151,7 +150,7 @@
                                 <tr>
                                 <?php while ($row = mysqli_fetch_array($results)) { ?>
 
-                                <tr> <td><?php echo $row['id']; ?></td> 
+                                <tr>    <td><?php echo $row['id']; ?></td> 
                                         <td><?php echo $row['team_img']; ?></td> 
                                         <td><?php echo $row['team_firstName']; ?></td> 
                                         <td><?php echo $row['team_role']; ?></td> 
@@ -165,7 +164,7 @@
                                             <a href="teampage.php?dele=<?php echo $row['id']; ?>" class="btn btn-delete">delete</a>
 
                                         </td>
-                                    </tr>
+                                </tr>
                                 	<?php } ?>
                                     
                                   
