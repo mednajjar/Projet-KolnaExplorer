@@ -4711,13 +4711,10 @@ header .logo span {
   font-size: 80%;
 }
 
-table {
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid black;
+.btn {
   padding: 5px 10px;
+  border: none;
+  background-color: chartreuse;
 }
 
 @media only screen and (max-width: 420px) {
@@ -4741,6 +4738,10 @@ th, td {
     z-index: -1;
     position: relative;
   }
+}
+
+.btn {
+  color: black;
 }
 
 @media only screen and (max-width: 768px) {

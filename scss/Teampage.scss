@@ -169,10 +169,22 @@ header .logo span {
 	padding: 20px 10px;
 	font-size: 80%;
 }
+.msg{
+	text-align: center;
+	color: rgb(231, 74, 74);
+}
+.btn-team {
+	height: 35px;
+	width: 70px;
+	border:none;
+	background-color: rgb(149, 211, 87);
+}
 table{
     border-collapse: collapse;
   }
-  
+ .form-group{
+	 padding:5px 10px;
+ } 
   th, td{
     border: 1px solid black;
     padding: 5px 10px;
@@ -181,9 +193,29 @@ table{
 	  border:2px;
 	  width: 500px;
 	  line-height: 20px;
-	  align-content: center
+	  align-content: center;
+	  margin-top: 40px;
 
   }
+  .action-team{
+	  display: flex;
+	  padding: 5px;
+  }
+  .btn {
+	color:black;
+	// border:1px solid black;
+	height: 35px;
+	width: 70px;
+	text-align: center;
+	margin: 3px;
+	border-radius: 3px;
+}
+.btn-edit{
+	background-color: chartreuse;
+}
+.btn-delete{
+	background-color: rgb(216, 85, 25);
+}
 
 
  
@@ -210,9 +242,12 @@ table{
 		position: relative;
 	}
 }
-.btn {
-	color:black;
-}
+// .btn {
+// 	color:black;
+// 	border:1px solid black;
+// 	height: 25px;
+// 	width: 100px;
+// }
 
 @media only screen and (max-width: 768px){
 	header {

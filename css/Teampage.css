@@ -174,8 +174,24 @@ header .logo span {
   font-size: 80%;
 }
 
+.msg {
+  text-align: center;
+  color: #e74a4a;
+}
+
+.btn-team {
+  height: 35px;
+  width: 70px;
+  border: none;
+  background-color: #95d357;
+}
+
 table {
   border-collapse: collapse;
+}
+
+.form-group {
+  padding: 5px 10px;
 }
 
 th, td {
@@ -188,6 +204,29 @@ th, td {
   width: 500px;
   line-height: 20px;
   align-content: center;
+  margin-top: 40px;
+}
+
+.action-team {
+  display: flex;
+  padding: 5px;
+}
+
+.btn {
+  color: black;
+  height: 35px;
+  width: 70px;
+  text-align: center;
+  margin: 3px;
+  border-radius: 3px;
+}
+
+.btn-edit {
+  background-color: chartreuse;
+}
+
+.btn-delete {
+  background-color: #d85519;
 }
 
 @media only screen and (max-width: 420px) {
@@ -211,10 +250,6 @@ th, td {
     z-index: -1;
     position: relative;
   }
-}
-
-.btn {
-  color: black;
 }
 
 @media only screen and (max-width: 768px) {

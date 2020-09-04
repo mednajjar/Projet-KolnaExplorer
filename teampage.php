@@ -106,7 +106,7 @@
                                     <input type="text" name="team_role" value= "<?php echo $team_role;?>" class="form-control" placeholder="Enter role"         >
                                 </div> 
                                 <div class="form-group">
-                                    <input type="text" name="team_resum" value= "<?php echo $team_resum;?>" class="form-control" placeholder="Enter resumer"        >
+                                    <textarea name="team_resum" value="<?php echo $team_resum;?>" id="" class="form-control" placeholder="Enter resumer" cols="30" rows="10"></textarea>
                                 </div>
 
                                 </div>
@@ -120,21 +120,21 @@
                                     <input type="text" name="twitter_path" value= "<?php echo $twitter_path;?>" class="form-control" placeholder="enter path twitter"        >
                                 </div>
                                 </div> <div class="form-group">
-                                    <input type="text" name="instagram_path" value= "<?php echo $instagram_path; ?>" class="form-control" placeholder="enter path twitter"        >
+                                    <input type="text" name="instagram_path" value= "<?php echo $instagram_path; ?>" class="form-control" placeholder="enter path isntagram"        >
                                 </div> 
                                 <div class="form-group">
                                 <?php if ($update == true): ?>
-                                <button class="btn" type="submit" name="update" style="background: #556B2F;" >update</button></div>
+                                <button class="btn-team" type="submit" name="update" style="background: #556B2F;" >update</button></div>
                                 <?php else: ?>                               
                                 <div class="form-group">
-                                <button class="btn" type="submit" name="save" >Save</button>
+                                <button class="btn-team" type="submit" name="save">Save</button>
                                 <?php endif ?>
 
                                 </div>
 
 
                               
-                                 <table>
+                                 <table class="team_table">
                                     <tr>
                                         <th>id</th>
                                         <th>image</th>
@@ -145,8 +145,7 @@
                                         <th>linkdin</th>
                                         <th>twitter</th>
                                         <th>instagram</th>
-                                        <th colspan="2">action</th>
-
+                                        <th >action</th>
 
                                    
                                     </tr>
@@ -162,9 +161,9 @@
                                         <td><?php echo $row['linkdin_path']; ?></td> 
                                         <td><?php echo $row['twitter_path']; ?></td> 
                                         <td><?php echo $row['instagram_path']; ?></td> 
-                                        <td>
-                                            <a href="teampage.php?edit=<?php echo $row['id']; ?>" class="btn btn-info">edit</a>
-                                            <a href="teampage.php?dele=<?php echo $row['id']; ?>" class="btn btn-info">delete</a>
+                                        <td class="action-team">
+                                            <a href="teampage.php?edit=<?php echo $row['id']; ?>" class="btn btn-edit">edit</a>
+                                            <a href="teampage.php?dele=<?php echo $row['id']; ?>" class="btn btn-delete">delete</a>
 
                                         </td>
                                     </tr>
