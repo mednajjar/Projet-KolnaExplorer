@@ -73,7 +73,7 @@
 
         
         <?php while ($row = mysqli_fetch_array($results)) { ?>       
-<div class="sectionTeam2-block1">
+        <div class="sectionTeam2-block1">
             <div class="block1-team1">
             <img class="block1-team1__photo" src="images/<?= $row['team_img'];?>" alt="">
             <div class="logoteam">
