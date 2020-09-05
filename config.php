@@ -1,5 +1,5 @@
 <?php
-$dsn = 'mysql:host=localhost; dbname=Kolnaexplorer';
+$dsn = 'mysql:host=localhost; dbname=mysql';
 $user = 'root';
 $pass = '';
 $options = array(
