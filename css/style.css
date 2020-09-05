@@ -3558,16 +3558,15 @@ body {
 
 .contactForm__label1 img {
   position: absolute;
-  margin-top: 28px;
+  margin-left: 5px;
 }
 
 .contactForm__label1 input {
   font-family: "Nunito", sans-serif;
   margin-top: 20px;
   height: 42px;
-  width: 100%;
+  width: 95%;
   padding-left: 2%;
-  margin-right: 5px;
 }
 
 .contactForm__label2 {
@@ -3580,14 +3579,14 @@ body {
 }
 
 .contactForm__label2 img {
-  margin-top: 32px;
+  margin-left: .5em;
   position: absolute;
 }
 
 .contactForm__label2 input {
   font-family: "Nunito", sans-serif;
   height: 42px;
-  width: 90%;
+  width: 100%;
   margin-top: 20px;
   padding-left: 2%;
 }
@@ -3611,7 +3610,7 @@ body {
 }
 
 .contactForm__label3 img {
-  margin-top: 28px;
+  margin-left: .5em;
   position: absolute;
 }
 
@@ -3635,7 +3634,7 @@ body {
 }
 
 .contactForm__label4 img {
-  margin-top: 28px;
+  margin-left: .5em;
   position: absolute;
 }
 
@@ -3645,8 +3644,8 @@ body {
 }
 
 .contactForm__labelSend input {
-  margin-top: 78px;
-  width: 100%;
+  margin-top: 100px;
+  width: 101%;
   border: none;
   padding: 16px;
   background-color: #698474;
@@ -3719,7 +3718,7 @@ body {
     width: 100%;
   }
   .contactForm__label1 img {
-    margin-left: 360px;
+    display: none;
   }
   .contactForm__label2 {
     margin-top: 20px;
@@ -3732,7 +3731,7 @@ body {
     width: 100%;
   }
   .contactForm__label2 img {
-    margin-left: 360px;
+    display: none;
   }
   .contactForm__label3 {
     margin-top: 20px;
@@ -3745,7 +3744,7 @@ body {
     width: 100%;
   }
   .contactForm__label3 img {
-    margin-left: 360px;
+    display: none;
   }
   .contactForm__label4 {
     margin-top: 20px;
@@ -3756,7 +3755,7 @@ body {
     text-align: left;
   }
   .contactForm__label4 img {
-    margin-left: 360px;
+    display: none;
   }
   .contactForm__labelSend input {
     margin-top: 28px;
@@ -3780,10 +3779,9 @@ body {
     width: 90%;
   }
   .contactForm__label1 img {
-    margin-left: 110px;
+    display: none;
   }
   .contactForm__label2 img {
-    margin-left: 118px;
     display: none;
   }
   .contactForm__label2 input {
@@ -3793,15 +3791,13 @@ body {
     margin-top: 10px;
   }
   .contactForm__label3 img {
-    margin-top: 30px;
-    margin-left: 270px;
+    display: none;
   }
   .contactForm__label4 {
     margin-top: 20px;
   }
   .contactForm__label4 img {
-    margin-top: 38px;
-    margin-left: 270px;
+    display: none;
   }
   .contactForm__label4 textarea {
     width: 93%;
