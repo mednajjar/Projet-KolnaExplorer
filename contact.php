@@ -1,3 +1,4 @@
+<?php include 'config.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -80,60 +81,83 @@
 
                 <?php 
                         $name = $subject = $email = $message = "";
+                        $nameErr = $subjectErr = $emailErr = $messageErr = "";
+
                         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-                        
-                            $name = $_POST['name'];
-                            $email = $_POST['email']; 
-                            $subject = $_POST['subject'];
-                            $message = $_POST['body'];
+                            if(empty($_POST['name'])){
+                                $nameErr = "Name is required";
+                            }else {
+                                $name = test_input($_POST["name"]);
+                                // check if name 
+                                if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
+                                $nameErr = "Only letters and white space allowed";
+                                }
+                            }
+                            if (empty($_POST["email"])) {
+                                $emailErr = "Email is required";
+                              } else {
+                                $email = test_input($_POST["email"]);
+                                // check if e-mail address is well-formed
+                                if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                                  $emailErr = "Invalid email format";
+                                }
+                              }
+                            if (empty($_POST["subject"])) {
+                                $subject = "";
+                            } else {
+                                $subject = test_input($_POST["subject"]);
+                            }
+                            if (empty($_POST["body"])) {
+                                $message = "";
+                            } else {
+                                $message = test_input($_POST["body"]);
+                            }
+
+                            
                             $email_from = 'kolnaexplorer@gmail.com';
-
                             $email_subject = "New form submission";
-
                             $email_body = "User Name: $name.\n".
                                                 "User Email: $email.\n".
                                                     "User subject: $subject.\n".
                                                         "User Message: $message.\n";
-
-
                             $to = "meachkaddour1@gmail.com";
-
                             $headers = "From: $email_from \r\n";
-
                             $headers .= "Reply-To: $email \r\n";
                             mail($to,$email_subject,$email_body,$headers);
 
-                            // header("Location: contact.php");
-                        
                         }
- 
+                        function test_input($data) {
+                            $data = trim($data);
+                            $data = stripslashes($data);
+                            $data = htmlspecialchars($data);
+                            return $data;
+                          }
                     ?>
 
 
-                <form class="contactForm" method="POST" action="contact.php" name="contact-form" id="contact-form">
+                <form class="contactForm" method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" name="contact-form" id="contact-form">
 
                     <div class="contactForm__label1">
-                        <label>Votre Nom<span class="text-danger"> *</span></label>
-                        <img src="Assets/name.png" alt="personne">
-                        <input name="name" id="name" type="text" placeholder="       First Name :" required>
+                        
+                        <label>Votre Nom<img src="Assets/name.png" alt="personne"><span class="text-danger"> <?php echo $nameErr;?></span></label>
+                        
+                        <input name="name" id="name" type="text" placeholder="First Name :" value="<?php echo $name;?>">
                     </div>
                     <div class="contactForm__label2">
-                        <label>Votre Email<span class="text-danger"> *</span></label>
-                        <img src="Assets/gmail.png" alt="gmail">
-                        <input name="email" id="email" type="email" placeholder="        Your email :" required>
+                        
+                        <label>Votre Email<img src="Assets/gmail.png" alt="gmail"><span class="text-danger"><?php echo $emailErr;?></span></label>
+                        <input name="email" id="email" type="email" placeholder="Your email :" value="<?php echo $email;?>">
                     </div>
                     <div class="contactForm__label3">
-                        <label>Sujet</label>
-                        <img src="Assets/subject.png" alt="subject">
-                        <input name="subject" id="subject" type="text" placeholder="     Sujet" required>
+                        <label>Sujet<img src="Assets/subject.png" alt="subject"></label>
+                        <input name="subject" id="subject" type="text" placeholder="Sujet" value="<?php echo $subject;?>">
                     </div>
                     <div class="contactForm__label4">
-                        <label>Message</label>
-                        <img src="Assets/msg.png" alt="message">
-                        <textarea name="body" id="comments" placeholder="   Votre Message :" required></textarea>
+                        <label>Message<img src="Assets/msg.png" alt="message"></label>                     
+                        <textarea name="body" id="comments" placeholder="Votre Message :" <?php echo $message;?>></textarea>
                     </div>
                     <div class="contactForm__labelSend">
-                        <input type="submit" id="submit" name="submit" class="form__btnSend" value="Envoyer le message" required>
+                        <input type="submit" id="submit" name="submit" class="form__btnSend" value="Envoyer le message">
                     </div>
                 </form>
 
