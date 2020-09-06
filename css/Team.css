@@ -97,7 +97,7 @@ ul li .active {
   }
   .navMenu {
     position: absolute;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     left: 0;
     height: 50vh;
@@ -673,12 +673,12 @@ form {
   text-align: center;
   font-size: 30px;
   color: #BAC7A7;
+  padding-top: 10px;
 }
 
 .sectionTeam2 .sectionTeam2-block0 .sectionTeam2-block0__title {
   display: block;
-  margin-top: 3px;
-  margin-top: 80px;
+  margin-top: 20px;
   font-weight: bold;
 }
 
@@ -686,6 +686,7 @@ form {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .sectionTeam2 .container-team .sectionTeam2-block1 {
@@ -771,6 +772,9 @@ form {
   body .sectionTeam2 {
     height: auto;
   }
+  body .sectionTeam2 .sectionTeam2-block0 {
+    font-size: 22px;
+  }
   body .sectionTeam2 .container-team {
     display: flex;
     flex-direction: column;
@@ -800,6 +804,9 @@ form {
   }
   body .sectionTeam2 {
     height: auto;
+  }
+  body .sectionTeam2 .sectionTeam2-block0 {
+    font-size: 18px;
   }
   body .sectionTeam2 .container-team {
     display: flex;

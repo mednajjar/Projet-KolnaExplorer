@@ -7,11 +7,8 @@
     padding: 0;
 }
 
-// body {
-//     overflow-x: hidden;
-//     font-family: nunito, sans-serif;
-  
-// }
+
+
 
 
 @import '_menu.scss';
@@ -45,43 +42,39 @@
 
 
 .sectionTeam2 {
-        // margin: 0 auto;
         margin-bottom: 100px;
-        // height: 800px;
-        // display: flex;
-        // flex-wrap: wrap;
+        
         
         width: 100%;
         .sectionTeam2-block0{
-        //    grid-column: 1/3;
-        //    grid-row:1/2;
+        
         display: block;
            text-align: center; 
            font-size: 30px;
            color: #BAC7A7;
+           padding-top: 10px;
+        
+
            .sectionTeam2-block0__title {
+
                display: block;
-               margin-top: 3px;         
-                margin-top: 80px;
+               
+                margin-top: 20px;
                 font-weight: bold;    
            }
            
         }
         .container-team{
-
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            padding-top: 50px;
           
         .sectionTeam2-block1 {
-            // background-color: blue;
             width: 50%;
             display: block;
-            // height: 250px;
             padding-left: 100px;
-            // grid-column: 1/2;
-            // grid-row:2/3;
-            // text-align: center;
+            
 
             display: flex;
             flex-direction: row;
@@ -108,7 +101,6 @@
             .block1-team2 {
                 margin-top: 30px;
                 margin-left: 15px;
-                //  font-family: 'Playfair Display SC', serif;
                  .block1-team2__tite1 {
                     width: 70%;
                  }
@@ -137,180 +129,7 @@
             }
         }
     }
-        // .sectionTeam2-block2{
-        //     // height: 250px;
-
-        //     padding-left: 100px;
-        //     width: 90%;
-        //     align-self: center;
-
-        //     grid-column: 2/3;
-        //     grid-row:2/3;
-        //     display: flex;
-        //     flex-direction: row;
-           
-        //     .block1-team1 {
-        //         .block1-team1__photo {
-        //             border-radius: 50%;
-        //         }
-        //          .logoteam {
-        //         display: flex;
-        //         flex-direction: row;
-        //         margin-top: 10px;
-        //         .logoteam--icone {
-        //             width: 25px;
-        //             cursor: pointer;
-
-        //         }
-
-        //     }
-          
-        //     }
-        //     .block1-team2 {
-        //         margin-top: 30px;
-        //         margin-left: 15px;
-        //         .block1-team2__tite1 {
-        //             width: 70%;
-        //          }
-        //         .block1-team2__tite2 {
-        //             color: rgba(202, 195, 195, 0.76);
-        //             font-family: 'EB Garamond', serif;   
-        //         }
-        //         .block1-team2__tite3 {
-        //             font-family: 'Mulish', sans-serif;
-        //             color: rgb(184, 20, 20);
-
-        //             font-size: 14px;
-
-
-        //         }
-            
-        //         .block1-team2--ligne {
-        //             height: 2px;
-        //             width: 10%;
-        //             margin-bottom: 30px;
-        //             color: rgb(189, 188, 182);
-        //             background-color:rgb(189, 188, 182);
-        //         }
-              
-        //     }
-
-        // }
-        // .sectionTeam2-block3 {
-        //     // height: 250px;
-
-        //     width: 90%;
-        //     align-self: center;
-
-        //     padding-left: 100px;
-        //     grid-column: 1/2;
-        //     grid-row:3/4;
-        //     display: flex;
-        //     flex-direction: row;
-        //     .block1-team1 {
-        //         .block1-team1__photo {
-        //             border-radius: 50%;
-        //         }
-        //          .logoteam {
-        //         display: flex;
-        //         flex-direction: row;
-        //         margin-top: 10px;
-        //         .logoteam--icone {
-        //             width: 25px;
-        //             cursor: pointer;
-
-        //         }
-
-        //     }
-          
-        //     }
-        //     .block1-team2 {
-        //         margin-top: 30px;
-        //         margin-left: 15px;
-        //         .block1-team2__tite1 {
-        //             width: 70%;
-        //          }
-        //         .block1-team2__tite2 {
-        //             color: rgba(202, 195, 195, 0.76);
-        //             font-family: 'EB Garamond', serif;   
-        //         }
-        //         .block1-team2__tite3 {
-        //             font-family: 'Mulish', sans-serif;
-        //             color: rgb(184, 20, 20);
-
-        //             font-size: 14px;
-
-
-        //         }
-            
-        //         .block1-team2--ligne {
-        //             height: 2px;
-        //             width: 10%;
-        //             margin-bottom: 30px;
-        //             color: rgb(189, 188, 182);
-        //             background-color:rgb(189, 188, 182);
-        //         }
-        //     }
-        // }
-
-            
-        // .sectionTeam2-block4 {
-        //     // height: 250px;
-
-        //     width: 90%;
-        //     align-self: center;
-        //     padding-left: 100px;
-        //     grid-column: 2/3;
-        //     grid-row:3/4;
-        //     display: flex;
-        //     flex-direction: row;
-        //     .block1-team1 {
-        //         .block1-team1__photo {
-        //             border-radius: 50%;
-        //         }
-        //          .logoteam {
-        //         display: flex;
-        //         flex-direction: row;
-        //         margin-top: 10px;
-        //         .logoteam--icone {
-        //             width: 25px;
-        //             cursor: pointer;
-
-        //         }
-
-        //     }
-          
-        //     }
-        //     .block1-team2 {
-        //         margin-top: 30px;
-        //         margin-left: 15px;
-        //         .block1-team2__tite1 {
-        //             width: 70%;
-        //          }
-        //         .block1-team2__tite2 {
-        //             color: rgba(202, 195, 195, 0.76);
-        //             font-family: 'EB Garamond', serif;   
-        //         }
-        //         .block1-team2__tite3 {
-        //             font-family: 'Mulish', sans-serif;
-        //             color: rgb(184, 20, 20);
-
-        //             font-size: 14px;
-
-
-        //         }
-            
-        //         .block1-team2--ligne {
-        //             height: 2px;
-        //             width: 10%;
-        //             margin-bottom: 30px;
-        //             color: rgb(189, 188, 182);
-        //             background-color:rgb(189, 188, 182);
-        //         }
-               
-        //     }
-        // }
-
+        
 
 
 
@@ -324,7 +143,7 @@
                     }
                 }
                 .sectionTeam2 {
-                    // height: 1200px;
+                    
                    
                     .block1-team2 {
                       padding-top: -20px
@@ -350,18 +169,21 @@
                     height: auto;
                     .sectionTeam-title {
                         text-align: center;
+                       
                     }
                 }
                 .sectionTeam2 {
                     height: auto;
+                    .sectionTeam2-block0{
+                        font-size: 22px;
+                    }
                    
                     .container-team{
                         display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
                     justify-content: center;
-                    // background-color: chocolate;
-                    // background-color: chartreuse;
+                    
                     .sectionTeam2-block1 {
                         width:  90%;
                     .block1-team1 {
@@ -395,13 +217,13 @@
                 }
                 .sectionTeam2 {
 
-                    // margin-top:100px;
-                    // margin: 0 auto;
                     height: auto;
-                    // margin-bottom: 50px;
-                    // background-color: chartreuse;
+                    
+                    .sectionTeam2-block0{
+                        font-size: 18px;
+                    }
                     .container-team{
-                        // background-color: cornflowerblue;
+                       
                         display: flex;
                         flex-direction: column;
                         
@@ -409,7 +231,6 @@
                     .sectionTeam2-block1  {
                         padding-left: 10px;
                         width: 100%;
-                        // text-align: justify;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-evenly;
@@ -424,51 +245,24 @@
             }
                 .block1-team2 {
                     padding-left: 20%;
-                    // display: block;
-                    // background-color: blue;
-                    // margin: 0;
-                    // position: absolute;
-                    // display: flex;
-                    // justify-content: center;
-                    // align-items: center;
-                    
-                    // position: static;
-                    // -ms-transform: translateY(-50%);
-                    // transform: translateY(-50%);
-                    // margin: auto;
-                    // width: 60%;
-                    // text-align: center;
-                    // margin-left: auto;
-                    // margin-right: auto;
-                    // width: 50em;
-                    // width: 100%;
-                    // text-align: left;
-                    // display: flex;
-                    // justify-content: center;
-                    // align-items: center;
+                   
 
         
                     .block1-team2__tite3 {
                         font-size: 12px;
                         width: 100%;
-                        // background-color: rgb(216, 224, 207);
-
-
-                        // text-align: center;
+                        
                         
                     }
                     .block1-team2__tite2 {
                         font-size: 16px;
-                        // text-align: center;
 
         
                     }
                     .block1-team2__tite1 {
                         font-size: 22px;
                         width: 100%;
-                        // background-color: rgb(216, 224, 207);
-
-                        // text-align: center;
+                       
 
         
                     }
