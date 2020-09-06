@@ -128,6 +128,7 @@
             <p   class="block1-team2__tite3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi similique reprehenderit laboriosam quisquam labore consequatur, quis doloribus. Sed laboriosam ea possimus ipsum autem tempore iusto repellat. Vitae necessitatibus dolores aut!</p>
             </div>
     </div>
+    
 
     <div class="sectionTeam2-block1">
             <div class="block1-team1">
