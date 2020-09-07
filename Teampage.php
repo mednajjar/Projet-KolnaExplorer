@@ -53,6 +53,9 @@
      
     <link rel="stylesheet" href="css/Teampage.css">
 </head>
+
+
+
 <body>
 
     
@@ -128,7 +131,7 @@
                                 </div> 
                                 <div class="form-group">
                                 <?php if ($update == true): ?>
-                                <button class="btn-team" type="submit" name="update" style="background: #556B2F;" >update</button></div>
+                                <button class="btn-team" type="submit" name="update"  >update</button></div>
                                 <?php else: ?>                               
                                 <div class="form-group">
                                 <button class="btn-team" type="submit" name="save">Save</button>
