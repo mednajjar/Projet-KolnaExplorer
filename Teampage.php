@@ -102,7 +102,9 @@
                     <div class="row">
                         <div class="block">
                             <form method="POST" action="action.php" enctype="multipart/form-data" > 
-
+                                    <div>
+                                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                                    </div>
                                 <div class="form-group">
                                     <input type="file" name="team_img" value="<?php echo $team_img;?>" class="form-control team-control" placeholder="Télécharger" >
                                 </div>                              
@@ -114,6 +116,7 @@
                                 </div> 
                                 <div class="form-group">
                                     <textarea name="team_resum" value="<?php echo $team_resum;?>"  class="form-control" placeholder="Enter descriprion" cols="30" rows="20"></textarea>
+
                                 </div>
 
                                 </div>
@@ -153,14 +156,14 @@
                                         <th>linkdin</th>
                                         <th>twitter</th>
                                         <th>instagram</th>
-                                        <th>action</th>
+                                        <th   colspan="2" >action</th>
 
                                    
                                     </tr>
                                 <tr>
-                                <?php 
-                                 $results = mysqli_query($db, "SELECT * FROM team");
-                                while ($row = mysqli_fetch_array($results)) { ?>
+                                        <?php 
+                                        $results = mysqli_query($db, "SELECT * FROM team");
+                                        while ($row = mysqli_fetch_array($results)) { ?>
 
                                 <tr>    <td><?php echo $row['id']; ?></td> 
                                         <td><?php echo $row['team_img']; ?></td> 
@@ -173,14 +176,14 @@
                                         <td><?php echo $row['instagram_path']; ?></td> 
                                         <td class="action-team">
                                             <a href="teampage.php?edit=<?php echo $row['id']; ?>" class="btn btn-edit">edit</a>
-                                            <a href="teampage.php?dele=<?php echo $row['id']; ?>" class="btn btn-delete">delete</a>
+                                            <a href="action.php?dele=<?php echo $row['id']; ?>" class="btn btn-delete">delete</a>
 
                                         </td>
                                 </tr>
                                 	<?php } ?>
                                     
                                   
-                                    </table>
+                                </table>
                                  </div>   
                 
                           

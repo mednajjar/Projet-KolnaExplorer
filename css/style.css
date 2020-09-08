@@ -115,7 +115,7 @@ ul li .active {
   }
   .navMenu {
     position: absolute;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     left: 0;
     height: 50vh;
@@ -2209,7 +2209,7 @@ ul li .active {
   }
   .navMenu {
     position: absolute;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     left: 0;
     height: 50vh;
@@ -3271,7 +3271,7 @@ ul li .active {
   }
   .navMenu {
     position: absolute;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
     left: 0;
     height: 50vh;
@@ -4720,7 +4720,6 @@ header .logo span {
   height: 35px;
   width: 70px;
   border: none;
-  background-color: #95d357;
 }
 
 table {

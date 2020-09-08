@@ -125,10 +125,9 @@ session_start();
       $facebook_path=$_POST['facebook_path'];
       $linkdin_path =$_POST['linkdin_path'];
       $twitter_path = $_POST['twitter_path'];
-      $instagram_path =$_POST['instagram_path'];
-    
+      $instagram_path =$_POST['instagram_path']; 
   
-    mysqli_query($db, "UPDATE team SET  team_img='$team_img', team_firstName='$team_firstName', team_role='$team_role',team_resum='$team_resum', facebook_path='$facebook_path' ,linkdin_path='$linkdin_path',twitter_path='$twitter_path',instagram_path='$instagram_path',  WHERE id=$id");
+    mysqli_query($db, "UPDATE team  SET team_img='$team_img', team_firstName='$team_firstName', team_role='$team_role',team_resum='$team_resum', facebook_path='$facebook_path' ,linkdin_path='$linkdin_path',twitter_path='$twitter_path',instagram_path='$instagram_path',  WHERE id=$id");
     $_SESSION['message'] = "Address updated!"; 
     header('location: teampage.php');
   }
@@ -142,80 +141,10 @@ session_start();
 // Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta eligendi ipsam eveniet aliquam assumenda ut accusamus quaerat neque adipisci eaque explicabo repudiandae repellat reprehenderit et accusantium architecto, natus optio. Ratione.
 
 
-  // if (isset($_GET['delete'])) {
-  //   $id=$_GET['delete'];
-  //   $sql1=("DELETE FROM team where id=$id");
-  //    $_SESSION['message']="reccord has benn delete";
-  //   $_SESSION['msg_type']="danger";
-  //   header("location:teampage.php");
-
-
-  // }
+  
 
 
 
-  // $team_img = "";
-  // $team_firstName = "";
-  // $team_role = "";
-  // $team_resum = "";
-  // $facebook_path="";
-  // $linkdin_path ="";
-  // $twitter_path ="";
-  // $instagram_path ="";
-
-
-  // if (isset($_GET['edit'])) {
-  //   $id=$_GET['edit'];
-  //   // $result=("SELECT FROM team where id=$id");
-
-  // // $result=("SELECT FROM team where id=$id");
-
-  // $sql2 =("SELECT * FROM team wherre id=$id");
-  // $result=$sql2=("SELECT * FROM team wherre id=$id");
-
-
-
-
-  //   $_SESSION['message']="reccord has benn delete";
-  //   $_SESSION['msg_type']="danger";
-  //   header("location:teampage.php");
-  //   if (count($result)==1) {
-  //     $row==$result->fetch_array();
-
-  //     $team_img = $row['team_img'];
-  //     $team_firstName = $row['team_firstName'];
-  //     $team_role = $row['team_role'];
-  //     $team_resum = $row['team_resum'];
-  //     $facebook_path=$row['facebook_path'];
-  //     $linkdin_path =$row['linkdin_path'];
-  //     $twitter_path = $row['twitter_path'];
-  //     $instagram_path =$row['instagram_path'];
-
-  //   }
-
-
-  // }
-
-
-
-  // if (isset($_GET['edit'])) {
-	// 	$id = $_GET['edit'];
-	// 	// $update = true;
-  //   $record ="SELECT * FROM team WHERE id=$id";
-
-
-	// 	if (count($result) == 1 ) {
-  //     $row = mysqli_fetch_array($record);
-  //     $team_img = $row['team_img'];
-  //     $team_firstName = $row['team_firstName'];
-  //     $team_role = $row['team_role'];
-  //     $team_resum = $row['team_resum'];
-  //     $facebook_path=$row['facebook_path'];
-  //     $linkdin_path =$row['linkdin_path'];
-  //     $twitter_path = $row['twitter_path'];
-  //     $instagram_path =$row['instagram_path'];
-			
-	// }
 
 
 
