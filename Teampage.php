@@ -109,7 +109,7 @@
                                     <input type="file" name="team_img" value="<?php echo $team_img;?>" class="form-control team-control" placeholder="Télécharger" >
                                 </div>                              
                                 <div class="form-group">
-                                    <input type="text" name="team_firstName" value="<?php echo $team_firstName;?>" class="form-control" placeholder="Entrer username"  >
+                                    <input type="text" name="team_fullname" value="<?php echo $team_firstName;?>" class="form-control" placeholder="Entrer username"  >
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="team_role" value= "<?php echo $team_role;?>" class="form-control" placeholder="Enter role">
@@ -156,7 +156,7 @@
                                         <th>linkdin</th>
                                         <th>twitter</th>
                                         <th>instagram</th>
-                                        <th   colspan="2" >action</th>
+                                        <!-- <th   colspan="2" >action</th> -->
 
                                    
                                     </tr>
@@ -167,9 +167,9 @@
 
                                 <tr>    <td><?php echo $row['id']; ?></td> 
                                         <td><?php echo $row['team_img']; ?></td> 
-                                        <td><?php echo $row['team_firstName']; ?></td> 
+                                         <td><?php echo $row['team_fullname']; ?></td>            
                                         <td><?php echo $row['team_role']; ?></td> 
-                                        <td><?php echo $row['team_resum']; ?></td> 
+                                        <td><?php echo $row['team_desc']; ?></td> 
                                         <td><?php echo $row['facebook_path']; ?></td> 
                                         <td><?php echo $row['linkdin_path']; ?></td> 
                                         <td><?php echo $row['twitter_path']; ?></td> 

@@ -40,7 +40,7 @@ session_start();
       // Get text
 
 
-      $team_firstName = $_POST['team_firstName'];
+      $team_firstName = $_POST['team_fullname'];
       $team_role = $_POST['team_role'];
       $team_resum = $_POST['team_resum'];
       $facebook_path=$_POST['facebook_path'];
@@ -56,7 +56,7 @@ session_start();
     
   	$target = "images/".basename($team_img);
 
-    mysqli_query($db,"INSERT INTO team (team_img,team_firstName,team_role,team_resum,facebook_path,linkdin_path,twitter_path,instagram_path) VALUES ('".$team_img."','".$team_firstName."','".$team_role."','".$team_resum."','".$facebook_path."','".$linkdin_path."','".$twitter_path."','".$instagram_path."')");
+    mysqli_query($db,"INSERT INTO team (team_img,team_fullname,team_role,team_desc,facebook_path,linkdin_path,twitter_path,instagram_path) VALUES ('".$team_img."','".$team_firstName."','".$team_role."','".$team_resum."','".$facebook_path."','".$linkdin_path."','".$twitter_path."','".$instagram_path."')");
 
 
 

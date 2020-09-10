@@ -85,9 +85,9 @@
             </div>
             <div class="block1-team2">
                 <hr  class=block1-team2--ligne>
-            <h1  class="block1-team2__tite1"  ><?php echo $row['team_firstName']; ?></h1>
+            <h1  class="block1-team2__tite1"  ><?php echo $row['team_fullname']; ?></h1>
             <h2   class="block1-team2__tite2"><?php echo $row['team_role']; ?></h2>
-            <p   class="block1-team2__tite3"><?php echo $row['team_resum']; ?></p>
+            <p   class="block1-team2__tite3"><?php echo $row['team_desc']; ?></p>
             </div>
 
 </div>
