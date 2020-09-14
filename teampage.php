@@ -103,7 +103,7 @@
                         <div class="block">
                             <form method="POST" action="action.php" enctype="multipart/form-data" > 
                                     <div>
-                                    <input type="hidden" name="id" value="<?php echo $id; ?>">
+                                    <input type="hidden" name="id" value="<?php echo $id; ?>"  >
                                     </div>
                                 <div class="form-group">
                                     <input type="file" name="team_img" value="<?php echo $team_img;?>" class="form-control team-control" placeholder="Télécharger" >
